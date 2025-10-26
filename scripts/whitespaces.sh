@@ -1,3 +1,5 @@
+#!/bin/bash
+
 mkdir -p .vscode
 
 cat > ~/.config/Code/User/settings.json << 'EOF'
