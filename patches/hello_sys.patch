@@ -1,0 +1,72 @@
+diff --git a/arch/x86/entry/syscalls/syscall_64.tbl b/arch/x86/entry/syscalls/syscall_64.tbl
+index 5eb708bff..43d8e9310 100644
+--- a/arch/x86/entry/syscalls/syscall_64.tbl
++++ b/arch/x86/entry/syscalls/syscall_64.tbl
+@@ -390,6 +390,7 @@
+ 464	common	getxattrat		sys_getxattrat
+ 465	common	listxattrat		sys_listxattrat
+ 466	common	removexattrat		sys_removexattrat
++467	common  sys_k22_hello		sys_k22_hello
+ 
+ #
+ # Due to a historical design error, certain syscalls are numbered differently
+diff --git a/init/main.c b/init/main.c
+index 2a1757826..24a0b5b9e 100644
+--- a/init/main.c
++++ b/init/main.c
+@@ -1095,6 +1095,7 @@ void start_kernel(void)
+ 	arch_post_acpi_subsys_init();
+ 	kcsan_init();
+ 
++	printk(KERN_INFO "I miss Alexis Delis\n");
+ 	/* Do the rest non-__init'ed, we're now alive */
+ 	rest_init();
+ 
+diff --git a/kernel/Makefile b/kernel/Makefile
+index 87866b037..a151a2145 100644
+--- a/kernel/Makefile
++++ b/kernel/Makefile
+@@ -10,7 +10,7 @@ obj-y     = fork.o exec_domain.o panic.o \
+ 	    extable.o params.o \
+ 	    kthread.o sys_ni.o nsproxy.o \
+ 	    notifier.o ksysfs.o cred.o reboot.o \
+-	    async.o range.o smpboot.o ucount.o regset.o ksyms_common.o
++	    async.o range.o smpboot.o ucount.o regset.o ksyms_common.o hello_syscall.o
+ 
+ obj-$(CONFIG_USERMODE_DRIVER) += usermode_driver.o
+ obj-$(CONFIG_MULTIUSER) += groups.o
+diff --git a/kernel/hello_syscall.c b/kernel/hello_syscall.c
+new file mode 100644
+index 000000000..0cdbca583
+--- /dev/null
++++ b/kernel/hello_syscall.c
+@@ -0,0 +1,29 @@
++// SPDX-License-Identifier: GPL-2.0
++/*
++ * hello system call implementation
++ */
++
++#include <linux/kernel.h>
++#include <linux/syscalls.h>
++#include <linux/uaccess.h>
++#include <linux/slab.h>
++
++#define HELLO_MSG "Hello "
++
++/**
++ *
++ * Documentation will go here.
++ *
++ */
++static int do_k22_hello(const char *input, size_t in_sz, char *output,
++                    size_t out_sz)
++{
++    pr_info("I miss Alexis Delis! But I managed to invoke a dummy syscall...\n");
++    return 0;
++}
++
++SYSCALL_DEFINE4(k22_hello, const char __user *, input, size_t, in_sz, char __user *,
++                output, size_t, out_sz)
++{
++    return do_k22_hello(input, in_sz, output, out_sz);
++}
