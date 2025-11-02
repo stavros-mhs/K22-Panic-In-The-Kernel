@@ -1,0 +1,40 @@
+diff --git a/arch/x86/entry/syscalls/syscall_64.tbl b/arch/x86/entry/syscalls/syscall_64.tbl
+index 5eb708bff..513fab35b 100644
+--- a/arch/x86/entry/syscalls/syscall_64.tbl
++++ b/arch/x86/entry/syscalls/syscall_64.tbl
+@@ -390,6 +390,7 @@
+ 464	common	getxattrat		sys_getxattrat
+ 465	common	listxattrat		sys_listxattrat
+ 466	common	removexattrat		sys_removexattrat
++467	common  k22tree			k22tree
+ 
+ #
+ # Due to a historical design error, certain syscalls are numbered differently
+diff --git a/include/uapi/linux/k22info.h b/include/uapi/linux/k22info.h
+new file mode 100644
+index 000000000..1d7acc268
+--- /dev/null
++++ b/include/uapi/linux/k22info.h
+@@ -0,0 +1,13 @@
++#include <sys/types.h>
++
++struct k22info
++{
++	char comm[64];
++	pid_t pid;
++	pid_t parent_pid;
++	pid_t first_child_pid;
++	pid_t next_sibling_pid;
++	unsigned long nvcsw;
++	unsigned long nivcsw;
++	unsigned long start_time;
++};
+diff --git a/kernel/k22tree.c b/kernel/k22tree.c
+new file mode 100644
+index 000000000..f0a8148c8
+--- /dev/null
++++ b/kernel/k22tree.c
+@@ -0,0 +1,3 @@
++#include <linux/k22info.h>
++
++/* k22info.h imports */
