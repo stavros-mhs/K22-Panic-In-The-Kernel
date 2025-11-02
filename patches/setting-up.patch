@@ -12,14 +12,14 @@ index 5eb708bff..513fab35b 100644
  # Due to a historical design error, certain syscalls are numbered differently
 diff --git a/include/uapi/linux/k22info.h b/include/uapi/linux/k22info.h
 new file mode 100644
-index 000000000..1d7acc268
+index 000000000..dfde1eea1
 --- /dev/null
 +++ b/include/uapi/linux/k22info.h
 @@ -0,0 +1,13 @@
++/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
 +#include <sys/types.h>
 +
-+struct k22info
-+{
++struct k22info {
 +	char comm[64];
 +	pid_t pid;
 +	pid_t parent_pid;
@@ -31,10 +31,10 @@ index 000000000..1d7acc268
 +};
 diff --git a/kernel/k22tree.c b/kernel/k22tree.c
 new file mode 100644
-index 000000000..f0a8148c8
+index 000000000..ccc640cd3
 --- /dev/null
 +++ b/kernel/k22tree.c
 @@ -0,0 +1,3 @@
-+#include <linux/k22info.h>
++// SPDX-License-Identifier: GPL-2.0-only
 +
-+/* k22info.h imports */
++#include <linux/k22info.h>
