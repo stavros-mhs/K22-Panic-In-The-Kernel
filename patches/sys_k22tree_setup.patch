@@ -1,0 +1,76 @@
+diff --git a/arch/x86/entry/syscalls/syscall_64.tbl b/arch/x86/entry/syscalls/syscall_64.tbl
+index 5eb708bff..358ae4ebe 100644
+--- a/arch/x86/entry/syscalls/syscall_64.tbl
++++ b/arch/x86/entry/syscalls/syscall_64.tbl
+@@ -390,6 +390,7 @@
+ 464	common	getxattrat		sys_getxattrat
+ 465	common	listxattrat		sys_listxattrat
+ 466	common	removexattrat		sys_removexattrat
++467	common  sys_k22tree		sys_k22tree
+ 
+ #
+ # Due to a historical design error, certain syscalls are numbered differently
+diff --git a/include/uapi/linux/k22info.h b/include/uapi/linux/k22info.h
+index dfde1eea1..4e42ec893 100644
+--- a/include/uapi/linux/k22info.h
++++ b/include/uapi/linux/k22info.h
+@@ -1,5 +1,5 @@
+ /* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+-#include <sys/types.h>
++#include <linux/types.h>
+ 
+ struct k22info {
+ 	char comm[64];
+diff --git a/kernel/Makefile b/kernel/Makefile
+index 87866b037..98881d8c7 100644
+--- a/kernel/Makefile
++++ b/kernel/Makefile
+@@ -10,7 +10,8 @@ obj-y     = fork.o exec_domain.o panic.o \
+ 	    extable.o params.o \
+ 	    kthread.o sys_ni.o nsproxy.o \
+ 	    notifier.o ksysfs.o cred.o reboot.o \
+-	    async.o range.o smpboot.o ucount.o regset.o ksyms_common.o
++	    async.o range.o smpboot.o ucount.o regset.o ksyms_common.o \
++	    k22tree.o
+ 
+ obj-$(CONFIG_USERMODE_DRIVER) += usermode_driver.o
+ obj-$(CONFIG_MULTIUSER) += groups.o
+diff --git a/kernel/k22tree.c b/kernel/k22tree.c
+index 189e31c65..5f86abf00 100644
+--- a/kernel/k22tree.c
++++ b/kernel/k22tree.c
+@@ -2,24 +2,22 @@
+ 
+ #include <linux/k22info.h>
+ #include <linux/syscalls.h>
+-#include <linux/uaccess.h>
+ 
+ int k22tree(struct k22info *buf, int *ne);
+ 
+ SYSCALL_DEFINE2(k22tree, struct k22info __user *, buf, int __user *, ne) {
+-    int num_entries;
++	int num_entries;
+ 
+-    // Basic error checking
+-    if (!buf || !ne)
+-        return -EINVAL;
++	/* Basic error checking */
++	if (!buf || !ne)
++		return -EINVAL;
+ 
+-    if (copy_from_user(&num_entries, ne, sizeof(int)))
+-        return -EFAULT;
++	if (copy_from_user(&num_entries, ne, sizeof(int)))
++		return -EFAULT;
+ 
+-    if (num_entries < 1)
+-        return -EINVAL;
++	if (num_entries < 1)
++		return -EINVAL;
++	/* TODO: Implement process tree traversal */
+ 
+-    // TODO: Implement process tree traversal
+-
+-    return 0;  // Placeholder
++	return 0;
+ }
