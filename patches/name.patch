@@ -1,0 +1,9 @@
+diff --git a/scripts/syscall.tbl b/scripts/syscall.tbl
+index ebbdb3c42..82c43a58a 100644
+--- a/scripts/syscall.tbl
++++ b/scripts/syscall.tbl
+@@ -407,3 +407,4 @@
+ 464	common	getxattrat			sys_getxattrat
+ 465	common	listxattrat			sys_listxattrat
+ 466	common	removexattrat			sys_removexattrat
++467     common  sys_k22_hello                   sys_k22_hello 
