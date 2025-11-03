@@ -1,0 +1,74 @@
+diff --git a/arch/x86/entry/syscalls/syscall_64.tbl b/arch/x86/entry/syscalls/syscall_64.tbl
+index 5eb708bff..513fab35b 100644
+--- a/arch/x86/entry/syscalls/syscall_64.tbl
++++ b/arch/x86/entry/syscalls/syscall_64.tbl
+@@ -390,6 +390,7 @@
+ 464	common	getxattrat		sys_getxattrat
+ 465	common	listxattrat		sys_listxattrat
+ 466	common	removexattrat		sys_removexattrat
++467	common  k22tree			k22tree
+ 
+ #
+ # Due to a historical design error, certain syscalls are numbered differently
+diff --git a/include/linux/syscalls.h b/include/linux/syscalls.h
+index c6333204d..104ead79a 100644
+--- a/include/linux/syscalls.h
++++ b/include/linux/syscalls.h
+@@ -302,6 +302,8 @@ static inline int is_syscall_trace_event(struct trace_event_call *tp_event)
+  * include the prototypes if CONFIG_ARCH_HAS_SYSCALL_WRAPPER is enabled.
+  */
+ #ifndef CONFIG_ARCH_HAS_SYSCALL_WRAPPER
++/* testing */
++asmlinkage long sys_k22tree(struct k22info __user *buf, int __user *ne);
+ asmlinkage long sys_io_setup(unsigned nr_reqs, aio_context_t __user *ctx);
+ asmlinkage long sys_io_destroy(aio_context_t ctx);
+ asmlinkage long sys_io_submit(aio_context_t, long,
+diff --git a/include/uapi/linux/k22info.h b/include/uapi/linux/k22info.h
+new file mode 100644
+index 000000000..dfde1eea1
+--- /dev/null
++++ b/include/uapi/linux/k22info.h
+@@ -0,0 +1,13 @@
++/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
++#include <sys/types.h>
++
++struct k22info {
++	char comm[64];
++	pid_t pid;
++	pid_t parent_pid;
++	pid_t first_child_pid;
++	pid_t next_sibling_pid;
++	unsigned long nvcsw;
++	unsigned long nivcsw;
++	unsigned long start_time;
++};
+diff --git a/kernel/k22tree.c b/kernel/k22tree.c
+new file mode 100644
+index 000000000..00c569a33
+--- /dev/null
++++ b/kernel/k22tree.c
+@@ -0,0 +1,24 @@
++// SPDX-License-Identifier: GPL-2.0-only
++
++#include <linux/syscalls.h>
++#include <linux/k22info.h>
++#include <linux/uaccess.h>
++
++SYSCALL_DEFINE2(k22tree, struct k22info __user *, buf, int __user *, ne)
++{
++    int num_entries;
++
++    // Basic error checking
++    if (!buf || !ne)
++        return -EINVAL;
++
++    if (copy_from_user(&num_entries, ne, sizeof(int)))
++        return -EFAULT;
++
++    if (num_entries < 1)
++        return -EINVAL;
++
++    // TODO: Implement process tree traversal
++
++    return 0;  // Placeholder
++}
