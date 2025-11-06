@@ -16,8 +16,8 @@ struct k22info {
 
 
 int main(void) {
-	struct k22info buf[10]; // Init buf with 10 entries
-	int num_entries = 10;   // Request up to 10 items
+	struct k22info buf[100]; // Init buf with 10 entries
+	int num_entries = 100;   // Request up to 10 items
 
 	int ret = syscall(467, buf, &num_entries);
 	printf("ret: %d\n", ret);
