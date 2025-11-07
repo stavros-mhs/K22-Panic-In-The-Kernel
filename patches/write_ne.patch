@@ -1,0 +1,120 @@
+diff --git a/arch/x86/entry/syscalls/syscall_64.tbl b/arch/x86/entry/syscalls/syscall_64.tbl
+index 5eb708bff..358ae4ebe 100644
+--- a/arch/x86/entry/syscalls/syscall_64.tbl
++++ b/arch/x86/entry/syscalls/syscall_64.tbl
+@@ -390,6 +390,7 @@
+ 464	common	getxattrat		sys_getxattrat
+ 465	common	listxattrat		sys_listxattrat
+ 466	common	removexattrat		sys_removexattrat
++467	common  sys_k22tree		sys_k22tree
+ 
+ #
+ # Due to a historical design error, certain syscalls are numbered differently
+diff --git a/include/uapi/linux/k22info.h b/include/uapi/linux/k22info.h
+index dfde1eea1..4e42ec893 100644
+--- a/include/uapi/linux/k22info.h
++++ b/include/uapi/linux/k22info.h
+@@ -1,5 +1,5 @@
+ /* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+-#include <sys/types.h>
++#include <linux/types.h>
+ 
+ struct k22info {
+ 	char comm[64];
+diff --git a/kernel/Makefile b/kernel/Makefile
+index 87866b037..98881d8c7 100644
+--- a/kernel/Makefile
++++ b/kernel/Makefile
+@@ -10,7 +10,8 @@ obj-y     = fork.o exec_domain.o panic.o \
+ 	    extable.o params.o \
+ 	    kthread.o sys_ni.o nsproxy.o \
+ 	    notifier.o ksysfs.o cred.o reboot.o \
+-	    async.o range.o smpboot.o ucount.o regset.o ksyms_common.o
++	    async.o range.o smpboot.o ucount.o regset.o ksyms_common.o \
++	    k22tree.o
+ 
+ obj-$(CONFIG_USERMODE_DRIVER) += usermode_driver.o
+ obj-$(CONFIG_MULTIUSER) += groups.o
+diff --git a/kernel/k22tree.c b/kernel/k22tree.c
+index 189e31c65..c2e7b5311 100644
+--- a/kernel/k22tree.c
++++ b/kernel/k22tree.c
+@@ -1,25 +1,65 @@
+ // SPDX-License-Identifier: GPL-2.0-only
+ 
+-#include <linux/k22info.h>
+-#include <linux/syscalls.h>
+-#include <linux/uaccess.h>
++#include <linux/kernel.h> // cause why not
++#include <linux/slab.h> // kmalloc, kfree
++#include <linux/k22info.h> // struct k22info
++#include <linux/syscalls.h> // SYSCALL_DEFINE2
++#include <linux/uaccess.h> // copy from/to user
++#include <linux/sched.h> // struct task_struct
++#include <linux/sched/signal.h> // for_each_process, thread_group_leader
++#include <linux/list.h> // list_for_each_entry
++#include <linux/string.h> // copy process name
+ 
+ int k22tree(struct k22info *buf, int *ne);
+ 
+ SYSCALL_DEFINE2(k22tree, struct k22info __user *, buf, int __user *, ne) {
+-    int num_entries;
++	/* error checking */
++	if (!buf || !ne)
++		return -EINVAL;
+ 
+-    // Basic error checking
+-    if (!buf || !ne)
+-        return -EINVAL;
++	int kne = 0;
++	struct k22info *kbuf = NULL;
+ 
+-    if (copy_from_user(&num_entries, ne, sizeof(int)))
+-        return -EFAULT;
++	if (copy_from_user(&kne, ne, sizeof(int)))
++		return -EFAULT;
+ 
+-    if (num_entries < 1)
+-        return -EINVAL;
++	if (kne < 1)
++		return -EINVAL;
+ 
+-    // TODO: Implement process tree traversal
++	/* allocate mem to store ne pids */
++	kbuf = kmalloc_array(kne * sizeof(struct k22info), GFP_KERNEL);
++	if (!kbuf)
++		return -ENOMEM;
+ 
+-    return 0;  // Placeholder
++	/* iterate over task list logic */
++	struct task_struct *tsk = &init_task;
++	int written = 0;
++
++	rcu_read_lock();
++	for_each_process(tsk) {
++
++		if (!thread_group_leader(tsk))
++			pr_info("k22 Not thread group leader. skipping.\n");
++
++		pr_info("k22 PID: %d, comm: %s\n", tsk->pid, tsk->comm);
++
++		kbuf[written].pid = tsk->pid;
++		strscpy(kbuf[written].comm, tsk->comm, sizeof(kbuf[written].comm));
++
++		/* POSSIBLE LOGICAL ERROR HERE */
++		/* IF WRITTEN NEVER >= KNE WHAT HAPPENS? */
++		written++;
++		if (written >= kne)
++			break;
++	}
++	rcu_read_unlock();
++
++	if (copy_to_user(buf, kbuf, written * sizeof(struct k22info))) {
++		kfree(kbuf);
++		return -EFAULT;
++	}
++
++	kfree(kbuf);
++
++	return written;
+ }
