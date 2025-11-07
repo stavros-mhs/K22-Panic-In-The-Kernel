@@ -7,7 +7,7 @@ index 5eb708bff..358ae4ebe 100644
  465	common	listxattrat		sys_listxattrat
  466	common	removexattrat		sys_removexattrat
 +467	common  sys_k22tree		sys_k22tree
- 
+
  #
  # Due to a historical design error, certain syscalls are numbered differently
 diff --git a/include/uapi/linux/k22info.h b/include/uapi/linux/k22info.h
@@ -40,7 +40,7 @@ index 87866b037..98881d8c7 100644
 -	    async.o range.o smpboot.o ucount.o regset.o ksyms_common.o
 +	    async.o range.o smpboot.o ucount.o regset.o ksyms_common.o \
 +	    k22tree.o
- 
+
  obj-$(CONFIG_USERMODE_DRIVER) += usermode_driver.o
  obj-$(CONFIG_MULTIUSER) += groups.o
 diff --git a/kernel/k22tree.c b/kernel/k22tree.c
