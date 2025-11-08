@@ -33,7 +33,9 @@ static int find_parent(int *stack, int top, int parent_pid, struct k22info *buf)
 int main(void)
 {
         struct k22info *buf;
-        int num_entries = 100;  /* Start with a reasonable size */
+	int max_entries = 500; // Number of entries by user
+			       // This we DO NOT TRUST
+        int num_entries = 100; // Start with a reasonable size
         int ret;
         int total_collected = 0;
 
@@ -44,7 +46,9 @@ int main(void)
                 return 1;
         }
 
-        /* Keep calling the syscall and doubling buffer until we get all processes */
+        /* Keep calling the syscall and doubling buffer
+	 * until we get all processes
+	 */
         while (1) {
                 int current_size = num_entries;
                 int temp_entries = num_entries;
@@ -66,8 +70,11 @@ int main(void)
                 /* If the number of entries equals what we requested,
                  * there might be more processes. Double the buffer and try again.
                  */
-                if (total_collected == current_size && current_size <= 100) {
-                        num_entries *= 2;
+                if (total_collected >= current_size) {
+                        if (num_entries * 2 > max_entries)
+				num_entries = max_entries;
+			else
+				num_entries *= 2;
                         struct k22info *new_buf = realloc(buf, num_entries * sizeof(struct k22info));
                         if (!new_buf) {
                                 perror("realloc failed");
