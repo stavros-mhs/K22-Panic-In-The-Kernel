@@ -18,7 +18,7 @@ struct k22info {
 
 /* Find the position of a process with given parent_pid in the stack.
  * Returns the index in the stack, or -1 if not found.
- * The stack contains positions (indices) of processes in the buffer.
+ * The stack contains positions (index) of processes in the buffer.
  */
 static int find_parent(int *stack, int top, int parent_pid, struct k22info *buf)
 {
@@ -33,8 +33,6 @@ static int find_parent(int *stack, int top, int parent_pid, struct k22info *buf)
 int main(void)
 {
         struct k22info *buf;
-	int max_entries = 500; // Number of entries by user
-			       // This we DO NOT TRUST
         int num_entries = 100; // Start with a reasonable size
         int ret;
         int total_collected = 0;
@@ -54,9 +52,7 @@ int main(void)
                 int temp_entries = num_entries;
 
                 printf("- User-space buf. size: %d\n", current_size);
-
                 ret = syscall(467, buf, &temp_entries);
-
                 printf("- syscall return val:   %d\n", ret);
 
                 if (ret < 0) {
@@ -64,16 +60,11 @@ int main(void)
                         free(buf);
                         return 1;
                 }
-
                 total_collected = temp_entries;
-
                 /* If the number of entries equals what we requested,
                  * there might be more processes. Double the buffer and try again.
                  */
                 if (total_collected >= current_size) {
-                        if (num_entries * 2 > max_entries)
-				num_entries = max_entries;
-			else
 				num_entries *= 2;
                         struct k22info *new_buf = realloc(buf, num_entries * sizeof(struct k22info));
                         if (!new_buf) {
@@ -89,9 +80,7 @@ int main(void)
                         break;
                 }
         }
-
         printf("--- OK ---\n\n");
-
         /* Allocate stack for tracking process hierarchy positions */
         int *stack = malloc(total_collected * sizeof(int));
         if (!stack) {
@@ -99,7 +88,6 @@ int main(void)
                 free(buf);
                 return 1;
         }
-
         /* Print header */
         printf("#comm,pid,ppid,fcldpid,nsblpid,nvcsw,nivcsw,stime\n");
 
@@ -129,20 +117,16 @@ int main(void)
                                 /* Parent not found (shouldn't happen with correct DFS) */
                                 fprintf(stderr, "Warning: Parent PID %d not found for process %d\n",
                                         p->parent_pid, p->pid);
-                                parent_pos = top;  /* Default to current top */
+                                // parent_pos = top;  /* Default to current top */
                         }
-
                         /* Update stack: remove processes that are not ancestors of current */
                         top = parent_pos + 1;
-
                         /* Add current process to stack */
                         stack[top] = i;
-
                         /* Print dashes based on depth */
                         for (int j = 0; j < top; j++) {
                                 printf("-");
                         }
-
                         /* Print process information */
                         printf("%s,%d,%d,%d,%d,%ld,%ld,%ld\n",
                                p->comm,
@@ -155,10 +139,8 @@ int main(void)
                                p->start_time);
                 }
         }
-
         /* Free allocated memory */
         free(stack);
         free(buf);
-
         return 0;
 }
