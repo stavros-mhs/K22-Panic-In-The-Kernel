@@ -1,0 +1,177 @@
+diff --git a/arch/x86/entry/syscalls/syscall_64.tbl b/arch/x86/entry/syscalls/syscall_64.tbl
+index 5eb708bff..358ae4ebe 100644
+--- a/arch/x86/entry/syscalls/syscall_64.tbl
++++ b/arch/x86/entry/syscalls/syscall_64.tbl
+@@ -390,6 +390,7 @@
+ 464	common	getxattrat		sys_getxattrat
+ 465	common	listxattrat		sys_listxattrat
+ 466	common	removexattrat		sys_removexattrat
++467	common  sys_k22tree		sys_k22tree
+ 
+ #
+ # Due to a historical design error, certain syscalls are numbered differently
+diff --git a/include/uapi/linux/k22info.h b/include/uapi/linux/k22info.h
+new file mode 100644
+index 000000000..4e42ec893
+--- /dev/null
++++ b/include/uapi/linux/k22info.h
+@@ -0,0 +1,13 @@
++/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
++#include <linux/types.h>
++
++struct k22info {
++	char comm[64];
++	pid_t pid;
++	pid_t parent_pid;
++	pid_t first_child_pid;
++	pid_t next_sibling_pid;
++	unsigned long nvcsw;
++	unsigned long nivcsw;
++	unsigned long start_time;
++};
+diff --git a/kernel/Makefile b/kernel/Makefile
+index 87866b037..d66149391 100644
+--- a/kernel/Makefile
++++ b/kernel/Makefile
+@@ -10,7 +10,7 @@ obj-y     = fork.o exec_domain.o panic.o \
+ 	    extable.o params.o \
+ 	    kthread.o sys_ni.o nsproxy.o \
+ 	    notifier.o ksysfs.o cred.o reboot.o \
+-	    async.o range.o smpboot.o ucount.o regset.o ksyms_common.o
++	    async.o range.o smpboot.o ucount.o regset.o ksyms_common.o k22tree.o
+ 
+ obj-$(CONFIG_USERMODE_DRIVER) += usermode_driver.o
+ obj-$(CONFIG_MULTIUSER) += groups.o
+diff --git a/kernel/k22tree.c b/kernel/k22tree.c
+new file mode 100644
+index 000000000..50aeba75a
+--- /dev/null
++++ b/kernel/k22tree.c
+@@ -0,0 +1,127 @@
++// SPDX-License-Identifier: GPL-2.0-only
++
++#include <linux/syscalls.h>     // syscall define
++#include <linux/k22info.h>      // import k22info struct
++#include <linux/sched.h>        // import task_struct
++#include <linux/sched/signal.h> // import process iteration macro
++#include <linux/uaccess.h>      // user access utils
++#include <linux/list.h>         // list_for_each_entry utility
++#include <linux/pid.h>          // task_pid_nr utility
++#include <linux/slab.h>         // kmalloc/kfree
++#include <linux/sched/task.h>   // init_task and other task utils
++
++int k22tree(struct k22info *buf, int *ne); // syscall prototype
++
++/* helper function that writes the relevant task_struct fields to a k22info instance*/
++static void tsk_to_k22info(struct task_struct *tsk, struct k22info *k22info)
++{
++	/* name of the executable */
++	get_task_comm(k22info->comm, tsk);
++
++	/* process ID */
++	k22info->pid = task_pid_nr(tsk);
++
++	/* parent process ID */
++	k22info->parent_pid = task_pid_nr(rcu_dereference(tsk->real_parent));
++
++	/* PID of first child */
++	struct task_struct *child, *sibling;
++
++	child = list_first_entry_or_null(&tsk->children,
++					struct task_struct,
++					sibling);
++
++	k22info->first_child_pid = child ? task_pid_nr(child) : 0;
++
++	/* PID of next sibling */
++	if (!list_is_last(&tsk->sibling, &tsk->real_parent->children)) {
++		sibling = list_next_entry(tsk, sibling);
++		k22info->next_sibling_pid = task_pid_nr(sibling);
++	} else {
++		k22info->next_sibling_pid = 0;
++	}
++
++	/* number of voluntary context switches */
++	k22info->nvcsw = tsk->nvcsw;
++	/* number of involuntary context switches */
++	k22info->nivcsw = tsk->nivcsw;
++	/* monotonic start time in nanoseconds */
++	k22info->start_time = tsk->start_boottime;
++}
++
++static int stack_dfs(struct task_struct *root, struct k22info *buf, int ne)
++{
++	/* init stack */
++	struct task_struct *stack[512];
++
++	int top = 0;
++
++	/* init return variable */
++	int written = 0;
++
++	/* first entry in stack */
++	stack[top] = root;
++	top++;
++
++	struct task_struct *curr;
++
++	while (top > 0) {
++		top--;
++		curr = stack[top];
++
++		if (thread_group_leader(curr) && written < ne) {
++			tsk_to_k22info(curr, &buf[written]);
++			written++;
++		}
++
++		struct task_struct *child;
++
++		list_for_each_entry(child, &curr->children, sibling) {
++			if (top >= 521) {
++				pr_warn("DFS stack overflow. Stopping early.\n");
++				break;
++			}
++			stack[top++] = child;
++		}
++	}
++
++	return written;
++}
++
++SYSCALL_DEFINE2(k22tree, struct k22info __user *, buf, int __user *, ne) {
++	struct k22info *kbuf;
++	int kne;
++	int written = 0;
++	int ret = 0;
++
++	/* error checking */
++	if (!buf || !ne)
++		return -EINVAL;
++
++	if (copy_from_user(&kne, ne, sizeof(int)))
++		return -EFAULT;
++
++	if (kne < 1)
++		return -EINVAL;
++
++	/* populate __user buf logic */
++	kbuf = kmalloc_array(kne, sizeof(struct k22info), GFP_KERNEL);
++	if (!kbuf)
++		return -ENOMEM;
++
++	struct task_struct *root = &init_task;
++
++	rcu_read_lock();
++	written = stack_dfs(root, kbuf, kne);
++	rcu_read_unlock();
++
++	/* copy results to user space*/
++	if (copy_to_user(buf, kbuf, written * sizeof(struct k22info))) {
++		ret = -EFAULT;
++		goto out;
++	}
++
++out:
++	kfree(kbuf);
++	return ret;
++}
