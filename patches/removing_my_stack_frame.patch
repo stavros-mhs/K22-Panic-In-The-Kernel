@@ -1,0 +1,351 @@
+diff --git a/arch/x86/entry/syscalls/syscall_64.tbl b/arch/x86/entry/syscalls/syscall_64.tbl
+index 5eb708bff..358ae4ebe 100644
+--- a/arch/x86/entry/syscalls/syscall_64.tbl
++++ b/arch/x86/entry/syscalls/syscall_64.tbl
+@@ -390,6 +390,7 @@
+ 464	common	getxattrat		sys_getxattrat
+ 465	common	listxattrat		sys_listxattrat
+ 466	common	removexattrat		sys_removexattrat
++467	common  sys_k22tree		sys_k22tree
+ 
+ #
+ # Due to a historical design error, certain syscalls are numbered differently
+diff --git a/include/uapi/linux/k22info.h b/include/uapi/linux/k22info.h
+new file mode 100644
+index 000000000..4e42ec893
+--- /dev/null
++++ b/include/uapi/linux/k22info.h
+@@ -0,0 +1,13 @@
++/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
++#include <linux/types.h>
++
++struct k22info {
++	char comm[64];
++	pid_t pid;
++	pid_t parent_pid;
++	pid_t first_child_pid;
++	pid_t next_sibling_pid;
++	unsigned long nvcsw;
++	unsigned long nivcsw;
++	unsigned long start_time;
++};
+diff --git a/k22tree_userspace/a.out b/k22tree_userspace/a.out
+new file mode 100755
+index 000000000..34e91ec90
+Binary files /dev/null and b/k22tree_userspace/a.out differ
+diff --git a/k22tree_userspace/invoke_sys.c b/k22tree_userspace/invoke_sys.c
+new file mode 100644
+index 000000000..aa57777c3
+--- /dev/null
++++ b/k22tree_userspace/invoke_sys.c
+@@ -0,0 +1,146 @@
++#include <stdio.h>
++#include <unistd.h>
++#include <errno.h>
++#include <stdlib.h>
++#include <sys/syscall.h>
++#include <string.h>
++
++struct k22info {
++        char comm[64];              /* name of the executable */
++        pid_t pid;                  /* process ID */
++        pid_t parent_pid;           /* parent process ID */
++        pid_t first_child_pid;      /* PID of first child */
++        pid_t next_sibling_pid;     /* PID of next sibling */
++        unsigned long nvcsw;        /* number of voluntary context switches */
++        unsigned long nivcsw;       /* number of involuntary context switches */
++        unsigned long start_time;   /* monotonic start time in nanoseconds */
++};
++
++/* Find the position of a process with given parent_pid in the stack.
++ * Returns the index in the stack, or -1 if not found.
++ * The stack contains positions (index) of processes in the buffer.
++ */
++static int find_parent(int *stack, int top, int parent_pid, struct k22info *buf)
++{
++        for (int i = top; i >= 0; i--) {
++                if (buf[stack[i]].pid == parent_pid) {
++                        return i;
++                }
++        }
++        return -1;
++}
++
++int main(void)
++{
++        struct k22info *buf;
++        int num_entries = 100; // Start with a reasonable size
++        int ret;
++        int total_collected = 0;
++
++        /* Allocate initial buffer */
++        buf = malloc(num_entries * sizeof(struct k22info));
++        if (!buf) {
++                perror("malloc failed");
++                return 1;
++        }
++
++        /* Keep calling the syscall and doubling buffer
++	 * until we get all processes
++	 */
++        while (1) {
++                int current_size = num_entries;
++                int temp_entries = num_entries;
++
++                printf("- User-space buf. size: %d\n", current_size);
++                ret = syscall(467, buf, &temp_entries);
++                printf("- syscall return val:   %d\n", ret);
++
++                if (ret < 0) {
++                        perror("syscall error");
++                        free(buf);
++                        return 1;
++                }
++                total_collected = temp_entries;
++                /* If the number of entries equals what we requested,
++                 * there might be more processes. Double the buffer and try again.
++                 */
++                if (total_collected >= current_size) {
++				num_entries *= 2;
++                        struct k22info *new_buf = realloc(buf, num_entries * sizeof(struct k22info));
++                        if (!new_buf) {
++                                perror("realloc failed");
++                                free(buf);
++                                return 1;
++                        }
++                        buf = new_buf;
++                } else {
++                        /* Either we got fewer entries than requested (all processes fit),
++                         * or buffer size is already large enough
++                         */
++                        break;
++                }
++        }
++        printf("--- OK ---\n\n");
++        /* Allocate stack for tracking process hierarchy positions */
++        int *stack = malloc(total_collected * sizeof(int));
++        if (!stack) {
++                perror("malloc failed for stack");
++                free(buf);
++                return 1;
++        }
++        /* Print header */
++        printf("#comm,pid,ppid,fcldpid,nsblpid,nvcsw,nivcsw,stime\n");
++
++        /* Print only the requested number of entries */
++        if (total_collected > 0) {
++                printf("%s,%d,%d,%d,%d,%ld,%ld,%ld\n",
++                       buf[0].comm,
++                       buf[0].pid,
++                       buf[0].parent_pid,
++                       buf[0].first_child_pid,
++                       buf[0].next_sibling_pid,
++                       buf[0].nvcsw,
++                       buf[0].nivcsw,
++                       buf[0].start_time);
++
++                stack[0] = 0;  /* Root is at position 0 in the stack */
++                int top = 0;
++
++                /* Process remaining entries */
++                for (int i = 1; i < total_collected; i++) {
++                        struct k22info *p = &buf[i];
++
++                        /* Find the position of the parent in the stack */
++                        int parent_pos = find_parent(stack, top, p->parent_pid, buf);
++
++                        if (parent_pos == -1) {
++                                /* Parent not found (shouldn't happen with correct DFS) */
++                                fprintf(stderr, "Warning: Parent PID %d not found for process %d\n",
++                                        p->parent_pid, p->pid);
++                                // parent_pos = top;  /* Default to current top */
++                        }
++                        /* Update stack: remove processes that are not ancestors of current */
++                        top = parent_pos + 1;
++                        /* Add current process to stack */
++                        stack[top] = i;
++                        /* Print dashes based on depth */
++                        for (int j = 0; j < top; j++) {
++                                printf("-");
++                        }
++                        /* Print process information */
++                        printf("%s,%d,%d,%d,%d,%ld,%ld,%ld\n",
++                               p->comm,
++                               p->pid,
++                               p->parent_pid,
++                               p->first_child_pid,
++                               p->next_sibling_pid,
++                               p->nvcsw,
++                               p->nivcsw,
++                               p->start_time);
++                }
++        }
++        /* Free allocated memory */
++        free(stack);
++        free(buf);
++        return 0;
++}
+diff --git a/kernel/Makefile b/kernel/Makefile
+index 87866b037..d66149391 100644
+--- a/kernel/Makefile
++++ b/kernel/Makefile
+@@ -10,7 +10,7 @@ obj-y     = fork.o exec_domain.o panic.o \
+ 	    extable.o params.o \
+ 	    kthread.o sys_ni.o nsproxy.o \
+ 	    notifier.o ksysfs.o cred.o reboot.o \
+-	    async.o range.o smpboot.o ucount.o regset.o ksyms_common.o
++	    async.o range.o smpboot.o ucount.o regset.o ksyms_common.o k22tree.o
+ 
+ obj-$(CONFIG_USERMODE_DRIVER) += usermode_driver.o
+ obj-$(CONFIG_MULTIUSER) += groups.o
+diff --git a/kernel/k22tree.c b/kernel/k22tree.c
+new file mode 100644
+index 000000000..ce52c5852
+--- /dev/null
++++ b/kernel/k22tree.c
+@@ -0,0 +1,145 @@
++// SPDX-License-Identifier: GPL-2.0-only
++
++#include <linux/syscalls.h>     // syscall define
++#include <linux/k22info.h>      // import k22info struct
++#include <linux/sched.h>        // import task_struct
++#include <linux/sched/signal.h> // import process iteration macro
++#include <linux/uaccess.h>      // user access utils
++#include <linux/list.h>         // list_for_each_entry utility
++#include <linux/pid.h>          // task_pid_nr utility
++#include <linux/slab.h>         // kmalloc/kfree
++#include <linux/sched/task.h>   // init_task and other task utils
++
++// struct my_stack_frame {
++// 	struct task_struct *task;
++// 	struct list_head *next_child;
++// };
++
++/* Helper function to collect process info from a single task */
++static void collect_task_info(struct task_struct *task, struct k22info *info)
++{
++	struct task_struct *child, *sibling;
++
++	info->pid = task_pid_nr(task);
++	get_task_comm(info->comm, task);
++	info->parent_pid = task_pid_nr(rcu_dereference(task->real_parent));
++	child = list_first_entry_or_null(&task->children,
++                                         struct task_struct,
++                                         sibling);
++	// Check if child is null
++        info->first_child_pid = child ? task_pid_nr(child) : 0;
++	// Check if urrent task (task) is the last sibling
++	// in the list of children of its parent
++	if (!list_is_last(&task->sibling, &task->real_parent->children)) {
++                sibling = list_next_entry(task, sibling);
++                info->next_sibling_pid = task_pid_nr(sibling);
++        } else {
++                info->next_sibling_pid = 0;
++        }
++	info->nvcsw = task->nvcsw;
++	info->nivcsw = task->nivcsw;
++	info->start_time = task->start_time;
++}
++
++static int dfs_traverse_iterative(struct task_struct *root,
++                                   struct k22info *buffer,
++                                   int max_entries,
++				   struct task_struct **stack)
++{
++        int top = 0;
++        int count = 0;
++        struct task_struct *cur_task;
++	struct list_head *list;
++
++        // Push root
++        stack[top] = root;
++        top++;
++
++        while (top > 0) {
++                top--;
++                cur_task = stack[top];
++
++                // Process current node
++                if (thread_group_leader(cur_task)) {
++                        if (count < max_entries)
++				collect_task_info(cur_task, &buffer[count]);
++			// When we reach the num of entries the buf can fit
++			// do not collect info just count them
++                        count++;
++                }
++
++                // Push children onto stack (in reverse order for pre-order)
++                list_for_each_prev(list, &cur_task->children) {
++                        if (top >= 1000)
++                                break;
++                        struct task_struct *child = list_entry(list,
++                                                struct task_struct, sibling);
++                        stack[top] = child;
++                        top++;
++                }
++        }
++
++        kfree(stack);
++        return count;
++}
++
++SYSCALL_DEFINE2(k22tree, struct k22info __user *, buf, int __user *, ne)
++{
++	int num_entries; // Num of entries the user requested - DON'T TRUST
++	int collected;   // Num of entries collected with DFS traversal
++        struct k22info *kernel_buffer;
++	int ret = 0;
++
++	// Basic error checking
++	if (!buf || !ne)
++		return -EINVAL;
++
++	if (copy_from_user(&num_entries, ne, sizeof(int)))
++		return -EFAULT;
++
++	if (num_entries < 1)
++		return -EINVAL;
++
++	// Allocate kernel buffer and stack(OUTSIDE of any lock)
++        // Use GFP_KERNEL since we're in process context and can sleep
++        kernel_buffer = kmalloc(num_entries * sizeof(struct k22info), GFP_KERNEL);
++        if (!kernel_buffer)
++                return -ENOMEM;
++
++        struct task_struct **stack;
++	stack = kmalloc(sizeof(struct task_struct *) * 1000, GFP_KERNEL);
++        if (!stack) {
++		kfree(kernel_buffer);
++                return -ENOMEM;
++	}
++
++        // Lock the tasklist to safely traverse the process tree
++        rcu_read_lock();
++
++        // Start DFS traversal from init_task (root of process tree)
++        // init_task is the ancestor of all processes
++        collected = dfs_traverse_iterative(&init_task,
++						kernel_buffer,
++						num_entries,
++						stack);
++
++        // Unlock BEFORE doing any operations that may block
++        rcu_read_unlock();
++
++	int copy_count = (collected < num_entries) ? collected : num_entries;
++        // Copy collected data to user space (OUTSIDE of lock)
++        if (copy_to_user(buf, kernel_buffer, copy_count* sizeof(struct k22info))) {
++                ret = -EFAULT;
++                goto out;
++        }
++	// Update the number of entries collected (OUTSIDE of lock)
++        if (copy_to_user(ne, &collected, sizeof(int))) {
++                ret = -EFAULT;
++                goto out;
++        }
++	ret = collected;
++out:
++        // Free allocated memory
++        kfree(kernel_buffer);
++        return ret;
++}
