@@ -13,7 +13,7 @@ struct k22info {
         pid_t next_sibling_pid;     /* PID of next sibling */
         unsigned long nvcsw;        /* number of voluntary context switches */
         unsigned long nivcsw;       /* number of involuntary context switches */
-        unsigned long start_time;   /* monotonic start time in nanoseconds */
+        unsigned long start_time;   /* monotonic start time in seconds */
 };
 
 /* Find the position of a process with given parent_pid in the stack.
