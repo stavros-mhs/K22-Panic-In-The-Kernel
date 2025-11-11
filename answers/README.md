@@ -21,6 +21,6 @@ We can notice `kworker` instances with a boot time of 2, these are probably kern
 
 Other early threads (with a boot time of 5-8 like `systemd-journal`, `systemd-oomd`, `dbus-daemon`, `NetworkManager`, etc.) are system daemons. Not user programs.
 
-`k22tree` is clearly a user program. It's boot time is way past booting (901).
+`test_k22tree` is clearly a user program. It's boot time is way past booting (901).
 
 **Conclusion**: low boot time indicates the process is a  kernel/system program. After all the initialization has happend - which takes time - user programs can be invoked. This means their boot time must be >> than system programs.

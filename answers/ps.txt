@@ -1,0 +1,723 @@
+UID          PID    PPID     LWP  C NLWP    SZ   RSS PSR STIME TTY          TIME CMD
+root           1       0       1  0    1  6353 15896   0 20:11 ?        00:00:03 /sbin/init auto automatic-ubiquity noprompt
+root           2       0       2  0    1     0     0   1 20:11 ?        00:00:00 [kthreadd]
+root           3       2       3  0    1     0     0   0 20:11 ?        00:00:00 [pool_workqueue_release]
+root           4       2       4  0    1     0     0   0 20:11 ?        00:00:00 [kworker/R-rcu_gp]
+root           5       2       5  0    1     0     0   0 20:11 ?        00:00:00 [kworker/R-sync_wq]
+root           6       2       6  0    1     0     0   0 20:11 ?        00:00:00 [kworker/R-kvfree_rcu_reclaim]
+root           7       2       7  0    1     0     0   0 20:11 ?        00:00:00 [kworker/R-slub_flushwq]
+root           8       2       8  0    1     0     0   0 20:11 ?        00:00:00 [kworker/R-netns]
+root          10       2      10  0    1     0     0   0 20:11 ?        00:00:00 [kworker/0:1-cgroup_destroy]
+root          11       2      11  0    1     0     0   0 20:11 ?        00:00:00 [kworker/0:0H-events_highpri]
+root          12       2      12  0    1     0     0   0 20:11 ?        00:00:00 [kworker/u512:0-ipv6_addrconf]
+root          13       2      13  0    1     0     0   0 20:11 ?        00:00:00 [kworker/R-mm_percpu_wq]
+root          14       2      14  0    1     0     0   0 20:11 ?        00:00:00 [rcu_tasks_kthread]
+root          15       2      15  0    1     0     0   0 20:11 ?        00:00:00 [rcu_tasks_rude_kthread]
+root          16       2      16  0    1     0     0   0 20:11 ?        00:00:00 [rcu_tasks_trace_kthread]
+root          17       2      17  0    1     0     0   0 20:11 ?        00:00:00 [ksoftirqd/0]
+root          18       2      18  0    1     0     0   3 20:11 ?        00:00:00 [rcu_preempt]
+root          19       2      19  0    1     0     0   0 20:11 ?        00:00:00 [rcu_exp_par_gp_kthread_worker/1]
+root          20       2      20  0    1     0     0   0 20:11 ?        00:00:00 [rcu_exp_gp_kthread_worker]
+root          21       2      21  0    1     0     0   0 20:11 ?        00:00:00 [migration/0]
+root          22       2      22  0    1     0     0   0 20:11 ?        00:00:00 [idle_inject/0]
+root          23       2      23  0    1     0     0   0 20:11 ?        00:00:00 [cpuhp/0]
+root          24       2      24  0    1     0     0   1 20:11 ?        00:00:00 [cpuhp/1]
+root          25       2      25  0    1     0     0   1 20:11 ?        00:00:00 [idle_inject/1]
+root          26       2      26  0    1     0     0   1 20:11 ?        00:00:00 [migration/1]
+root          27       2      27  0    1     0     0   1 20:11 ?        00:00:00 [ksoftirqd/1]
+root          28       2      28  0    1     0     0   1 20:11 ?        00:00:00 [kworker/1:0-mm_percpu_wq]
+root          29       2      29  0    1     0     0   1 20:11 ?        00:00:00 [kworker/1:0H-events_highpri]
+root          30       2      30  0    1     0     0   2 20:11 ?        00:00:00 [cpuhp/2]
+root          31       2      31  0    1     0     0   2 20:11 ?        00:00:00 [idle_inject/2]
+root          32       2      32  0    1     0     0   2 20:11 ?        00:00:00 [migration/2]
+root          33       2      33  0    1     0     0   2 20:11 ?        00:00:00 [ksoftirqd/2]
+root          34       2      34  0    1     0     0   2 20:11 ?        00:00:00 [kworker/2:0-events]
+root          35       2      35  0    1     0     0   2 20:11 ?        00:00:00 [kworker/2:0H-kblockd]
+root          36       2      36  0    1     0     0   3 20:11 ?        00:00:00 [cpuhp/3]
+root          37       2      37  0    1     0     0   3 20:11 ?        00:00:00 [idle_inject/3]
+root          38       2      38  0    1     0     0   3 20:11 ?        00:00:00 [migration/3]
+root          39       2      39  0    1     0     0   3 20:11 ?        00:00:00 [ksoftirqd/3]
+root          40       2      40  0    1     0     0   3 20:11 ?        00:00:00 [kworker/3:0-events]
+root          41       2      41  0    1     0     0   3 20:11 ?        00:00:00 [kworker/3:0H-events_highpri]
+root          42       2      42  0    1     0     0   0 20:11 ?        00:00:00 [kworker/u513:0-events_unbound]
+root          45       2      45  0    1     0     0   3 20:11 ?        00:00:00 [kworker/u516:0-events_power_efficient]
+root          46       2      46  0    1     0     0   1 20:11 ?        00:00:00 [kdevtmpfs]
+root          47       2      47  0    1     0     0   1 20:11 ?        00:00:00 [kworker/R-inet_frag_wq]
+root          48       2      48  0    1     0     0   0 20:11 ?        00:00:00 [kauditd]
+root          49       2      49  0    1     0     0   0 20:11 ?        00:00:00 [khungtaskd]
+root          50       2      50  0    1     0     0   1 20:11 ?        00:00:00 [oom_reaper]
+root          52       2      52  0    1     0     0   1 20:11 ?        00:00:00 [kworker/R-writeback]
+root          54       2      54  0    1     0     0   2 20:11 ?        00:00:00 [kcompactd0]
+root          55       2      55  0    1     0     0   1 20:11 ?        00:00:00 [ksmd]
+root          56       2      56  0    1     0     0   1 20:11 ?        00:00:00 [khugepaged]
+root          57       2      57  0    1     0     0   1 20:11 ?        00:00:00 [kworker/R-kintegrityd]
+root          58       2      58  0    1     0     0   2 20:11 ?        00:00:00 [kworker/R-kblockd]
+root          59       2      59  0    1     0     0   1 20:11 ?        00:00:00 [irq/9-acpi]
+root          62       2      62  0    1     0     0   3 20:11 ?        00:00:00 [kworker/R-tpm_dev_wq]
+root          63       2      63  0    1     0     0   0 20:11 ?        00:00:00 [kworker/R-ata_sff]
+root          64       2      64  0    1     0     0   3 20:11 ?        00:00:00 [kworker/R-md]
+root          65       2      65  0    1     0     0   0 20:11 ?        00:00:00 [kworker/R-md_bitmap]
+root          66       2      66  0    1     0     0   0 20:11 ?        00:00:00 [kworker/R-edac-poller]
+root          67       2      67  0    1     0     0   0 20:11 ?        00:00:00 [kworker/R-devfreq_wq]
+root          68       2      68  0    1     0     0   3 20:11 ?        00:00:00 [watchdogd]
+root          70       2      70  0    1     0     0   1 20:11 ?        00:00:00 [kworker/1:1H-kblockd]
+root          71       2      71  0    1     0     0   3 20:11 ?        00:00:00 [kswapd0]
+root          72       2      72  0    1     0     0   0 20:11 ?        00:00:00 [ecryptfs-kthread]
+root          74       2      74  0    1     0     0   3 20:11 ?        00:00:00 [kworker/R-kthrotld]
+root          75       2      75  0    1     0     0   2 20:11 ?        00:00:00 [irq/24-pciehp]
+root          76       2      76  0    1     0     0   3 20:11 ?        00:00:00 [irq/25-pciehp]
+root          77       2      77  0    1     0     0   0 20:11 ?        00:00:00 [irq/26-pciehp]
+root          78       2      78  0    1     0     0   1 20:11 ?        00:00:00 [irq/27-pciehp]
+root          79       2      79  0    1     0     0   2 20:11 ?        00:00:00 [irq/28-pciehp]
+root          80       2      80  0    1     0     0   3 20:11 ?        00:00:00 [irq/29-pciehp]
+root          81       2      81  0    1     0     0   0 20:11 ?        00:00:00 [irq/30-pciehp]
+root          82       2      82  0    1     0     0   1 20:11 ?        00:00:00 [irq/31-pciehp]
+root          83       2      83  0    1     0     0   2 20:11 ?        00:00:00 [irq/32-pciehp]
+root          84       2      84  0    1     0     0   3 20:11 ?        00:00:00 [irq/33-pciehp]
+root          85       2      85  0    1     0     0   0 20:11 ?        00:00:00 [irq/34-pciehp]
+root          86       2      86  0    1     0     0   1 20:11 ?        00:00:00 [irq/35-pciehp]
+root          87       2      87  0    1     0     0   2 20:11 ?        00:00:00 [irq/36-pciehp]
+root          88       2      88  0    1     0     0   3 20:11 ?        00:00:00 [irq/37-pciehp]
+root          89       2      89  0    1     0     0   0 20:11 ?        00:00:00 [irq/38-pciehp]
+root          90       2      90  0    1     0     0   1 20:11 ?        00:00:00 [irq/39-pciehp]
+root          91       2      91  0    1     0     0   2 20:11 ?        00:00:00 [irq/40-pciehp]
+root          92       2      92  0    1     0     0   3 20:11 ?        00:00:00 [irq/41-pciehp]
+root          93       2      93  0    1     0     0   0 20:11 ?        00:00:00 [irq/42-pciehp]
+root          94       2      94  0    1     0     0   1 20:11 ?        00:00:00 [irq/43-pciehp]
+root          95       2      95  0    1     0     0   2 20:11 ?        00:00:00 [irq/44-pciehp]
+root          96       2      96  0    1     0     0   3 20:11 ?        00:00:00 [irq/45-pciehp]
+root          97       2      97  0    1     0     0   0 20:11 ?        00:00:00 [irq/46-pciehp]
+root          98       2      98  0    1     0     0   1 20:11 ?        00:00:00 [irq/47-pciehp]
+root          99       2      99  0    1     0     0   2 20:11 ?        00:00:00 [irq/48-pciehp]
+root         100       2     100  0    1     0     0   3 20:11 ?        00:00:00 [irq/49-pciehp]
+root         101       2     101  0    1     0     0   0 20:11 ?        00:00:00 [irq/50-pciehp]
+root         102       2     102  0    1     0     0   1 20:11 ?        00:00:00 [irq/51-pciehp]
+root         103       2     103  0    1     0     0   2 20:11 ?        00:00:00 [irq/52-pciehp]
+root         104       2     104  0    1     0     0   3 20:11 ?        00:00:00 [irq/53-pciehp]
+root         105       2     105  0    1     0     0   0 20:11 ?        00:00:00 [irq/54-pciehp]
+root         106       2     106  0    1     0     0   1 20:11 ?        00:00:00 [irq/55-pciehp]
+root         107       2     107  0    1     0     0   0 20:11 ?        00:00:00 [kworker/R-acpi_thermal_pm]
+root         109       2     109  0    1     0     0   2 20:11 ?        00:00:00 [scsi_eh_0]
+root         110       2     110  0    1     0     0   3 20:11 ?        00:00:00 [kworker/R-scsi_tmf_0]
+root         111       2     111  0    1     0     0   3 20:11 ?        00:00:00 [scsi_eh_1]
+root         112       2     112  0    1     0     0   3 20:11 ?        00:00:00 [kworker/R-scsi_tmf_1]
+root         115       2     115  0    1     0     0   3 20:11 ?        00:00:00 [kworker/R-mld]
+root         116       2     116  0    1     0     0   3 20:11 ?        00:00:00 [kworker/R-ipv6_addrconf]
+root         117       2     117  0    1     0     0   3 20:11 ?        00:00:00 [kworker/u512:1-ipv6_addrconf]
+root         124       2     124  0    1     0     0   3 20:11 ?        00:00:00 [kworker/R-kstrp]
+root         127       2     127  0    1     0     0   0 20:11 ?        00:00:00 [kworker/0:2-events]
+root         128       2     128  0    1     0     0   3 20:11 ?        00:00:00 [kworker/u517:0]
+root         129       2     129  0    1     0     0   3 20:11 ?        00:00:00 [kworker/u518:0]
+root         131       2     131  0    1     0     0   2 20:11 ?        00:00:00 [kworker/u520:0-ttm]
+root         132       2     132  0    1     0     0   3 20:11 ?        00:00:00 [kworker/u521:0-ttm]
+root         145       2     145  0    1     0     0   3 20:11 ?        00:00:00 [kworker/R-charger_manager]
+root         146       2     146  0    1     0     0   0 20:11 ?        00:00:00 [kworker/0:1H-kblockd]
+root         169       2     169  0    1     0     0   3 20:11 ?        00:00:00 [kworker/3:1H-kblockd]
+root         173       2     173  0    1     0     0   2 20:11 ?        00:00:00 [kworker/2:1H-kblockd]
+root         200       2     200  0    1     0     0   0 20:11 ?        00:00:00 [kworker/R-mpt_poll_0]
+root         201       2     201  0    1     0     0   1 20:11 ?        00:00:00 [kworker/R-mpt/0]
+root         203       2     203  0    1     0     0   0 20:11 ?        00:00:00 [scsi_eh_2]
+root         204       2     204  0    1     0     0   0 20:11 ?        00:00:00 [kworker/R-scsi_tmf_2]
+root         218       2     218  0    1     0     0   1 20:11 ?        00:00:00 [scsi_eh_3]
+root         220       2     220  0    1     0     0   2 20:11 ?        00:00:00 [kworker/R-scsi_tmf_3]
+root         221       2     221  0    1     0     0   3 20:11 ?        00:00:00 [scsi_eh_4]
+root         222       2     222  0    1     0     0   2 20:11 ?        00:00:00 [kworker/R-scsi_tmf_4]
+root         223       2     223  0    1     0     0   2 20:11 ?        00:00:00 [scsi_eh_5]
+root         224       2     224  0    1     0     0   2 20:11 ?        00:00:00 [kworker/R-scsi_tmf_5]
+root         225       2     225  0    1     0     0   3 20:11 ?        00:00:00 [scsi_eh_6]
+root         226       2     226  0    1     0     0   3 20:11 ?        00:00:00 [kworker/R-scsi_tmf_6]
+root         227       2     227  0    1     0     0   3 20:11 ?        00:00:00 [scsi_eh_7]
+root         229       2     229  0    1     0     0   2 20:11 ?        00:00:00 [kworker/R-scsi_tmf_7]
+root         230       2     230  0    1     0     0   2 20:11 ?        00:00:00 [scsi_eh_8]
+root         231       2     231  0    1     0     0   0 20:11 ?        00:00:00 [kworker/R-scsi_tmf_8]
+root         232       2     232  0    1     0     0   2 20:11 ?        00:00:00 [scsi_eh_9]
+root         233       2     233  0    1     0     0   2 20:11 ?        00:00:00 [kworker/R-scsi_tmf_9]
+root         234       2     234  0    1     0     0   2 20:11 ?        00:00:00 [scsi_eh_10]
+root         235       2     235  0    1     0     0   2 20:11 ?        00:00:00 [kworker/R-scsi_tmf_10]
+root         236       2     236  0    1     0     0   2 20:11 ?        00:00:00 [scsi_eh_11]
+root         237       2     237  0    1     0     0   2 20:11 ?        00:00:00 [kworker/R-scsi_tmf_11]
+root         238       2     238  0    1     0     0   1 20:11 ?        00:00:00 [scsi_eh_12]
+root         239       2     239  0    1     0     0   2 20:11 ?        00:00:00 [kworker/R-scsi_tmf_12]
+root         240       2     240  0    1     0     0   1 20:11 ?        00:00:00 [scsi_eh_13]
+root         241       2     241  0    1     0     0   3 20:11 ?        00:00:00 [kworker/R-scsi_tmf_13]
+root         242       2     242  0    1     0     0   1 20:11 ?        00:00:00 [scsi_eh_14]
+root         243       2     243  0    1     0     0   3 20:11 ?        00:00:00 [kworker/R-scsi_tmf_14]
+root         244       2     244  0    1     0     0   0 20:11 ?        00:00:00 [scsi_eh_15]
+root         245       2     245  0    1     0     0   0 20:11 ?        00:00:00 [kworker/R-scsi_tmf_15]
+root         248       2     248  0    1     0     0   1 20:11 ?        00:00:00 [scsi_eh_16]
+root         249       2     249  0    1     0     0   2 20:11 ?        00:00:00 [kworker/R-scsi_tmf_16]
+root         250       2     250  0    1     0     0   2 20:11 ?        00:00:00 [scsi_eh_17]
+root         251       2     251  0    1     0     0   3 20:11 ?        00:00:00 [kworker/R-scsi_tmf_17]
+root         252       2     252  0    1     0     0   3 20:11 ?        00:00:00 [scsi_eh_18]
+root         253       2     253  0    1     0     0   2 20:11 ?        00:00:00 [kworker/R-scsi_tmf_18]
+root         255       2     255  0    1     0     0   0 20:11 ?        00:00:00 [scsi_eh_19]
+root         256       2     256  0    1     0     0   3 20:11 ?        00:00:00 [kworker/R-scsi_tmf_19]
+root         257       2     257  0    1     0     0   0 20:11 ?        00:00:00 [scsi_eh_20]
+root         258       2     258  0    1     0     0   2 20:11 ?        00:00:00 [kworker/R-scsi_tmf_20]
+root         259       2     259  0    1     0     0   3 20:11 ?        00:00:00 [scsi_eh_21]
+root         260       2     260  0    1     0     0   3 20:11 ?        00:00:00 [kworker/R-scsi_tmf_21]
+root         261       2     261  0    1     0     0   3 20:11 ?        00:00:00 [scsi_eh_22]
+root         262       2     262  0    1     0     0   2 20:11 ?        00:00:00 [kworker/R-scsi_tmf_22]
+root         263       2     263  0    1     0     0   0 20:11 ?        00:00:00 [scsi_eh_23]
+root         264       2     264  0    1     0     0   2 20:11 ?        00:00:00 [kworker/R-scsi_tmf_23]
+root         265       2     265  0    1     0     0   1 20:11 ?        00:00:00 [scsi_eh_24]
+root         266       2     266  0    1     0     0   2 20:11 ?        00:00:00 [kworker/R-scsi_tmf_24]
+root         267       2     267  0    1     0     0   0 20:11 ?        00:00:00 [scsi_eh_25]
+root         268       2     268  0    1     0     0   2 20:11 ?        00:00:00 [kworker/R-scsi_tmf_25]
+root         269       2     269  0    1     0     0   0 20:11 ?        00:00:00 [scsi_eh_26]
+root         270       2     270  0    1     0     0   2 20:11 ?        00:00:00 [kworker/R-scsi_tmf_26]
+root         271       2     271  0    1     0     0   2 20:11 ?        00:00:00 [scsi_eh_27]
+root         272       2     272  0    1     0     0   2 20:11 ?        00:00:00 [kworker/R-scsi_tmf_27]
+root         273       2     273  0    1     0     0   1 20:11 ?        00:00:00 [scsi_eh_28]
+root         274       2     274  0    1     0     0   2 20:11 ?        00:00:00 [kworker/R-scsi_tmf_28]
+root         275       2     275  0    1     0     0   2 20:11 ?        00:00:00 [scsi_eh_29]
+root         276       2     276  0    1     0     0   2 20:11 ?        00:00:00 [kworker/R-scsi_tmf_29]
+root         277       2     277  0    1     0     0   2 20:11 ?        00:00:00 [scsi_eh_30]
+root         278       2     278  0    1     0     0   1 20:11 ?        00:00:00 [kworker/R-scsi_tmf_30]
+root         279       2     279  0    1     0     0   0 20:11 ?        00:00:00 [scsi_eh_31]
+root         280       2     280  0    1     0     0   1 20:11 ?        00:00:00 [kworker/R-scsi_tmf_31]
+root         281       2     281  0    1     0     0   2 20:11 ?        00:00:00 [scsi_eh_32]
+root         282       2     282  0    1     0     0   2 20:11 ?        00:00:00 [kworker/R-scsi_tmf_32]
+root         302       2     302  0    1     0     0   2 20:11 ?        00:00:00 [kworker/u514:24-events_unbound]
+root         304       2     304  0    1     0     0   0 20:11 ?        00:00:00 [kworker/u514:26-events_freezable_pwr_efficient]
+root         317       2     317  0    1     0     0   2 20:11 ?        00:00:00 [kworker/u515:2-events_unbound]
+root         353       2     353  0    1     0     0   0 20:11 ?        00:00:00 [jbd2/sda2-8]
+root         354       2     354  0    1     0     0   0 20:11 ?        00:00:00 [kworker/R-ext4-rsv-conversion]
+root         402       2     402  0    1     0     0   3 20:11 ?        00:00:00 [irq/57-vmw_vmci]
+root         403       2     403  0    1     0     0   0 20:11 ?        00:00:00 [irq/58-vmw_vmci]
+root         404       2     404  0    1     0     0   1 20:11 ?        00:00:00 [irq/59-vmw_vmci]
+root         412       1     412  0    1 19009 42996   2 20:11 ?        00:00:00 /usr/lib/systemd/systemd-journald
+systemd+     430       1     430  0    1  4536  7752   0 20:11 ?        00:00:00 /usr/lib/systemd/systemd-oomd
+systemd+     451       1     451  0    2 22908  7960   2 20:11 ?        00:00:00 /usr/lib/systemd/systemd-timesyncd
+systemd+     451       1     487  0    2 22908  7960   2 20:11 ?        00:00:00 /usr/lib/systemd/systemd-timesyncd
+root         452       2     452  0    1     0     0   2 20:11 ?        00:00:00 [irq/16-vmwgfx]
+root         453       2     453  0    1     0     0   1 20:11 ?        00:00:00 [kworker/R-ttm]
+root         456       1     456  0    3 38141  1296   3 20:11 ?        00:00:00 vmware-vmblock-fuse /run/vmblock-fuse -o rw,subtype=vmware-vmblock,default_permissions,allow_other,dev,suid
+root         456       1     457  0    3 38141  1296   1 20:11 ?        00:00:00 vmware-vmblock-fuse /run/vmblock-fuse -o rw,subtype=vmware-vmblock,default_permissions,allow_other,dev,suid
+root         456       1     458  0    3 38141  1296   1 20:11 ?        00:00:00 vmware-vmblock-fuse /run/vmblock-fuse -o rw,subtype=vmware-vmblock,default_permissions,allow_other,dev,suid
+root         465       1     465  0    1  9213 13896   0 20:11 ?        00:00:00 /usr/lib/systemd/systemd-udevd
+systemd+     492       1     492  0    1  5800 14128   2 20:11 ?        00:00:00 /usr/lib/systemd/systemd-resolved
+root         495       2     495  0    1     0     0   2 20:11 ?        00:00:00 [psimon]
+root        1273       1    1273  0    1  5980 11012   1 20:11 ?        00:00:00 /usr/bin/VGAuthService
+root        1314       2    1314  0    1     0     0   1 20:11 ?        00:00:00 [kworker/u515:4-flush-8:0]
+root        1319       1    1319  0    4 29219  9704   1 20:11 ?        00:00:02 /usr/bin/vmtoolsd
+root        1319       1    1421  0    4 29219  9704   3 20:11 ?        00:00:00 /usr/bin/vmtoolsd
+root        1319       1    1422  0    4 29219  9704   3 20:11 ?        00:00:00 /usr/bin/vmtoolsd
+root        1319       1    1423  0    4 29219  9704   3 20:11 ?        00:00:00 /usr/bin/vmtoolsd
+root        1323       2    1323  0    1     0     0   2 20:11 ?        00:00:00 [kworker/u515:5-events_freezable_pwr_efficient]
+root        1379       2    1379  0    1     0     0   1 20:11 ?        00:00:00 [kworker/R-cryptd]
+root        1429       2    1429  0    1     0     0   3 20:11 ?        00:00:00 [kworker/3:3-cgroup_destroy]
+avahi       1472       1    1472  0    1  1699  4452   0 20:11 ?        00:00:00 avahi-daemon: running [vm-ubuntu.local]
+message+    1473       1    1473  0    1  3019  8056   3 20:11 ?        00:00:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+gnome-r+    1477       1    1477  0    4 130366 16840  2 20:11 ?        00:00:00 /usr/libexec/gnome-remote-desktop-daemon --system
+gnome-r+    1477       1    1573  0    4 130366 16840  0 20:11 ?        00:00:00 /usr/libexec/gnome-remote-desktop-daemon --system
+gnome-r+    1477       1    1576  0    4 130366 16840  2 20:11 ?        00:00:00 /usr/libexec/gnome-remote-desktop-daemon --system
+gnome-r+    1477       1    1583  0    4 130366 16840  0 20:11 ?        00:00:00 /usr/libexec/gnome-remote-desktop-daemon --system
+polkitd     1480       1    1480  0    4 97316 11628   2 20:11 ?        00:00:00 /usr/lib/polkit-1/polkitd --no-debug --log-level=notice
+polkitd     1480       1    1587  0    4 97316 11628   3 20:11 ?        00:00:00 /usr/lib/polkit-1/polkitd --no-debug --log-level=notice
+polkitd     1480       1    1589  0    4 97316 11628   0 20:11 ?        00:00:00 /usr/lib/polkit-1/polkitd --no-debug --log-level=notice
+polkitd     1480       1    1593  0    4 97316 11628   2 20:11 ?        00:00:00 /usr/lib/polkit-1/polkitd --no-debug --log-level=notice
+root        1494       1    1494  0   11 499399 39908  2 20:11 ?        00:00:01 /snap/snapd/current/usr/lib/snapd/snapd
+root        1494       1    1658  0   11 499399 39908  1 20:11 ?        00:00:00 /snap/snapd/current/usr/lib/snapd/snapd
+root        1494       1    1659  0   11 499399 39908  3 20:11 ?        00:00:00 /snap/snapd/current/usr/lib/snapd/snapd
+root        1494       1    1660  0   11 499399 39908  2 20:11 ?        00:00:00 /snap/snapd/current/usr/lib/snapd/snapd
+root        1494       1    1661  0   11 499399 39908  2 20:11 ?        00:00:00 /snap/snapd/current/usr/lib/snapd/snapd
+root        1494       1    1685  0   11 499399 39908  0 20:11 ?        00:00:00 /snap/snapd/current/usr/lib/snapd/snapd
+root        1494       1    1762  0   11 499399 39908  3 20:11 ?        00:00:00 /snap/snapd/current/usr/lib/snapd/snapd
+root        1494       1    1774  0   11 499399 39908  1 20:11 ?        00:00:00 /snap/snapd/current/usr/lib/snapd/snapd
+root        1494       1    1809  0   11 499399 39908  1 20:11 ?        00:00:00 /snap/snapd/current/usr/lib/snapd/snapd
+root        1494       1    1919  0   11 499399 39908  1 20:11 ?        00:00:00 /snap/snapd/current/usr/lib/snapd/snapd
+root        1494       1    2070  0   11 499399 39908  3 20:11 ?        00:00:00 /snap/snapd/current/usr/lib/snapd/snapd
+root        1502       1    1502  0    4 77973  7444   3 20:11 ?        00:00:00 /usr/libexec/accounts-daemon
+root        1502       1    1558  0    4 77973  7444   0 20:11 ?        00:00:00 /usr/libexec/accounts-daemon
+root        1502       1    1559  0    4 77973  7444   2 20:11 ?        00:00:00 /usr/libexec/accounts-daemon
+root        1502       1    1578  0    4 77973  7444   2 20:11 ?        00:00:00 /usr/libexec/accounts-daemon
+root        1505       1    1505  0    1  2426  2948   2 20:11 ?        00:00:00 /usr/sbin/cron -f -P
+root        1507       1    1507  0    4 77675  7012   1 20:11 ?        00:00:00 /usr/libexec/switcheroo-control
+root        1507       1    1535  0    4 77675  7012   2 20:11 ?        00:00:00 /usr/libexec/switcheroo-control
+root        1507       1    1536  0    4 77675  7012   3 20:11 ?        00:00:00 /usr/libexec/switcheroo-control
+root        1507       1    1574  0    4 77675  7012   1 20:11 ?        00:00:00 /usr/libexec/switcheroo-control
+root        1509       1    1509  0    1  4756  9020   2 20:11 ?        00:00:00 /usr/lib/systemd/systemd-logind
+root        1518       1    1518  0    6 136256 15276  1 20:11 ?        00:00:00 /usr/libexec/udisks2/udisksd
+root        1518       1    1537  0    6 136256 15276  0 20:11 ?        00:00:00 /usr/libexec/udisks2/udisksd
+root        1518       1    1538  0    6 136256 15276  1 20:11 ?        00:00:00 /usr/libexec/udisks2/udisksd
+root        1518       1    1575  0    6 136256 15276  3 20:11 ?        00:00:00 /usr/libexec/udisks2/udisksd
+root        1518       1    1623  0    6 136256 15276  1 20:11 ?        00:00:00 /usr/libexec/udisks2/udisksd
+root        1518       1    1628  0    6 136256 15276  2 20:11 ?        00:00:00 /usr/libexec/udisks2/udisksd
+syslog      1528       1    1528  0    4 55183  5624   2 20:11 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+syslog      1528       1    1553  0    4 55183  5624   2 20:11 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+syslog      1528       1    1554  0    4 55183  5624   1 20:11 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+syslog      1528       1    1555  0    4 55183  5624   2 20:11 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+avahi       1534    1472    1534  0    1  1652  1536   2 20:11 ?        00:00:00 avahi-daemon: chroot helper
+root        1577       1    1577  0    4 84968 20236   3 20:11 ?        00:00:00 /usr/sbin/NetworkManager --no-daemon
+root        1577       1    1630  0    4 84968 20236   1 20:11 ?        00:00:00 /usr/sbin/NetworkManager --no-daemon
+root        1577       1    1631  0    4 84968 20236   2 20:11 ?        00:00:00 /usr/sbin/NetworkManager --no-daemon
+root        1577       1    1632  0    4 84968 20236   1 20:11 ?        00:00:00 /usr/sbin/NetworkManager --no-daemon
+root        1585       1    1585  0    1  4604  6240   3 20:11 ?        00:00:00 /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+root        1622       1    1622  0    4 79416 12584   0 20:11 ?        00:00:00 /usr/sbin/ModemManager
+root        1622       1    1629  0    4 79416 12584   1 20:11 ?        00:00:00 /usr/sbin/ModemManager
+root        1622       1    1633  0    4 79416 12584   1 20:11 ?        00:00:00 /usr/sbin/ModemManager
+root        1622       1    1635  0    4 79416 12584   3 20:11 ?        00:00:00 /usr/sbin/ModemManager
+root        1717       1    1717  0    1  8153 12204   3 20:11 ?        00:00:00 /usr/sbin/cupsd -l
+root        1724       1    1724  0    2 30902 29156   1 20:11 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root        1724       1    1749  0    2 30902 29156   0 20:11 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+cups-br+    1741       1    1741  0    4 52343 20792   0 20:11 ?        00:00:00 /usr/sbin/cups-browsed
+cups-br+    1741       1    1755  0    4 52343 20792   1 20:11 ?        00:00:00 /usr/sbin/cups-browsed
+cups-br+    1741       1    1756  0    4 52343 20792   1 20:11 ?        00:00:00 /usr/sbin/cups-browsed
+cups-br+    1741       1    1757  0    4 52343 20792   2 20:11 ?        00:00:00 /usr/sbin/cups-browsed
+root        1742       1    1742  0    4 78364  9232   3 20:11 ?        00:00:00 /usr/sbin/gdm3
+root        1742       1    1744  0    4 78364  9232   1 20:11 ?        00:00:00 /usr/sbin/gdm3
+root        1742       1    1745  0    4 78364  9232   1 20:11 ?        00:00:00 /usr/sbin/gdm3
+root        1742       1    1746  0    4 78364  9232   0 20:11 ?        00:00:00 /usr/sbin/gdm3
+root        1760       2    1760  0    1     0     0   1 20:11 ?        00:00:00 [psimon]
+rtkit       1839       1    1839  0    3  5465  3220   2 20:11 ?        00:00:00 /usr/libexec/rtkit-daemon
+rtkit       1839       1    1869  0    3  5465  3220   1 20:11 ?        00:00:00 /usr/libexec/rtkit-daemon
+rtkit       1839       1    1870  0    3  5465  3220   2 20:11 ?        00:00:00 /usr/libexec/rtkit-daemon
+root        1923       1    1923  0    4 78022  7088   3 20:11 ?        00:00:00 /usr/libexec/power-profiles-daemon
+root        1923       1    1949  0    4 78022  7088   2 20:11 ?        00:00:00 /usr/libexec/power-profiles-daemon
+root        1923       1    1950  0    4 78022  7088   1 20:11 ?        00:00:00 /usr/libexec/power-profiles-daemon
+root        1923       1    1951  0    4 78022  7088   3 20:11 ?        00:00:00 /usr/libexec/power-profiles-daemon
+colord      2053       1    2053  0    4 79731 14428   1 20:11 ?        00:00:00 /usr/libexec/colord
+colord      2053       1    2060  0    4 79731 14428   1 20:11 ?        00:00:00 /usr/libexec/colord
+colord      2053       1    2061  0    4 79731 14428   1 20:11 ?        00:00:00 /usr/libexec/colord
+colord      2053       1    2063  0    4 79731 14428   1 20:11 ?        00:00:00 /usr/libexec/colord
+root        2099       1    2099  0    4 80311  9856   1 20:11 ?        00:00:00 /usr/libexec/upowerd
+root        2099       1    2182  0    4 80311  9856   3 20:11 ?        00:00:00 /usr/libexec/upowerd
+root        2099       1    2183  0    4 80311  9856   0 20:11 ?        00:00:00 /usr/libexec/upowerd
+root        2099       1    2184  0    4 80311  9856   0 20:11 ?        00:00:00 /usr/libexec/upowerd
+root        2320       2    2320  0    1     0     0   3 20:11 ?        00:00:00 [kworker/u521:1]
+root        2465    1742    2465  0    4 43996 10496   2 20:11 ?        00:00:00 gdm-session-worker [pam/gdm-password]
+root        2465    1742    2466  0    4 43996 10496   1 20:11 ?        00:00:00 gdm-session-worker [pam/gdm-password]
+root        2465    1742    2467  0    4 43996 10496   0 20:11 ?        00:00:00 gdm-session-worker [pam/gdm-password]
+root        2465    1742    2468  0    4 43996 10496   1 20:11 ?        00:00:00 gdm-session-worker [pam/gdm-password]
+stavros     2471       1    2471  0    1  5803 13776   3 20:11 ?        00:00:01 /usr/lib/systemd/systemd --user
+stavros     2472    2471    2472  0    1  5620  3620   0 20:11 ?        00:00:00 (sd-pam)
+stavros     2485    2471    2485  0    1  1944  3532   3 20:11 ?        00:00:00 /usr/bin/mpris-proxy
+stavros     2486    2471    2486  0    3 26104 12356   1 20:11 ?        00:00:00 /usr/bin/pipewire
+stavros     2486    2471    2504  0    3 26104 12356   3 20:11 ?        00:00:00 /usr/bin/pipewire
+stavros     2486    2471    2510  0    3 26104 12356   3 20:11 ?        00:00:00 /usr/bin/pipewire
+stavros     2487    2471    2487  0    2 21923  5536   3 20:11 ?        00:00:00 /usr/bin/pipewire -c filter-chain.conf
+stavros     2487    2471    2512  0    2 21923  5536   2 20:11 ?        00:00:00 /usr/bin/pipewire -c filter-chain.conf
+stavros     2490    2471    2490  0    1  9784 11688   3 20:11 ?        00:00:00 /snap/snapd-desktop-integration/315/usr/bin/snapd-desktop-integration
+stavros     2491    2471    2491  0    6 120738 19348  0 20:11 ?        00:00:00 /usr/bin/wireplumber
+stavros     2491    2471    2509  0    6 120738 19348  3 20:11 ?        00:00:00 /usr/bin/wireplumber
+stavros     2491    2471    2513  0    6 120738 19348  3 20:11 ?        00:00:00 /usr/bin/wireplumber
+stavros     2491    2471    2517  0    6 120738 19348  0 20:11 ?        00:00:00 /usr/bin/wireplumber
+stavros     2491    2471    2523  0    6 120738 19348  0 20:11 ?        00:00:00 /usr/bin/wireplumber
+stavros     2491    2471    2525  0    6 120738 19348  0 20:11 ?        00:00:00 /usr/bin/wireplumber
+stavros     2492    2471    2492  0    3 27294 11116   2 20:11 ?        00:00:00 /usr/bin/pipewire-pulse
+stavros     2492    2471    2515  0    3 27294 11116   0 20:11 ?        00:00:00 /usr/bin/pipewire-pulse
+stavros     2492    2471    2519  0    3 27294 11116   3 20:11 ?        00:00:00 /usr/bin/pipewire-pulse
+stavros     2493    2471    2493  0    1  2530  6648   1 20:11 ?        00:00:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+stavros     2498    2471    2498  0    5 46526 10600   3 20:11 ?        00:00:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+stavros     2498    2471    2500  0    5 46526 10600   1 20:11 ?        00:00:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+stavros     2498    2471    2501  0    5 46526 10600   1 20:11 ?        00:00:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+stavros     2498    2471    2502  0    5 46526 10600   3 20:11 ?        00:00:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+stavros     2498    2471    2511  0    5 46526 10600   3 20:11 ?        00:00:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+stavros     2537    2465    2537  0    4 42721  6092   3 20:11 tty2     00:00:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+stavros     2537    2465    2540  0    4 42721  6092   2 20:11 tty2     00:00:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+stavros     2537    2465    2541  0    4 42721  6092   1 20:11 tty2     00:00:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+stavros     2537    2465    2542  0    4 42721  6092   3 20:11 tty2     00:00:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+stavros     2543    2537    2543  0    4 49680 14256   1 20:11 tty2     00:00:00 /usr/libexec/gnome-session-binary --session=ubuntu
+stavros     2543    2537    2633  0    4 49680 14256   2 20:11 tty2     00:00:00 /usr/libexec/gnome-session-binary --session=ubuntu
+stavros     2543    2537    2634  0    4 49680 14256   0 20:11 tty2     00:00:00 /usr/libexec/gnome-session-binary --session=ubuntu
+stavros     2543    2537    2635  0    4 49680 14256   1 20:11 tty2     00:00:00 /usr/libexec/gnome-session-binary --session=ubuntu
+stavros     2602    2471    2602  0    7 152285 7104   3 20:11 ?        00:00:00 /usr/libexec/xdg-document-portal
+stavros     2602    2471    2609  0    7 152285 7104   3 20:11 ?        00:00:00 /usr/libexec/xdg-document-portal
+stavros     2602    2471    2610  0    7 152285 7104   3 20:11 ?        00:00:00 /usr/libexec/xdg-document-portal
+stavros     2602    2471    2612  0    7 152285 7104   3 20:11 ?        00:00:00 /usr/libexec/xdg-document-portal
+stavros     2602    2471    2627  0    7 152285 7104   0 20:11 ?        00:00:00 /usr/libexec/xdg-document-portal
+stavros     2602    2471    2629  0    7 152285 7104   0 20:11 ?        00:00:00 /usr/libexec/xdg-document-portal
+stavros     2602    2471    2630  0    7 152285 7104   3 20:11 ?        00:00:00 /usr/libexec/xdg-document-portal
+stavros     2614    2471    2614  0    4 77513  6140   2 20:11 ?        00:00:00 /usr/libexec/xdg-permission-store
+stavros     2614    2471    2622  0    4 77513  6140   1 20:11 ?        00:00:00 /usr/libexec/xdg-permission-store
+stavros     2614    2471    2623  0    4 77513  6140   3 20:11 ?        00:00:00 /usr/libexec/xdg-permission-store
+stavros     2614    2471    2625  0    4 77513  6140   0 20:11 ?        00:00:00 /usr/libexec/xdg-permission-store
+root        2628    2602    2628  0    1   693  2024   2 20:11 ?        00:00:00 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+stavros     2653    2471    2653  0    3 24430  7340   0 20:11 ?        00:00:00 /usr/libexec/gcr-ssh-agent --base-dir /run/user/1000/gcr
+stavros     2653    2471    2659  0    3 24430  7340   0 20:11 ?        00:00:00 /usr/libexec/gcr-ssh-agent --base-dir /run/user/1000/gcr
+stavros     2653    2471    2660  0    3 24430  7340   1 20:11 ?        00:00:00 /usr/libexec/gcr-ssh-agent --base-dir /run/user/1000/gcr
+stavros     2654    2471    2654  0    2 22531  5164   0 20:11 ?        00:00:00 /usr/libexec/gnome-session-ctl --monitor
+stavros     2654    2471    2662  0    2 22531  5164   0 20:11 ?        00:00:00 /usr/libexec/gnome-session-ctl --monitor
+stavros     2668    2471    2668  0    4 78897  8088   3 20:11 ?        00:00:00 /usr/libexec/gvfsd
+stavros     2668    2471    2671  0    4 78897  8088   3 20:11 ?        00:00:00 /usr/libexec/gvfsd
+stavros     2668    2471    2672  0    4 78897  8088   3 20:11 ?        00:00:00 /usr/libexec/gvfsd
+stavros     2668    2471    2673  0    4 78897  8088   2 20:11 ?        00:00:00 /usr/libexec/gvfsd
+root        2677       2    2677  0    1     0     0   0 20:11 ?        00:00:00 [kworker/u513:4-flush-8:0]
+stavros     2679    2471    2679  0    7 98740  7124   1 20:11 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+stavros     2679    2471    2683  0    7 98740  7124   3 20:11 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+stavros     2679    2471    2684  0    7 98740  7124   0 20:11 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+stavros     2679    2471    2685  0    7 98740  7124   3 20:11 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+stavros     2679    2471    2686  0    7 98740  7124   0 20:11 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+stavros     2679    2471    2694  0    7 98740  7124   3 20:11 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+stavros     2679    2471    2695  0    7 98740  7124   1 20:11 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+stavros     2682    2471    2682  0    5 158503 16024  0 20:11 ?        00:00:00 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+stavros     2682    2471    2696  0    5 158503 16024  1 20:11 ?        00:00:00 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+stavros     2682    2471    2697  0    5 158503 16024  0 20:11 ?        00:00:00 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+stavros     2682    2471    2699  0    5 158503 16024  3 20:11 ?        00:00:00 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+stavros     2682    2471    2701  0    5 158503 16024  1 20:11 ?        00:00:00 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+stavros     2724    2682    2724  0    5 95370  7516   3 20:11 ?        00:00:00 /usr/libexec/at-spi-bus-launcher --launch-immediately
+stavros     2724    2682    2729  0    5 95370  7516   1 20:11 ?        00:00:00 /usr/libexec/at-spi-bus-launcher --launch-immediately
+stavros     2724    2682    2730  0    5 95370  7516   2 20:11 ?        00:00:00 /usr/libexec/at-spi-bus-launcher --launch-immediately
+stavros     2724    2682    2731  0    5 95370  7516   2 20:11 ?        00:00:00 /usr/libexec/at-spi-bus-launcher --launch-immediately
+stavros     2724    2682    2733  0    5 95370  7516   0 20:11 ?        00:00:00 /usr/libexec/at-spi-bus-launcher --launch-immediately
+stavros     2726    2471    2726  0   25 1189622 398584 2 20:11 ?       00:00:06 /usr/bin/gnome-shell
+stavros     2726    2471    2737  0   25 1189622 398584 0 20:11 ?       00:00:00 /usr/bin/gnome-shell
+stavros     2726    2471    2738  0   25 1189622 398584 0 20:11 ?       00:00:00 /usr/bin/gnome-shell
+stavros     2726    2471    2740  0   25 1189622 398584 1 20:11 ?       00:00:00 /usr/bin/gnome-shell
+stavros     2726    2471    2741  0   25 1189622 398584 2 20:11 ?       00:00:00 /usr/bin/gnome-shell
+stavros     2726    2471    2742  0   25 1189622 398584 3 20:11 ?       00:00:00 /usr/bin/gnome-shell
+stavros     2726    2471    2743  0   25 1189622 398584 1 20:11 ?       00:00:00 /usr/bin/gnome-shell
+stavros     2726    2471    2744  0   25 1189622 398584 2 20:11 ?       00:00:00 /usr/bin/gnome-shell
+stavros     2726    2471    2745  0   25 1189622 398584 0 20:11 ?       00:00:00 /usr/bin/gnome-shell
+stavros     2726    2471    2746  0   25 1189622 398584 0 20:11 ?       00:00:00 /usr/bin/gnome-shell
+stavros     2726    2471    2747  0   25 1189622 398584 0 20:11 ?       00:00:00 /usr/bin/gnome-shell
+stavros     2726    2471    2748  0   25 1189622 398584 0 20:11 ?       00:00:00 /usr/bin/gnome-shell
+stavros     2726    2471    2749  0   25 1189622 398584 0 20:11 ?       00:00:00 /usr/bin/gnome-shell
+stavros     2726    2471    2751  0   25 1189622 398584 2 20:11 ?       00:00:00 /usr/bin/gnome-shell
+stavros     2726    2471    2753  0   25 1189622 398584 0 20:11 ?       00:00:00 /usr/bin/gnome-shell
+stavros     2726    2471    2754  0   25 1189622 398584 3 20:11 ?       00:00:00 /usr/bin/gnome-shell
+stavros     2726    2471    2755  0   25 1189622 398584 1 20:11 ?       00:00:00 /usr/bin/gnome-shell
+stavros     2726    2471    2756  0   25 1189622 398584 2 20:11 ?       00:00:00 /usr/bin/gnome-shell
+stavros     2726    2471    2757  0   25 1189622 398584 0 20:11 ?       00:00:00 /usr/bin/gnome-shell
+stavros     2726    2471    2758  0   25 1189622 398584 0 20:11 ?       00:00:00 /usr/bin/gnome-shell
+stavros     2726    2471    2759  0   25 1189622 398584 2 20:11 ?       00:00:00 /usr/bin/gnome-shell
+stavros     2726    2471    2760  0   25 1189622 398584 0 20:11 ?       00:00:00 /usr/bin/gnome-shell
+stavros     2726    2471    2761  0   25 1189622 398584 0 20:11 ?       00:00:00 /usr/bin/gnome-shell
+stavros     2726    2471    2781  0   25 1189622 398584 1 20:11 ?       00:00:00 /usr/bin/gnome-shell
+stavros     2726    2471    3344  0   25 1189622 398584 0 20:11 ?       00:00:00 /usr/bin/gnome-shell
+stavros     2735    2724    2735  0    1  2222  4908   3 20:11 ?        00:00:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
+stavros     2794    2471    2794  0    4 42281  7060   0 20:11 ?        00:00:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+stavros     2794    2471    2795  0    4 42281  7060   3 20:11 ?        00:00:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+stavros     2794    2471    2796  0    4 42281  7060   2 20:11 ?        00:00:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+stavros     2794    2471    2797  0    4 42281  7060   0 20:11 ?        00:00:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+stavros     2832    2471    2832  0    7 165047 22192  3 20:11 ?        00:00:00 /usr/libexec/gnome-shell-calendar-server
+stavros     2832    2471    2843  0    7 165047 22192  2 20:11 ?        00:00:00 /usr/libexec/gnome-shell-calendar-server
+stavros     2832    2471    2844  0    7 165047 22192  0 20:11 ?        00:00:00 /usr/libexec/gnome-shell-calendar-server
+stavros     2832    2471    2846  0    7 165047 22192  2 20:11 ?        00:00:00 /usr/libexec/gnome-shell-calendar-server
+stavros     2832    2471    2849  0    7 165047 22192  2 20:11 ?        00:00:00 /usr/libexec/gnome-shell-calendar-server
+stavros     2832    2471    2850  0    7 165047 22192  3 20:11 ?        00:00:00 /usr/libexec/gnome-shell-calendar-server
+stavros     2832    2471    3130  0    7 165047 22192  1 20:11 ?        00:00:00 /usr/libexec/gnome-shell-calendar-server
+stavros     2852    2471    2852  0    5 152388 43528  3 20:11 ?        00:00:00 /usr/libexec/evolution-source-registry
+stavros     2852    2471    2861  0    5 152388 43528  3 20:11 ?        00:00:00 /usr/libexec/evolution-source-registry
+stavros     2852    2471    2862  0    5 152388 43528  0 20:11 ?        00:00:00 /usr/libexec/evolution-source-registry
+stavros     2852    2471    2863  0    5 152388 43528  3 20:11 ?        00:00:00 /usr/libexec/evolution-source-registry
+stavros     2852    2471    2865  0    5 152388 43528  3 20:11 ?        00:00:00 /usr/libexec/evolution-source-registry
+stavros     2853    2490    2853  0    5 107119 28732  3 20:11 ?        00:00:00 /snap/snapd-desktop-integration/315/usr/bin/snapd-desktop-integration
+stavros     2853    2490    3020  0    5 107119 28732  1 20:11 ?        00:00:00 /snap/snapd-desktop-integration/315/usr/bin/snapd-desktop-integration
+stavros     2853    2490    3021  0    5 107119 28732  3 20:11 ?        00:00:00 /snap/snapd-desktop-integration/315/usr/bin/snapd-desktop-integration
+stavros     2853    2490    3024  0    5 107119 28732  2 20:11 ?        00:00:00 /snap/snapd-desktop-integration/315/usr/bin/snapd-desktop-integration
+stavros     2853    2490    3087  0    5 107119 28732  3 20:11 ?        00:00:00 /snap/snapd-desktop-integration/315/usr/bin/snapd-desktop-integration
+stavros     2855    2471    2855  0   12 683396 27952  0 20:11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+stavros     2855    2471    2876  0   12 683396 27952  0 20:11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+stavros     2855    2471    2877  0   12 683396 27952  0 20:11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+stavros     2855    2471    2880  0   12 683396 27952  3 20:11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+stavros     2855    2471    2895  0   12 683396 27952  1 20:11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+stavros     2855    2471    2896  0   12 683396 27952  1 20:11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+stavros     2855    2471    2897  0   12 683396 27952  1 20:11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+stavros     2855    2471    2898  0   12 683396 27952  1 20:11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+stavros     2855    2471    2899  0   12 683396 27952  1 20:11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+stavros     2855    2471    2900  0   12 683396 27952  1 20:11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+stavros     2855    2471    2901  0   12 683396 27952  1 20:11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+stavros     2855    2471    2903  0   12 683396 27952  1 20:11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+stavros     2860    2471    2860  0    4 115527 11380  1 20:11 ?        00:00:00 /usr/bin/ibus-daemon --panel disable
+stavros     2860    2471    3025  0    4 115527 11380  1 20:11 ?        00:00:00 /usr/bin/ibus-daemon --panel disable
+stavros     2860    2471    3026  0    4 115527 11380  2 20:11 ?        00:00:00 /usr/bin/ibus-daemon --panel disable
+stavros     2860    2471    3098  0    4 115527 11380  3 20:11 ?        00:00:00 /usr/bin/ibus-daemon --panel disable
+stavros     2864    2471    2864  0    5 61263  7056   0 20:11 ?        00:00:00 /usr/libexec/gsd-a11y-settings
+stavros     2864    2471    2906  0    5 61263  7056   0 20:11 ?        00:00:00 /usr/libexec/gsd-a11y-settings
+stavros     2864    2471    2908  0    5 61263  7056   0 20:11 ?        00:00:00 /usr/libexec/gsd-a11y-settings
+stavros     2864    2471    2911  0    5 61263  7056   2 20:11 ?        00:00:00 /usr/libexec/gsd-a11y-settings
+stavros     2864    2471    3084  0    5 61263  7056   1 20:11 ?        00:00:00 /usr/libexec/gsd-a11y-settings
+stavros     2867    2471    2867  0    5 103496 20712  3 20:11 ?        00:00:00 /usr/libexec/gsd-color
+stavros     2867    2471    2915  0    5 103496 20712  0 20:11 ?        00:00:00 /usr/libexec/gsd-color
+stavros     2867    2471    2919  0    5 103496 20712  0 20:11 ?        00:00:00 /usr/libexec/gsd-color
+stavros     2867    2471    2930  0    5 103496 20712  1 20:11 ?        00:00:00 /usr/libexec/gsd-color
+stavros     2867    2471    3085  0    5 103496 20712  3 20:11 ?        00:00:00 /usr/libexec/gsd-color
+stavros     2871    2471    2871  0    5 64258 10004   3 20:11 ?        00:00:00 /usr/libexec/gsd-datetime
+stavros     2871    2471    3010  0    5 64258 10004   2 20:11 ?        00:00:00 /usr/libexec/gsd-datetime
+stavros     2871    2471    3015  0    5 64258 10004   3 20:11 ?        00:00:00 /usr/libexec/gsd-datetime
+stavros     2871    2471    3086  0    5 64258 10004   2 20:11 ?        00:00:00 /usr/libexec/gsd-datetime
+stavros     2871    2471    3119  0    5 64258 10004   3 20:11 ?        00:00:00 /usr/libexec/gsd-datetime
+stavros     2872    2471    2872  0    5 96536  8248   0 20:11 ?        00:00:00 /usr/libexec/gsd-housekeeping
+stavros     2872    2471    2905  0    5 96536  8248   0 20:11 ?        00:00:00 /usr/libexec/gsd-housekeeping
+stavros     2872    2471    2907  0    5 96536  8248   0 20:11 ?        00:00:00 /usr/libexec/gsd-housekeeping
+stavros     2872    2471    2912  0    5 96536  8248   3 20:11 ?        00:00:00 /usr/libexec/gsd-housekeeping
+stavros     2872    2471    3095  0    5 96536  8248   3 20:11 ?        00:00:00 /usr/libexec/gsd-housekeeping
+stavros     2874    2471    2874  0    5 103112 20244  0 20:11 ?        00:00:00 /usr/libexec/gsd-keyboard
+stavros     2874    2471    3058  0    5 103112 20244  1 20:11 ?        00:00:00 /usr/libexec/gsd-keyboard
+stavros     2874    2471    3059  0    5 103112 20244  1 20:11 ?        00:00:00 /usr/libexec/gsd-keyboard
+stavros     2874    2471    3063  0    5 103112 20244  1 20:11 ?        00:00:00 /usr/libexec/gsd-keyboard
+stavros     2874    2471    3088  0    5 103112 20244  3 20:11 ?        00:00:00 /usr/libexec/gsd-keyboard
+stavros     2878    2471    2878  0    5 178105 24008  0 20:11 ?        00:00:00 /usr/libexec/gsd-media-keys
+stavros     2878    2471    3073  0    5 178105 24008  0 20:11 ?        00:00:00 /usr/libexec/gsd-media-keys
+stavros     2878    2471    3074  0    5 178105 24008  0 20:11 ?        00:00:00 /usr/libexec/gsd-media-keys
+stavros     2878    2471    3081  0    5 178105 24008  3 20:11 ?        00:00:00 /usr/libexec/gsd-media-keys
+stavros     2878    2471    3106  0    5 178105 24008  1 20:11 ?        00:00:00 /usr/libexec/gsd-media-keys
+stavros     2881    2471    2881  0    5 122405 22120  2 20:11 ?        00:00:00 /usr/libexec/gsd-power
+stavros     2881    2471    3050  0    5 122405 22120  3 20:11 ?        00:00:00 /usr/libexec/gsd-power
+stavros     2881    2471    3051  0    5 122405 22120  2 20:11 ?        00:00:00 /usr/libexec/gsd-power
+stavros     2881    2471    3053  0    5 122405 22120  3 20:11 ?        00:00:00 /usr/libexec/gsd-power
+stavros     2881    2471    3089  0    5 122405 22120  1 20:11 ?        00:00:00 /usr/libexec/gsd-power
+stavros     2882    2471    2882  0    4 80888 11456   2 20:11 ?        00:00:00 /usr/libexec/gsd-print-notifications
+stavros     2882    2471    3082  0    4 80888 11456   1 20:11 ?        00:00:00 /usr/libexec/gsd-print-notifications
+stavros     2882    2471    3083  0    4 80888 11456   3 20:11 ?        00:00:00 /usr/libexec/gsd-print-notifications
+stavros     2882    2471    3107  0    4 80888 11456   3 20:11 ?        00:00:00 /usr/libexec/gsd-print-notifications
+stavros     2885    2471    2885  0    4 114568 6936   1 20:11 ?        00:00:00 /usr/libexec/gsd-rfkill
+stavros     2885    2471    2978  0    4 114568 6936   0 20:11 ?        00:00:00 /usr/libexec/gsd-rfkill
+stavros     2885    2471    2979  0    4 114568 6936   0 20:11 ?        00:00:00 /usr/libexec/gsd-rfkill
+stavros     2885    2471    3097  0    4 114568 6936   3 20:11 ?        00:00:00 /usr/libexec/gsd-rfkill
+stavros     2887    2471    2887  0    4 77589  6368   1 20:11 ?        00:00:00 /usr/libexec/gsd-screensaver-proxy
+stavros     2887    2471    3076  0    4 77589  6368   0 20:11 ?        00:00:00 /usr/libexec/gsd-screensaver-proxy
+stavros     2887    2471    3077  0    4 77589  6368   0 20:11 ?        00:00:00 /usr/libexec/gsd-screensaver-proxy
+stavros     2887    2471    3100  0    4 77589  6368   2 20:11 ?        00:00:00 /usr/libexec/gsd-screensaver-proxy
+stavros     2889    2471    2889  0    5 117263 11696  3 20:11 ?        00:00:00 /usr/libexec/gsd-sharing
+stavros     2889    2471    3044  0    5 117263 11696  1 20:11 ?        00:00:00 /usr/libexec/gsd-sharing
+stavros     2889    2471    3045  0    5 117263 11696  2 20:11 ?        00:00:00 /usr/libexec/gsd-sharing
+stavros     2889    2471    3046  0    5 117263 11696  0 20:11 ?        00:00:00 /usr/libexec/gsd-sharing
+stavros     2889    2471    3092  0    5 117263 11696  1 20:11 ?        00:00:00 /usr/libexec/gsd-sharing
+stavros     2893    2471    2893  0    5 96722  8424   1 20:11 ?        00:00:00 /usr/libexec/gsd-smartcard
+stavros     2893    2471    2928  0    5 96722  8424   1 20:11 ?        00:00:00 /usr/libexec/gsd-smartcard
+stavros     2893    2471    2929  0    5 96722  8424   1 20:11 ?        00:00:00 /usr/libexec/gsd-smartcard
+stavros     2893    2471    3075  0    5 96722  8424   1 20:11 ?        00:00:00 /usr/libexec/gsd-smartcard
+stavros     2893    2471    3105  0    5 96722  8424   2 20:11 ?        00:00:00 /usr/libexec/gsd-smartcard
+stavros     2894    2471    2894  0    5 64379  9336   0 20:11 ?        00:00:00 /usr/libexec/gsd-sound
+stavros     2894    2471    3079  0    5 64379  9336   3 20:11 ?        00:00:00 /usr/libexec/gsd-sound
+stavros     2894    2471    3080  0    5 64379  9336   2 20:11 ?        00:00:00 /usr/libexec/gsd-sound
+stavros     2894    2471    3114  0    5 64379  9336   2 20:11 ?        00:00:00 /usr/libexec/gsd-sound
+stavros     2894    2471    3128  0    5 64379  9336   2 20:11 ?        00:00:00 /usr/libexec/gsd-sound
+stavros     2902    2471    2902  0    5 103517 21064  2 20:11 ?        00:00:00 /usr/libexec/gsd-wacom
+stavros     2902    2471    3101  0    5 103517 21064  1 20:11 ?        00:00:00 /usr/libexec/gsd-wacom
+stavros     2902    2471    3102  0    5 103517 21064  3 20:11 ?        00:00:00 /usr/libexec/gsd-wacom
+stavros     2902    2471    3104  0    5 103517 21064  1 20:11 ?        00:00:00 /usr/libexec/gsd-wacom
+stavros     2902    2471    3120  0    5 103517 21064  0 20:11 ?        00:00:00 /usr/libexec/gsd-wacom
+stavros     2918    2471    2918  0    3 38222 39468   0 20:11 ?        00:00:02 /usr/bin/vmtoolsd -n vmusr --blockFd 3 --uinputFd 4
+stavros     2918    2471    3047  0    3 38222 39468   2 20:11 ?        00:00:00 /usr/bin/vmtoolsd -n vmusr --blockFd 3 --uinputFd 4
+stavros     2918    2471    3463  0    3 38222 39468   0 20:11 ?        00:00:00 /usr/bin/vmtoolsd -n vmusr --blockFd 3 --uinputFd 4
+stavros     2927    2682    2927  0    8 210083 64688  3 20:11 ?        00:00:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+stavros     2927    2682    3069  0    8 210083 64688  1 20:11 ?        00:00:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+stavros     2927    2682    3070  0    8 210083 64688  1 20:11 ?        00:00:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+stavros     2927    2682    3072  0    8 210083 64688  1 20:11 ?        00:00:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+stavros     2927    2682    3093  0    8 210083 64688  0 20:11 ?        00:00:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+stavros     2927    2682    3286  0    8 210083 64688  2 20:11 ?        00:00:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+stavros     2927    2682    3293  0    8 210083 64688  0 20:11 ?        00:00:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+stavros     2927    2682    3303  0    8 210083 64688  0 20:11 ?        00:00:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+stavros     2936    2471    2936  0    5 130722 24168  3 20:11 ?        00:00:00 /usr/libexec/goa-daemon
+stavros     2936    2471    3055  0    5 130722 24168  3 20:11 ?        00:00:00 /usr/libexec/goa-daemon
+stavros     2936    2471    3056  0    5 130722 24168  3 20:11 ?        00:00:00 /usr/libexec/goa-daemon
+stavros     2936    2471    3090  0    5 130722 24168  3 20:11 ?        00:00:00 /usr/libexec/goa-daemon
+stavros     2936    2471    3096  0    5 130722 24168  0 20:11 ?        00:00:00 /usr/libexec/goa-daemon
+stavros     2947    2682    2947  0    4 76642  7636   0 20:11 ?        00:00:00 /usr/libexec/gsd-disk-utility-notify
+stavros     2947    2682    2980  0    4 76642  7636   0 20:11 ?        00:00:00 /usr/libexec/gsd-disk-utility-notify
+stavros     2947    2682    2984  0    4 76642  7636   2 20:11 ?        00:00:00 /usr/libexec/gsd-disk-utility-notify
+stavros     2947    2682    3091  0    4 76642  7636   0 20:11 ?        00:00:00 /usr/libexec/gsd-disk-utility-notify
+stavros     3111    2471    3111  0    4 97663  9788   0 20:11 ?        00:00:00 /usr/libexec/goa-identity-service
+stavros     3111    2471    3116  0    4 97663  9788   0 20:11 ?        00:00:00 /usr/libexec/goa-identity-service
+stavros     3111    2471    3117  0    4 97663  9788   2 20:11 ?        00:00:00 /usr/libexec/goa-identity-service
+stavros     3111    2471    3121  0    4 97663  9788   3 20:11 ?        00:00:00 /usr/libexec/goa-identity-service
+stavros     3122    2471    3122  0    5 152805 11564  2 20:11 ?        00:00:00 /usr/libexec/gvfs-udisks2-volume-monitor
+stavros     3122    2471    3152  0    5 152805 11564  2 20:11 ?        00:00:00 /usr/libexec/gvfs-udisks2-volume-monitor
+stavros     3122    2471    3153  0    5 152805 11564  2 20:11 ?        00:00:00 /usr/libexec/gvfs-udisks2-volume-monitor
+stavros     3122    2471    3157  0    5 152805 11564  3 20:11 ?        00:00:00 /usr/libexec/gvfs-udisks2-volume-monitor
+stavros     3122    2471    3179  0    5 152805 11564  1 20:11 ?        00:00:00 /usr/libexec/gvfs-udisks2-volume-monitor
+stavros     3127    2860    3127  0    4 42976  7352   2 20:11 ?        00:00:00 /usr/libexec/ibus-memconf
+stavros     3127    2860    3143  0    4 42976  7352   3 20:11 ?        00:00:00 /usr/libexec/ibus-memconf
+stavros     3127    2860    3144  0    4 42976  7352   0 20:11 ?        00:00:00 /usr/libexec/ibus-memconf
+stavros     3127    2860    3146  0    4 42976  7352   0 20:11 ?        00:00:00 /usr/libexec/ibus-memconf
+stavros     3129    2860    3129  0    5 106045 31988  3 20:11 ?        00:00:07 /usr/libexec/ibus-extension-gtk3
+stavros     3129    2860    3162  0    5 106045 31988  0 20:11 ?        00:00:00 /usr/libexec/ibus-extension-gtk3
+stavros     3129    2860    3163  0    5 106045 31988  1 20:11 ?        00:00:00 /usr/libexec/ibus-extension-gtk3
+stavros     3129    2860    3165  0    5 106045 31988  3 20:11 ?        00:00:00 /usr/libexec/ibus-extension-gtk3
+stavros     3129    2860    3167  0    5 106045 31988  3 20:11 ?        00:00:00 /usr/libexec/ibus-extension-gtk3
+stavros     3135    2471    3135  0   10 223924 24704  2 20:11 ?        00:00:00 /usr/libexec/evolution-calendar-factory
+stavros     3135    2471    3171  0   10 223924 24704  3 20:11 ?        00:00:00 /usr/libexec/evolution-calendar-factory
+stavros     3135    2471    3172  0   10 223924 24704  3 20:11 ?        00:00:00 /usr/libexec/evolution-calendar-factory
+stavros     3135    2471    3175  0   10 223924 24704  1 20:11 ?        00:00:00 /usr/libexec/evolution-calendar-factory
+stavros     3135    2471    3185  0   10 223924 24704  1 20:11 ?        00:00:00 /usr/libexec/evolution-calendar-factory
+stavros     3135    2471    3186  0   10 223924 24704  0 20:11 ?        00:00:00 /usr/libexec/evolution-calendar-factory
+stavros     3135    2471    3189  0   10 223924 24704  0 20:11 ?        00:00:00 /usr/libexec/evolution-calendar-factory
+stavros     3135    2471    3191  0   10 223924 24704  1 20:11 ?        00:00:00 /usr/libexec/evolution-calendar-factory
+stavros     3135    2471    3192  0   10 223924 24704  0 20:11 ?        00:00:00 /usr/libexec/evolution-calendar-factory
+stavros     3135    2471    3195  0   10 223924 24704  1 20:11 ?        00:00:00 /usr/libexec/evolution-calendar-factory
+stavros     3139    2471    3139  0    4 77806  7372   0 20:11 ?        00:00:00 /usr/libexec/ibus-portal
+stavros     3139    2471    3149  0    4 77806  7372   3 20:11 ?        00:00:00 /usr/libexec/ibus-portal
+stavros     3139    2471    3151  0    4 77806  7372   0 20:11 ?        00:00:00 /usr/libexec/ibus-portal
+stavros     3139    2471    3174  0    4 77806  7372   0 20:11 ?        00:00:00 /usr/libexec/ibus-portal
+stavros     3155    2471    3155  0    4 104443 14624  0 20:11 ?        00:00:00 /usr/libexec/gsd-printer
+stavros     3155    2471    3180  0    4 104443 14624  1 20:11 ?        00:00:00 /usr/libexec/gsd-printer
+stavros     3155    2471    3181  0    4 104443 14624  1 20:11 ?        00:00:00 /usr/libexec/gsd-printer
+stavros     3155    2471    3182  0    4 104443 14624  1 20:11 ?        00:00:00 /usr/libexec/gsd-printer
+stavros     3188    2471    3188  0    4 77911  7300   2 20:11 ?        00:00:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+stavros     3188    2471    3196  0    4 77911  7300   3 20:11 ?        00:00:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+stavros     3188    2471    3197  0    4 77911  7300   3 20:11 ?        00:00:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+stavros     3188    2471    3199  0    4 77911  7300   1 20:11 ?        00:00:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+stavros     3193    2471    3193  0    7 207008 29332  2 20:11 ?        00:00:00 /usr/libexec/evolution-addressbook-factory
+stavros     3193    2471    3201  0    7 207008 29332  3 20:11 ?        00:00:00 /usr/libexec/evolution-addressbook-factory
+stavros     3193    2471    3202  0    7 207008 29332  3 20:11 ?        00:00:00 /usr/libexec/evolution-addressbook-factory
+stavros     3193    2471    3203  0    7 207008 29332  0 20:11 ?        00:00:00 /usr/libexec/evolution-addressbook-factory
+stavros     3193    2471    3207  0    7 207008 29332  2 20:11 ?        00:00:00 /usr/libexec/evolution-addressbook-factory
+stavros     3193    2471    3209  0    7 207008 29332  0 20:11 ?        00:00:00 /usr/libexec/evolution-addressbook-factory
+stavros     3193    2471    3213  0    7 207008 29332  0 20:11 ?        00:00:00 /usr/libexec/evolution-addressbook-factory
+stavros     3200    2471    3200  0    4 77667  6908   2 20:11 ?        00:00:00 /usr/libexec/gvfs-mtp-volume-monitor
+stavros     3200    2471    3205  0    4 77667  6908   3 20:11 ?        00:00:00 /usr/libexec/gvfs-mtp-volume-monitor
+stavros     3200    2471    3206  0    4 77667  6908   3 20:11 ?        00:00:00 /usr/libexec/gvfs-mtp-volume-monitor
+stavros     3200    2471    3210  0    4 77667  6908   3 20:11 ?        00:00:00 /usr/libexec/gvfs-mtp-volume-monitor
+stavros     3211    2471    3211  0    4 77631  6668   1 20:11 ?        00:00:00 /usr/libexec/gvfs-goa-volume-monitor
+stavros     3211    2471    3216  0    4 77631  6668   3 20:11 ?        00:00:00 /usr/libexec/gvfs-goa-volume-monitor
+stavros     3211    2471    3217  0    4 77631  6668   3 20:11 ?        00:00:00 /usr/libexec/gvfs-goa-volume-monitor
+stavros     3211    2471    3220  0    4 77631  6668   2 20:11 ?        00:00:00 /usr/libexec/gvfs-goa-volume-monitor
+stavros     3222    2471    3222  0    5 98128  8528   2 20:11 ?        00:00:00 /usr/libexec/gvfs-afc-volume-monitor
+stavros     3222    2471    3223  0    5 98128  8528   2 20:11 ?        00:00:00 /usr/libexec/gvfs-afc-volume-monitor
+stavros     3222    2471    3224  0    5 98128  8528   2 20:11 ?        00:00:00 /usr/libexec/gvfs-afc-volume-monitor
+stavros     3222    2471    3225  0    5 98128  8528   0 20:11 ?        00:00:00 /usr/libexec/gvfs-afc-volume-monitor
+stavros     3222    2471    3227  0    5 98128  8528   1 20:11 ?        00:00:00 /usr/libexec/gvfs-afc-volume-monitor
+stavros     3228    2726    3228  0    1 55185 68932   3 20:11 ?        00:00:00 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.F3FZF3 -listenfd 4 -listenfd 5 -displayfd 6 -initfd 7 -byteswappedclients
+stavros     3251    2860    3251  0    4 43007  7392   3 20:11 ?        00:00:00 /usr/libexec/ibus-engine-simple
+stavros     3251    2860    3252  0    4 43007  7392   2 20:11 ?        00:00:00 /usr/libexec/ibus-engine-simple
+stavros     3251    2860    3253  0    4 43007  7392   2 20:11 ?        00:00:00 /usr/libexec/ibus-engine-simple
+stavros     3251    2860    3254  0    4 43007  7392   2 20:11 ?        00:00:00 /usr/libexec/ibus-engine-simple
+stavros     3269    2471    3269  0    4 41330  6108   2 20:11 ?        00:00:00 /usr/libexec/dconf-service
+stavros     3269    2471    3276  0    4 41330  6108   3 20:11 ?        00:00:00 /usr/libexec/dconf-service
+stavros     3269    2471    3277  0    4 41330  6108   2 20:11 ?        00:00:00 /usr/libexec/dconf-service
+stavros     3269    2471    3278  0    4 41330  6108   3 20:11 ?        00:00:00 /usr/libexec/dconf-service
+stavros     3288    2471    3288  0   12 683406 28464  2 20:11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+stavros     3288    2471    3291  0   12 683406 28464  3 20:11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+stavros     3288    2471    3292  0   12 683406 28464  1 20:11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+stavros     3288    2471    3294  0   12 683406 28464  3 20:11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+stavros     3288    2471    3295  0   12 683406 28464  0 20:11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+stavros     3288    2471    3296  0   12 683406 28464  1 20:11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+stavros     3288    2471    3297  0   12 683406 28464  3 20:11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+stavros     3288    2471    3298  0   12 683406 28464  2 20:11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+stavros     3288    2471    3299  0   12 683406 28464  0 20:11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+stavros     3288    2471    3300  0   12 683406 28464  3 20:11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+stavros     3288    2471    3301  0   12 683406 28464  1 20:11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+stavros     3288    2471    3302  0   12 683406 28464  1 20:11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+stavros     3315    2471    3315  0    4 42911  6892   1 20:11 ?        00:00:00 /usr/libexec/gvfsd-metadata
+stavros     3315    2471    3323  0    4 42911  6892   0 20:11 ?        00:00:00 /usr/libexec/gvfsd-metadata
+stavros     3315    2471    3324  0    4 42911  6892   0 20:11 ?        00:00:00 /usr/libexec/gvfsd-metadata
+stavros     3315    2471    3325  0    4 42911  6892   3 20:11 ?        00:00:00 /usr/libexec/gvfsd-metadata
+stavros     3316    2668    3316  0    5 152697 9228   2 20:11 ?        00:00:00 /usr/libexec/gvfsd-trash --spawner :1.22 /org/gtk/gvfs/exec_spaw/0
+stavros     3316    2668    3317  0    5 152697 9228   2 20:11 ?        00:00:00 /usr/libexec/gvfsd-trash --spawner :1.22 /org/gtk/gvfs/exec_spaw/0
+stavros     3316    2668    3318  0    5 152697 9228   0 20:11 ?        00:00:00 /usr/libexec/gvfsd-trash --spawner :1.22 /org/gtk/gvfs/exec_spaw/0
+stavros     3316    2668    3319  0    5 152697 9228   2 20:11 ?        00:00:00 /usr/libexec/gvfsd-trash --spawner :1.22 /org/gtk/gvfs/exec_spaw/0
+stavros     3316    2668    3322  0    5 152697 9228   3 20:11 ?        00:00:00 /usr/libexec/gvfsd-trash --spawner :1.22 /org/gtk/gvfs/exec_spaw/0
+stavros     3345    2471    3345  0    8 184074 27968  1 20:11 ?        00:00:00 /usr/libexec/localsearch-3
+stavros     3345    2471    3346  0    8 184074 27968  2 20:11 ?        00:00:00 /usr/libexec/localsearch-3
+stavros     3345    2471    3347  0    8 184074 27968  2 20:11 ?        00:00:00 /usr/libexec/localsearch-3
+stavros     3345    2471    3348  0    8 184074 27968  3 20:11 ?        00:00:00 /usr/libexec/localsearch-3
+stavros     3345    2471    3349  0    8 184074 27968  0 20:11 ?        00:00:00 /usr/libexec/localsearch-3
+stavros     3345    2471    3350  0    8 184074 27968  3 20:11 ?        00:00:00 /usr/libexec/localsearch-3
+stavros     3345    2471    3377  0    8 184074 27968  1 20:11 ?        00:00:00 /usr/libexec/localsearch-3
+stavros     3345    2471    3378  0    8 184074 27968  3 20:11 ?        00:00:00 /usr/libexec/localsearch-3
+stavros     3351    2471    3351  0    5 119535 84544  2 20:11 ?        00:00:00 /usr/libexec/gsd-xsettings
+stavros     3351    2471    3388  0    5 119535 84544  0 20:11 ?        00:00:00 /usr/libexec/gsd-xsettings
+stavros     3351    2471    3389  0    5 119535 84544  0 20:11 ?        00:00:00 /usr/libexec/gsd-xsettings
+stavros     3351    2471    3390  0    5 119535 84544  2 20:11 ?        00:00:00 /usr/libexec/gsd-xsettings
+stavros     3351    2471    3391  0    5 119535 84544  3 20:11 ?        00:00:00 /usr/libexec/gsd-xsettings
+root        3381       2    3381  0    1     0     0   1 20:11 ?        00:00:00 [kworker/u519:1]
+root        3382       2    3382  0    1     0     0   3 20:11 ?        00:00:00 [kworker/u519:2]
+stavros     3407    2471    3407  0    4 44855 13280   3 20:11 ?        00:00:00 /usr/libexec/ibus-x11
+stavros     3407    2471    3424  0    4 44855 13280   0 20:11 ?        00:00:00 /usr/libexec/ibus-x11
+stavros     3407    2471    3425  0    4 44855 13280   3 20:11 ?        00:00:00 /usr/libexec/ibus-x11
+stavros     3407    2471    3426  0    4 44855 13280   3 20:11 ?        00:00:00 /usr/libexec/ibus-x11
+stavros     3415    2726    3415  0   15 354173 112904 1 20:11 ?        00:00:00 /usr/libexec/mutter-x11-frames
+stavros     3415    2726    3428  0   15 354173 112904 3 20:11 ?        00:00:00 /usr/libexec/mutter-x11-frames
+stavros     3415    2726    3433  0   15 354173 112904 1 20:11 ?        00:00:00 /usr/libexec/mutter-x11-frames
+stavros     3415    2726    3434  0   15 354173 112904 0 20:11 ?        00:00:00 /usr/libexec/mutter-x11-frames
+stavros     3415    2726    3435  0   15 354173 112904 1 20:11 ?        00:00:00 /usr/libexec/mutter-x11-frames
+stavros     3415    2726    3436  0   15 354173 112904 0 20:11 ?        00:00:00 /usr/libexec/mutter-x11-frames
+stavros     3415    2726    3437  0   15 354173 112904 0 20:11 ?        00:00:00 /usr/libexec/mutter-x11-frames
+stavros     3415    2726    3438  0   15 354173 112904 0 20:11 ?        00:00:00 /usr/libexec/mutter-x11-frames
+stavros     3415    2726    3439  0   15 354173 112904 0 20:11 ?        00:00:00 /usr/libexec/mutter-x11-frames
+stavros     3415    2726    3440  0   15 354173 112904 0 20:11 ?        00:00:00 /usr/libexec/mutter-x11-frames
+stavros     3415    2726    3441  0   15 354173 112904 1 20:11 ?        00:00:00 /usr/libexec/mutter-x11-frames
+stavros     3415    2726    3444  0   15 354173 112904 2 20:11 ?        00:00:00 /usr/libexec/mutter-x11-frames
+stavros     3415    2726    3445  0   15 354173 112904 3 20:11 ?        00:00:00 /usr/libexec/mutter-x11-frames
+stavros     3415    2726    3447  0   15 354173 112904 2 20:11 ?        00:00:00 /usr/libexec/mutter-x11-frames
+stavros     3415    2726    3493  0   15 354173 112904 3 20:11 ?        00:00:00 /usr/libexec/mutter-x11-frames
+stavros     3443    2471    3443  0    6 176526 18460  3 20:11 ?        00:00:00 /usr/libexec/xdg-desktop-portal
+stavros     3443    2471    3446  0    6 176526 18460  1 20:11 ?        00:00:00 /usr/libexec/xdg-desktop-portal
+stavros     3443    2471    3448  0    6 176526 18460  2 20:11 ?        00:00:00 /usr/libexec/xdg-desktop-portal
+stavros     3443    2471    3449  0    6 176526 18460  3 20:11 ?        00:00:00 /usr/libexec/xdg-desktop-portal
+stavros     3443    2471    3483  0    6 176526 18460  3 20:11 ?        00:00:00 /usr/libexec/xdg-desktop-portal
+stavros     3443    2471    3492  0    6 176526 18460  0 20:11 ?        00:00:00 /usr/libexec/xdg-desktop-portal
+stavros     3453    2471    3453  0    6 151228 41004  3 20:11 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gnome
+stavros     3453    2471    3454  0    6 151228 41004  1 20:11 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gnome
+stavros     3453    2471    3455  0    6 151228 41004  0 20:11 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gnome
+stavros     3453    2471    3456  0    6 151228 41004  0 20:11 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gnome
+stavros     3453    2471    3457  0    6 151228 41004  0 20:11 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gnome
+stavros     3453    2471    3458  0    6 151228 41004  2 20:11 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gnome
+stavros     3484    2471    3484  0    5 104604 26668  3 20:11 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gtk
+stavros     3484    2471    3485  0    5 104604 26668  0 20:11 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gtk
+stavros     3484    2471    3486  0    5 104604 26668  3 20:11 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gtk
+stavros     3484    2471    3488  0    5 104604 26668  2 20:11 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gtk
+stavros     3484    2471    3489  0    5 104604 26668  2 20:11 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gtk
+root        3539       1    3539  0    1  2704  7500   1 20:12 ?        00:00:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+root        3541    3539    3541  0    1  4544 11864   0 20:12 ?        00:00:00 sshd-session: stavros [priv]
+stavros     3601    3541    3601  0    1  4620  8000   1 20:12 ?        00:00:01 sshd-session: stavros@notty
+stavros     3602    3601    3602  0    1  2713  4488   3 20:12 ?        00:00:00 -bash
+stavros     3614    3602    3614  0    1   722  1936   2 20:12 ?        00:00:00 sh
+stavros     3632    3614    3632  0    5  9918 18592   1 20:12 ?        00:00:00 /home/stavros/.vscode-server/code-7d842fb85a0275a4a8e4d7e040d2625abbf7f084 command-shell --cli-data-dir /home/stavros/.vscode-server/cli --parent-process-id 3614 --on-host=127.0.0.1 --on-port
+stavros     3632    3614    3639  0    5  9918 18592   3 20:12 ?        00:00:00 /home/stavros/.vscode-server/code-7d842fb85a0275a4a8e4d7e040d2625abbf7f084 command-shell --cli-data-dir /home/stavros/.vscode-server/cli --parent-process-id 3614 --on-host=127.0.0.1 --on-port
+stavros     3632    3614    3640  0    5  9918 18592   2 20:12 ?        00:00:00 /home/stavros/.vscode-server/code-7d842fb85a0275a4a8e4d7e040d2625abbf7f084 command-shell --cli-data-dir /home/stavros/.vscode-server/cli --parent-process-id 3614 --on-host=127.0.0.1 --on-port
+stavros     3632    3614    3641  0    5  9918 18592   0 20:12 ?        00:00:00 /home/stavros/.vscode-server/code-7d842fb85a0275a4a8e4d7e040d2625abbf7f084 command-shell --cli-data-dir /home/stavros/.vscode-server/cli --parent-process-id 3614 --on-host=127.0.0.1 --on-port
+stavros     3632    3614    3642  0    5  9918 18592   3 20:12 ?        00:00:00 /home/stavros/.vscode-server/code-7d842fb85a0275a4a8e4d7e040d2625abbf7f084 command-shell --cli-data-dir /home/stavros/.vscode-server/cli --parent-process-id 3614 --on-host=127.0.0.1 --on-port
+stavros     3681    3632    3681  0    1   722  1808   0 20:12 ?        00:00:00 sh /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/bin/code-server --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-95fe4b9b-9c98-4c81-a39e-8ff831db580a
+stavros     3685    3681    3685  0   11 2955100 94664 3 20:12 ?        00:00:03 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-95fe4b9b-9c98-4c81-a39e-8ff831db580a
+stavros     3685    3681    3686  0   11 2955100 94664 2 20:12 ?        00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-95fe4b9b-9c98-4c81-a39e-8ff831db580a
+stavros     3685    3681    3687  0   11 2955100 94664 2 20:12 ?        00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-95fe4b9b-9c98-4c81-a39e-8ff831db580a
+stavros     3685    3681    3688  0   11 2955100 94664 3 20:12 ?        00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-95fe4b9b-9c98-4c81-a39e-8ff831db580a
+stavros     3685    3681    3689  0   11 2955100 94664 2 20:12 ?        00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-95fe4b9b-9c98-4c81-a39e-8ff831db580a
+stavros     3685    3681    3690  0   11 2955100 94664 2 20:12 ?        00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-95fe4b9b-9c98-4c81-a39e-8ff831db580a
+stavros     3685    3681    3691  0   11 2955100 94664 3 20:12 ?        00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-95fe4b9b-9c98-4c81-a39e-8ff831db580a
+stavros     3685    3681    3692  0   11 2955100 94664 0 20:12 ?        00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-95fe4b9b-9c98-4c81-a39e-8ff831db580a
+stavros     3685    3681    3693  0   11 2955100 94664 1 20:12 ?        00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-95fe4b9b-9c98-4c81-a39e-8ff831db580a
+stavros     3685    3681    3694  0   11 2955100 94664 0 20:12 ?        00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-95fe4b9b-9c98-4c81-a39e-8ff831db580a
+stavros     3685    3681    3695  0   11 2955100 94664 0 20:12 ?        00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-95fe4b9b-9c98-4c81-a39e-8ff831db580a
+stavros     3717    3685    3717  0   13 8357995 137236 3 20:12 ?       00:00:03 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node --dns-result-order=ipv4first /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+stavros     3717    3685    3718  0   13 8357995 137236 3 20:12 ?       00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node --dns-result-order=ipv4first /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+stavros     3717    3685    3719  0   13 8357995 137236 0 20:12 ?       00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node --dns-result-order=ipv4first /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+stavros     3717    3685    3720  0   13 8357995 137236 1 20:12 ?       00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node --dns-result-order=ipv4first /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+stavros     3717    3685    3721  0   13 8357995 137236 3 20:12 ?       00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node --dns-result-order=ipv4first /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+stavros     3717    3685    3722  0   13 8357995 137236 3 20:12 ?       00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node --dns-result-order=ipv4first /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+stavros     3717    3685    3723  0   13 8357995 137236 2 20:12 ?       00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node --dns-result-order=ipv4first /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+stavros     3717    3685    3724  0   13 8357995 137236 2 20:12 ?       00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node --dns-result-order=ipv4first /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+stavros     3717    3685    3725  0   13 8357995 137236 2 20:12 ?       00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node --dns-result-order=ipv4first /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+stavros     3717    3685    3726  0   13 8357995 137236 3 20:12 ?       00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node --dns-result-order=ipv4first /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+stavros     3717    3685    3727  0   13 8357995 137236 3 20:12 ?       00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node --dns-result-order=ipv4first /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+stavros     3717    3685    3739  0   13 8357995 137236 2 20:12 ?       00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node --dns-result-order=ipv4first /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+stavros     3717    3685    3746  0   13 8357995 137236 0 20:12 ?       00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node --dns-result-order=ipv4first /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+stavros     3728    3685    3728  0   12 289435 73468  0 20:12 ?        00:00:03 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=ptyHost --logsPath /home/stavros/.vscode-server/data/logs/20251111T201218
+stavros     3728    3685    3729  0   12 289435 73468  3 20:12 ?        00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=ptyHost --logsPath /home/stavros/.vscode-server/data/logs/20251111T201218
+stavros     3728    3685    3730  0   12 289435 73468  1 20:12 ?        00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=ptyHost --logsPath /home/stavros/.vscode-server/data/logs/20251111T201218
+stavros     3728    3685    3731  0   12 289435 73468  1 20:12 ?        00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=ptyHost --logsPath /home/stavros/.vscode-server/data/logs/20251111T201218
+stavros     3728    3685    3732  0   12 289435 73468  0 20:12 ?        00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=ptyHost --logsPath /home/stavros/.vscode-server/data/logs/20251111T201218
+stavros     3728    3685    3733  0   12 289435 73468  2 20:12 ?        00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=ptyHost --logsPath /home/stavros/.vscode-server/data/logs/20251111T201218
+stavros     3728    3685    3734  0   12 289435 73468  3 20:12 ?        00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=ptyHost --logsPath /home/stavros/.vscode-server/data/logs/20251111T201218
+stavros     3728    3685    3735  0   12 289435 73468  2 20:12 ?        00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=ptyHost --logsPath /home/stavros/.vscode-server/data/logs/20251111T201218
+stavros     3728    3685    3736  0   12 289435 73468  3 20:12 ?        00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=ptyHost --logsPath /home/stavros/.vscode-server/data/logs/20251111T201218
+stavros     3728    3685    3737  0   12 289435 73468  0 20:12 ?        00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=ptyHost --logsPath /home/stavros/.vscode-server/data/logs/20251111T201218
+stavros     3728    3685    3738  0   12 289435 73468  2 20:12 ?        00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=ptyHost --logsPath /home/stavros/.vscode-server/data/logs/20251111T201218
+stavros     3728    3685    3790  0   12 289435 73468  0 20:12 ?        00:00:00 /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=ptyHost --logsPath /home/stavros/.vscode-server/data/logs/20251111T201218
+stavros     3789    3728    3789  0    1  3552  8180   1 20:12 pts/1    00:00:00 /usr/bin/bash --init-file /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+stavros     3831    2682    3831  0    6 142412 33888  2 20:12 ?        00:00:00 /usr/bin/update-notifier
+stavros     3831    2682    3838  0    6 142412 33888  2 20:12 ?        00:00:00 /usr/bin/update-notifier
+stavros     3831    2682    3839  0    6 142412 33888  2 20:12 ?        00:00:00 /usr/bin/update-notifier
+stavros     3831    2682    3841  0    6 142412 33888  2 20:12 ?        00:00:00 /usr/bin/update-notifier
+stavros     3831    2682    3843  0    6 142412 33888  1 20:12 ?        00:00:00 /usr/bin/update-notifier
+stavros     3831    2682    3892  0    6 142412 33888  3 20:12 ?        00:00:00 /usr/bin/update-notifier
+root        4300       2    4300  0    1     0     0   2 20:16 ?        00:00:00 [kworker/2:2-cgroup_destroy]
+root        4305       2    4305  0    1     0     0   2 20:16 ?        00:00:00 [kworker/u520:1]
+root        4315       2    4315  0    1     0     0   0 20:17 ?        00:00:00 [kworker/u513:2-events_power_efficient]
+root        4367       2    4367  0    1     0     0   1 20:20 ?        00:00:00 [kworker/1:1-mpt_poll_0]
+root        4368       2    4368  0    1     0     0   1 20:20 ?        00:00:00 [kworker/u514:0-events_freezable_pwr_efficient]
+root        4448       2    4448  0    1     0     0   3 20:25 ?        00:00:00 [kworker/u516:2-events_freezable_pwr_efficient]
+root        4449       2    4449  0    1     0     0   3 20:25 ?        00:00:00 [kworker/u516:5-kvfree_rcu_reclaim]
+root        4453       2    4453  0    1     0     0   0 20:26 ?        00:00:00 [kworker/0:0-cgroup_destroy]
+root        4460       2    4460  0    1     0     0   0 20:27 ?        00:00:00 [kworker/u514:1-events_power_efficient]
+stavros     4469    3614    4469  0    1  2196  2228   0 20:30 ?        00:00:00 sleep 180
+root        4470       2    4470  0    1     0     0   0 20:30 ?        00:00:00 [kworker/u515:0]
+stavros     4502    3728    4502  0    1   722  1748   1 20:31 ?        00:00:00 /bin/sh -c "/home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/vs/base/node/cpuUsage.sh" 3789
+stavros     4503    4502    4503  0    1  2680  3976   3 20:31 ?        00:00:00 /bin/bash /home/stavros/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/vs/base/node/cpuUsage.sh 3789
+stavros     4506    4503    4506  0    1  2196  2232   0 20:31 ?        00:00:00 sleep 1
+stavros     4508    3789    4508 99    1  3412  5268   2 20:31 pts/1    00:00:00 ps -FALL
