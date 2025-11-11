@@ -1,0 +1,743 @@
+UID          PID    PPID     LWP  C NLWP    SZ   RSS PSR STIME TTY          TIME CMD
+root           1       0       1  0    1  6314 15460   2 Nov11 ?        00:00:03 /sbin/init auto automatic-ubiquity noprompt
+root           2       0       2  0    1     0     0   3 Nov11 ?        00:00:00 [kthreadd]
+root           3       2       3  0    1     0     0   0 Nov11 ?        00:00:00 [pool_workqueue_release]
+root           4       2       4  0    1     0     0   0 Nov11 ?        00:00:00 [kworker/R-rcu_gp]
+root           5       2       5  0    1     0     0   0 Nov11 ?        00:00:00 [kworker/R-sync_wq]
+root           6       2       6  0    1     0     0   0 Nov11 ?        00:00:00 [kworker/R-kvfree_rcu_reclaim]
+root           7       2       7  0    1     0     0   0 Nov11 ?        00:00:00 [kworker/R-slub_flushwq]
+root           8       2       8  0    1     0     0   0 Nov11 ?        00:00:00 [kworker/R-netns]
+root          10       2      10  0    1     0     0   0 Nov11 ?        00:00:01 [kworker/0:1-events]
+root          11       2      11  0    1     0     0   0 Nov11 ?        00:00:00 [kworker/0:0H-events_highpri]
+root          13       2      13  0    1     0     0   0 Nov11 ?        00:00:00 [kworker/R-mm_percpu_wq]
+root          14       2      14  0    1     0     0   0 Nov11 ?        00:00:00 [rcu_tasks_kthread]
+root          15       2      15  0    1     0     0   0 Nov11 ?        00:00:00 [rcu_tasks_rude_kthread]
+root          16       2      16  0    1     0     0   0 Nov11 ?        00:00:00 [rcu_tasks_trace_kthread]
+root          17       2      17  0    1     0     0   0 Nov11 ?        00:00:00 [ksoftirqd/0]
+root          18       2      18  0    1     0     0   2 Nov11 ?        00:00:01 [rcu_preempt]
+root          19       2      19  0    1     0     0   2 Nov11 ?        00:00:00 [rcu_exp_par_gp_kthread_worker/1]
+root          20       2      20  0    1     0     0   2 Nov11 ?        00:00:00 [rcu_exp_gp_kthread_worker]
+root          21       2      21  0    1     0     0   0 Nov11 ?        00:00:00 [migration/0]
+root          22       2      22  0    1     0     0   0 Nov11 ?        00:00:00 [idle_inject/0]
+root          23       2      23  0    1     0     0   0 Nov11 ?        00:00:00 [cpuhp/0]
+root          24       2      24  0    1     0     0   1 Nov11 ?        00:00:00 [cpuhp/1]
+root          25       2      25  0    1     0     0   1 Nov11 ?        00:00:00 [idle_inject/1]
+root          26       2      26  0    1     0     0   1 Nov11 ?        00:00:00 [migration/1]
+root          27       2      27  0    1     0     0   1 Nov11 ?        00:00:00 [ksoftirqd/1]
+root          28       2      28  0    1     0     0   1 Nov11 ?        00:00:00 [kworker/1:0-cgroup_destroy]
+root          29       2      29  0    1     0     0   1 Nov11 ?        00:00:00 [kworker/1:0H-events_highpri]
+root          30       2      30  0    1     0     0   2 Nov11 ?        00:00:00 [cpuhp/2]
+root          31       2      31  0    1     0     0   2 Nov11 ?        00:00:00 [idle_inject/2]
+root          32       2      32  0    1     0     0   2 Nov11 ?        00:00:00 [migration/2]
+root          33       2      33  0    1     0     0   2 Nov11 ?        00:00:00 [ksoftirqd/2]
+root          35       2      35  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/2:0H-kblockd]
+root          36       2      36  0    1     0     0   3 Nov11 ?        00:00:00 [cpuhp/3]
+root          37       2      37  0    1     0     0   3 Nov11 ?        00:00:00 [idle_inject/3]
+root          38       2      38  0    1     0     0   3 Nov11 ?        00:00:00 [migration/3]
+root          39       2      39  0    1     0     0   3 Nov11 ?        00:00:00 [ksoftirqd/3]
+root          41       2      41  0    1     0     0   3 Nov11 ?        00:00:00 [kworker/3:0H-events_highpri]
+root          44       2      44  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/u515:0-flush-8:0]
+root          46       2      46  0    1     0     0   0 Nov11 ?        00:00:00 [kdevtmpfs]
+root          47       2      47  0    1     0     0   1 Nov11 ?        00:00:00 [kworker/R-inet_frag_wq]
+root          48       2      48  0    1     0     0   0 Nov11 ?        00:00:00 [kauditd]
+root          49       2      49  0    1     0     0   3 Nov11 ?        00:00:00 [khungtaskd]
+root          50       2      50  0    1     0     0   1 Nov11 ?        00:00:00 [oom_reaper]
+root          52       2      52  0    1     0     0   0 Nov11 ?        00:00:00 [kworker/u513:2-flush-8:0]
+root          53       2      53  0    1     0     0   1 Nov11 ?        00:00:00 [kworker/R-writeback]
+root          54       2      54  0    1     0     0   3 Nov11 ?        00:00:00 [kcompactd0]
+root          55       2      55  0    1     0     0   2 Nov11 ?        00:00:00 [ksmd]
+root          56       2      56  0    1     0     0   2 Nov11 ?        00:00:00 [khugepaged]
+root          57       2      57  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-kintegrityd]
+root          58       2      58  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-kblockd]
+root          59       2      59  0    1     0     0   1 Nov11 ?        00:00:00 [irq/9-acpi]
+root          62       2      62  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-tpm_dev_wq]
+root          63       2      63  0    1     0     0   0 Nov11 ?        00:00:00 [kworker/R-ata_sff]
+root          64       2      64  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-md]
+root          65       2      65  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-md_bitmap]
+root          66       2      66  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-edac-poller]
+root          67       2      67  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-devfreq_wq]
+root          68       2      68  0    1     0     0   2 Nov11 ?        00:00:00 [watchdogd]
+root          70       2      70  0    1     0     0   3 Nov11 ?        00:00:00 [kworker/3:1H-kblockd]
+root          71       2      71  0    1     0     0   0 Nov11 ?        00:00:00 [kswapd0]
+root          72       2      72  0    1     0     0   0 Nov11 ?        00:00:00 [ecryptfs-kthread]
+root          73       2      73  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-kthrotld]
+root          74       2      74  0    1     0     0   2 Nov11 ?        00:00:00 [irq/24-pciehp]
+root          75       2      75  0    1     0     0   3 Nov11 ?        00:00:00 [irq/25-pciehp]
+root          76       2      76  0    1     0     0   0 Nov11 ?        00:00:00 [irq/26-pciehp]
+root          77       2      77  0    1     0     0   1 Nov11 ?        00:00:00 [irq/27-pciehp]
+root          78       2      78  0    1     0     0   2 Nov11 ?        00:00:00 [irq/28-pciehp]
+root          79       2      79  0    1     0     0   3 Nov11 ?        00:00:00 [irq/29-pciehp]
+root          80       2      80  0    1     0     0   0 Nov11 ?        00:00:00 [irq/30-pciehp]
+root          81       2      81  0    1     0     0   1 Nov11 ?        00:00:00 [irq/31-pciehp]
+root          82       2      82  0    1     0     0   2 Nov11 ?        00:00:00 [irq/32-pciehp]
+root          83       2      83  0    1     0     0   3 Nov11 ?        00:00:00 [irq/33-pciehp]
+root          84       2      84  0    1     0     0   0 Nov11 ?        00:00:00 [irq/34-pciehp]
+root          85       2      85  0    1     0     0   1 Nov11 ?        00:00:00 [irq/35-pciehp]
+root          86       2      86  0    1     0     0   2 Nov11 ?        00:00:00 [irq/36-pciehp]
+root          87       2      87  0    1     0     0   3 Nov11 ?        00:00:00 [irq/37-pciehp]
+root          88       2      88  0    1     0     0   0 Nov11 ?        00:00:00 [irq/38-pciehp]
+root          89       2      89  0    1     0     0   1 Nov11 ?        00:00:00 [irq/39-pciehp]
+root          90       2      90  0    1     0     0   2 Nov11 ?        00:00:00 [irq/40-pciehp]
+root          91       2      91  0    1     0     0   3 Nov11 ?        00:00:00 [irq/41-pciehp]
+root          92       2      92  0    1     0     0   0 Nov11 ?        00:00:00 [irq/42-pciehp]
+root          93       2      93  0    1     0     0   1 Nov11 ?        00:00:00 [irq/43-pciehp]
+root          94       2      94  0    1     0     0   2 Nov11 ?        00:00:00 [irq/44-pciehp]
+root          95       2      95  0    1     0     0   3 Nov11 ?        00:00:00 [irq/45-pciehp]
+root          96       2      96  0    1     0     0   0 Nov11 ?        00:00:00 [irq/46-pciehp]
+root          97       2      97  0    1     0     0   1 Nov11 ?        00:00:00 [irq/47-pciehp]
+root          98       2      98  0    1     0     0   2 Nov11 ?        00:00:00 [irq/48-pciehp]
+root          99       2      99  0    1     0     0   3 Nov11 ?        00:00:00 [irq/49-pciehp]
+root         100       2     100  0    1     0     0   0 Nov11 ?        00:00:00 [irq/50-pciehp]
+root         101       2     101  0    1     0     0   1 Nov11 ?        00:00:00 [irq/51-pciehp]
+root         102       2     102  0    1     0     0   2 Nov11 ?        00:00:00 [irq/52-pciehp]
+root         103       2     103  0    1     0     0   3 Nov11 ?        00:00:00 [irq/53-pciehp]
+root         104       2     104  0    1     0     0   0 Nov11 ?        00:00:00 [irq/54-pciehp]
+root         105       2     105  0    1     0     0   1 Nov11 ?        00:00:00 [irq/55-pciehp]
+root         106       2     106  0    1     0     0   0 Nov11 ?        00:00:00 [kworker/R-acpi_thermal_pm]
+root         108       2     108  0    1     0     0   2 Nov11 ?        00:00:00 [scsi_eh_0]
+root         109       2     109  0    1     0     0   0 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_0]
+root         110       2     110  0    1     0     0   0 Nov11 ?        00:00:00 [scsi_eh_1]
+root         111       2     111  0    1     0     0   0 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_1]
+root         115       2     115  0    1     0     0   2 Nov11 ?        00:00:01 [kworker/2:1-events]
+root         116       2     116  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-mld]
+root         117       2     117  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-ipv6_addrconf]
+root         119       2     119  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/u512:1-ipv6_addrconf]
+root         126       2     126  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-kstrp]
+root         129       2     129  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/u517:0]
+root         131       2     131  0    1     0     0   1 Nov11 ?        00:00:00 [kworker/u519:0-ttm]
+root         133       2     133  0    1     0     0   3 Nov11 ?        00:00:00 [kworker/u521:0-ttm]
+root         141       2     141  0    1     0     0   0 Nov11 ?        00:00:00 [kworker/u515:2-kvfree_rcu_reclaim]
+root         148       2     148  0    1     0     0   1 Nov11 ?        00:00:00 [kworker/R-charger_manager]
+root         149       2     149  0    1     0     0   0 Nov11 ?        00:00:00 [kworker/0:1H-kblockd]
+root         172       2     172  0    1     0     0   1 Nov11 ?        00:00:00 [kworker/1:1H-kblockd]
+root         203       2     203  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/2:2-cgroup_destroy]
+root         204       2     204  0    1     0     0   3 Nov11 ?        00:00:00 [kworker/R-mpt_poll_0]
+root         205       2     205  0    1     0     0   3 Nov11 ?        00:00:00 [kworker/R-mpt/0]
+root         206       2     206  0    1     0     0   0 Nov11 ?        00:00:00 [scsi_eh_2]
+root         207       2     207  0    1     0     0   1 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_2]
+root         208       2     208  0    1     0     0   3 Nov11 ?        00:00:00 [scsi_eh_3]
+root         209       2     209  0    1     0     0   1 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_3]
+root         210       2     210  0    1     0     0   2 Nov11 ?        00:00:00 [scsi_eh_4]
+root         211       2     211  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_4]
+root         212       2     212  0    1     0     0   0 Nov11 ?        00:00:00 [scsi_eh_5]
+root         213       2     213  0    1     0     0   3 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_5]
+root         214       2     214  0    1     0     0   0 Nov11 ?        00:00:00 [scsi_eh_6]
+root         215       2     215  0    1     0     0   1 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_6]
+root         216       2     216  0    1     0     0   3 Nov11 ?        00:00:00 [scsi_eh_7]
+root         217       2     217  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_7]
+root         218       2     218  0    1     0     0   1 Nov11 ?        00:00:00 [scsi_eh_8]
+root         219       2     219  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_8]
+root         220       2     220  0    1     0     0   3 Nov11 ?        00:00:00 [scsi_eh_9]
+root         221       2     221  0    1     0     0   1 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_9]
+root         222       2     222  0    1     0     0   1 Nov11 ?        00:00:00 [kworker/u514:2-events_unbound]
+root         223       2     223  0    1     0     0   1 Nov11 ?        00:00:00 [scsi_eh_10]
+root         224       2     224  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_10]
+root         225       2     225  0    1     0     0   2 Nov11 ?        00:00:00 [scsi_eh_11]
+root         226       2     226  0    1     0     0   3 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_11]
+root         242       2     242  0    1     0     0   2 Nov11 ?        00:00:00 [scsi_eh_12]
+root         243       2     243  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_12]
+root         244       2     244  0    1     0     0   3 Nov11 ?        00:00:00 [scsi_eh_13]
+root         245       2     245  0    1     0     0   3 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_13]
+root         246       2     246  0    1     0     0   2 Nov11 ?        00:00:00 [scsi_eh_14]
+root         247       2     247  0    1     0     0   1 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_14]
+root         248       2     248  0    1     0     0   3 Nov11 ?        00:00:00 [scsi_eh_15]
+root         249       2     249  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_15]
+root         250       2     250  0    1     0     0   2 Nov11 ?        00:00:00 [scsi_eh_16]
+root         251       2     251  0    1     0     0   1 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_16]
+root         252       2     252  0    1     0     0   1 Nov11 ?        00:00:00 [scsi_eh_17]
+root         253       2     253  0    1     0     0   3 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_17]
+root         254       2     254  0    1     0     0   2 Nov11 ?        00:00:00 [scsi_eh_18]
+root         255       2     255  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_18]
+root         256       2     256  0    1     0     0   1 Nov11 ?        00:00:00 [scsi_eh_19]
+root         257       2     257  0    1     0     0   3 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_19]
+root         259       2     259  0    1     0     0   1 Nov11 ?        00:00:00 [scsi_eh_20]
+root         260       2     260  0    1     0     0   3 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_20]
+root         261       2     261  0    1     0     0   1 Nov11 ?        00:00:00 [scsi_eh_21]
+root         262       2     262  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_21]
+root         263       2     263  0    1     0     0   1 Nov11 ?        00:00:00 [scsi_eh_22]
+root         264       2     264  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_22]
+root         265       2     265  0    1     0     0   2 Nov11 ?        00:00:00 [scsi_eh_23]
+root         266       2     266  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_23]
+root         267       2     267  0    1     0     0   0 Nov11 ?        00:00:00 [scsi_eh_24]
+root         268       2     268  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_24]
+root         269       2     269  0    1     0     0   3 Nov11 ?        00:00:00 [scsi_eh_25]
+root         270       2     270  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_25]
+root         271       2     271  0    1     0     0   0 Nov11 ?        00:00:00 [scsi_eh_26]
+root         272       2     272  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_26]
+root         273       2     273  0    1     0     0   0 Nov11 ?        00:00:00 [scsi_eh_27]
+root         274       2     274  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_27]
+root         275       2     275  0    1     0     0   3 Nov11 ?        00:00:00 [scsi_eh_28]
+root         276       2     276  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_28]
+root         277       2     277  0    1     0     0   3 Nov11 ?        00:00:00 [scsi_eh_29]
+root         278       2     278  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_29]
+root         279       2     279  0    1     0     0   0 Nov11 ?        00:00:00 [scsi_eh_30]
+root         280       2     280  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_30]
+root         281       2     281  0    1     0     0   2 Nov11 ?        00:00:00 [scsi_eh_31]
+root         282       2     282  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_31]
+root         283       2     283  0    1     0     0   2 Nov11 ?        00:00:00 [scsi_eh_32]
+root         284       2     284  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-scsi_tmf_32]
+root         307       2     307  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/u516:28-flush-8:0]
+root         308       2     308  0    1     0     0   3 Nov11 ?        00:00:00 [kworker/u516:29-kvfree_rcu_reclaim]
+root         352       2     352  0    1     0     0   1 Nov11 ?        00:00:00 [jbd2/sda2-8]
+root         353       2     353  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/R-ext4-rsv-conversion]
+root         400       2     400  0    1     0     0   3 Nov11 ?        00:00:00 [irq/57-vmw_vmci]
+root         401       2     401  0    1     0     0   0 Nov11 ?        00:00:00 [irq/58-vmw_vmci]
+root         402       2     402  0    1     0     0   1 Nov11 ?        00:00:00 [irq/59-vmw_vmci]
+root         410       1     410  0    1 12833 19564   3 Nov11 ?        00:00:00 /usr/lib/systemd/systemd-journald
+systemd+     430       1     430  0    1  4535  7696   0 Nov11 ?        00:00:01 /usr/lib/systemd/systemd-oomd
+root         450       1     450  0    3 38141  1612   3 Nov11 ?        00:00:00 vmware-vmblock-fuse /run/vmblock-fuse -o rw,subtype=vmware-vmblock,default_permissions,allow_other,dev,suid
+root         450       1     451  0    3 38141  1612   3 Nov11 ?        00:00:00 vmware-vmblock-fuse /run/vmblock-fuse -o rw,subtype=vmware-vmblock,default_permissions,allow_other,dev,suid
+root         450       1     452  0    3 38141  1612   3 Nov11 ?        00:00:00 vmware-vmblock-fuse /run/vmblock-fuse -o rw,subtype=vmware-vmblock,default_permissions,allow_other,dev,suid
+systemd+     453       1     453  0    3 41340  7920   2 Nov11 ?        00:00:00 /usr/lib/systemd/systemd-timesyncd
+systemd+     453       1     490  0    3 41340  7920   3 Nov11 ?        00:00:00 /usr/lib/systemd/systemd-timesyncd
+systemd+     453       1     492  0    3 41340  7920   0 Nov11 ?        00:00:00 /usr/lib/systemd/systemd-timesyncd
+root         455       2     455  0    1     0     0   2 Nov11 ?        00:00:00 [irq/16-vmwgfx]
+root         456       2     456  0    1     0     0   3 Nov11 ?        00:00:00 [kworker/R-ttm]
+root         461       1     461  0    1  9240 13880   0 Nov11 ?        00:00:00 /usr/lib/systemd/systemd-udevd
+systemd+     489       1     489  0    1  5798 14168   1 Nov11 ?        00:00:00 /usr/lib/systemd/systemd-resolved
+root         496       2     496  0    1     0     0   2 Nov11 ?        00:00:00 [psimon]
+root        1047       1    1047  0    1  5978 11024   1 Nov11 ?        00:00:00 /usr/bin/VGAuthService
+root        1051       1    1051  0    4 29219  9820   2 Nov11 ?        00:00:04 /usr/bin/vmtoolsd
+root        1051       1    1124  0    4 29219  9820   3 Nov11 ?        00:00:00 /usr/bin/vmtoolsd
+root        1051       1    1131  0    4 29219  9820   3 Nov11 ?        00:00:00 /usr/bin/vmtoolsd
+root        1051       1    1132  0    4 29219  9820   1 Nov11 ?        00:00:00 /usr/bin/vmtoolsd
+root        1126       2    1126  0    1     0     0   3 Nov11 ?        00:00:01 [kworker/3:4-events]
+avahi       1184       1    1184  0    1  1718  4432   3 Nov11 ?        00:00:00 avahi-daemon: running [melvm.local]
+message+    1186       1    1186  0    1  2978  7968   3 Nov11 ?        00:00:01 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+gnome-r+    1199       1    1199  0    4 130365 16912  3 Nov11 ?        00:00:00 /usr/libexec/gnome-remote-desktop-daemon --system
+gnome-r+    1199       1    1326  0    4 130365 16912  1 Nov11 ?        00:00:00 /usr/libexec/gnome-remote-desktop-daemon --system
+gnome-r+    1199       1    1327  0    4 130365 16912  3 Nov11 ?        00:00:00 /usr/libexec/gnome-remote-desktop-daemon --system
+gnome-r+    1199       1    1334  0    4 130365 16912  2 Nov11 ?        00:00:00 /usr/libexec/gnome-remote-desktop-daemon --system
+polkitd     1207       1    1207  0    4 97280 11616   2 Nov11 ?        00:00:00 /usr/lib/polkit-1/polkitd --no-debug --log-level=notice
+polkitd     1207       1    1462  0    4 97280 11616   0 Nov11 ?        00:00:00 /usr/lib/polkit-1/polkitd --no-debug --log-level=notice
+polkitd     1207       1    1463  0    4 97280 11616   3 Nov11 ?        00:00:00 /usr/lib/polkit-1/polkitd --no-debug --log-level=notice
+polkitd     1207       1    1464  0    4 97280 11616   3 Nov11 ?        00:00:00 /usr/lib/polkit-1/polkitd --no-debug --log-level=notice
+root        1228       1    1228  0   11 499335 39156  2 Nov11 ?        00:00:01 /usr/lib/snapd/snapd
+root        1228       1    1503  0   11 499335 39156  1 Nov11 ?        00:00:00 /usr/lib/snapd/snapd
+root        1228       1    1507  0   11 499335 39156  1 Nov11 ?        00:00:00 /usr/lib/snapd/snapd
+root        1228       1    1508  0   11 499335 39156  3 Nov11 ?        00:00:00 /usr/lib/snapd/snapd
+root        1228       1    1512  0   11 499335 39156  3 Nov11 ?        00:00:00 /usr/lib/snapd/snapd
+root        1228       1    1516  0   11 499335 39156  1 Nov11 ?        00:00:00 /usr/lib/snapd/snapd
+root        1228       1    1730  0   11 499335 39156  2 Nov11 ?        00:00:00 /usr/lib/snapd/snapd
+root        1228       1    1735  0   11 499335 39156  0 Nov11 ?        00:00:00 /usr/lib/snapd/snapd
+root        1228       1    1756  0   11 499335 39156  0 Nov11 ?        00:00:00 /usr/lib/snapd/snapd
+root        1228       1    2040  0   11 499335 39156  0 Nov11 ?        00:00:00 /usr/lib/snapd/snapd
+root        1228       1    2061  0   11 499335 39156  1 Nov11 ?        00:00:00 /usr/lib/snapd/snapd
+root        1243       1    1243  0    4 78005  7560   3 Nov11 ?        00:00:00 /usr/libexec/accounts-daemon
+root        1243       1    1299  0    4 78005  7560   1 Nov11 ?        00:00:00 /usr/libexec/accounts-daemon
+root        1243       1    1301  0    4 78005  7560   1 Nov11 ?        00:00:00 /usr/libexec/accounts-daemon
+root        1243       1    1310  0    4 78005  7560   3 Nov11 ?        00:00:00 /usr/libexec/accounts-daemon
+root        1245       1    1245  0    1  2426  2968   2 Nov11 ?        00:00:00 /usr/sbin/cron -f -P
+root        1246       1    1246  0    4 77675  7284   3 Nov11 ?        00:00:00 /usr/libexec/switcheroo-control
+root        1246       1    1295  0    4 77675  7284   2 Nov11 ?        00:00:00 /usr/libexec/switcheroo-control
+root        1246       1    1296  0    4 77675  7284   2 Nov11 ?        00:00:00 /usr/libexec/switcheroo-control
+root        1246       1    1309  0    4 77675  7284   1 Nov11 ?        00:00:00 /usr/libexec/switcheroo-control
+root        1259       1    1259  0    1  4716  9144   0 Nov11 ?        00:00:00 /usr/lib/systemd/systemd-logind
+root        1261       1    1261  0    6 136229 14972  0 Nov11 ?        00:00:00 /usr/libexec/udisks2/udisksd
+root        1261       1    1270  0    6 136229 14972  2 Nov11 ?        00:00:00 /usr/libexec/udisks2/udisksd
+root        1261       1    1272  0    6 136229 14972  1 Nov11 ?        00:00:00 /usr/libexec/udisks2/udisksd
+root        1261       1    1308  0    6 136229 14972  0 Nov11 ?        00:00:00 /usr/libexec/udisks2/udisksd
+root        1261       1    1485  0    6 136229 14972  3 Nov11 ?        00:00:00 /usr/libexec/udisks2/udisksd
+root        1261       1    1494  0    6 136229 14972  0 Nov11 ?        00:00:00 /usr/libexec/udisks2/udisksd
+avahi       1281    1184    1281  0    1  1652  1488   2 Nov11 ?        00:00:00 avahi-daemon: chroot helper
+syslog      1328       1    1328  0    4 55183  6076   1 Nov11 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+syslog      1328       1    1445  0    4 55183  6076   3 Nov11 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+syslog      1328       1    1446  0    4 55183  6076   0 Nov11 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+syslog      1328       1    1447  0    4 55183  6076   1 Nov11 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+root        1363       1    1363  0    4 84975 20272   2 Nov11 ?        00:00:00 /usr/sbin/NetworkManager --no-daemon
+root        1363       1    1450  0    4 84975 20272   2 Nov11 ?        00:00:00 /usr/sbin/NetworkManager --no-daemon
+root        1363       1    1451  0    4 84975 20272   3 Nov11 ?        00:00:00 /usr/sbin/NetworkManager --no-daemon
+root        1363       1    1452  0    4 84975 20272   1 Nov11 ?        00:00:00 /usr/sbin/NetworkManager --no-daemon
+root        1371       1    1371  0    1  4604  6352   2 Nov11 ?        00:00:00 /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+root        1427       2    1427  0    1     0     0   1 Nov11 ?        00:00:00 [kworker/u512:2]
+root        1484       1    1484  0    4 97848 12564   2 Nov11 ?        00:00:00 /usr/sbin/ModemManager
+root        1484       1    1486  0    4 97848 12564   1 Nov11 ?        00:00:00 /usr/sbin/ModemManager
+root        1484       1    1488  0    4 97848 12564   0 Nov11 ?        00:00:00 /usr/sbin/ModemManager
+root        1484       1    1493  0    4 97848 12564   3 Nov11 ?        00:00:00 /usr/sbin/ModemManager
+root        1567       2    1567  0    1     0     0   3 Nov11 ?        00:00:00 [kworker/R-cryptd]
+root        1657       2    1657  0    1     0     0   1 Nov11 ?        00:00:00 [kworker/u514:3-writeback]
+root        1664       2    1664  0    1     0     0   0 Nov11 ?        00:00:00 [kworker/u513:3-ext4-rsv-conversion]
+root        1780       1    1780  0    1  8151 11852   2 Nov11 ?        00:00:00 /usr/sbin/cupsd -l
+root        1790       1    1790  0    2 30902 29372   3 Nov11 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root        1790       1    1830  0    2 30902 29372   2 Nov11 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root        1799       1    1799  0    1  2704  7484   1 Nov11 ?        00:00:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+cups-br+    1815       1    1815  0    4 52342 21104   0 Nov11 ?        00:00:00 /usr/sbin/cups-browsed
+cups-br+    1815       1    1835  0    4 52342 21104   2 Nov11 ?        00:00:00 /usr/sbin/cups-browsed
+cups-br+    1815       1    1836  0    4 52342 21104   1 Nov11 ?        00:00:00 /usr/sbin/cups-browsed
+cups-br+    1815       1    1838  0    4 52342 21104   0 Nov11 ?        00:00:00 /usr/sbin/cups-browsed
+root        1817       1    1817  0    4 78363  9208   0 Nov11 ?        00:00:00 /usr/sbin/gdm3
+root        1817       1    1823  0    4 78363  9208   1 Nov11 ?        00:00:00 /usr/sbin/gdm3
+root        1817       1    1824  0    4 78363  9208   1 Nov11 ?        00:00:00 /usr/sbin/gdm3
+root        1817       1    1825  0    4 78363  9208   2 Nov11 ?        00:00:00 /usr/sbin/gdm3
+root        1821       1    1821  0    4 78021  7380   3 Nov11 ?        00:00:00 /usr/libexec/power-profiles-daemon
+root        1821       1    1839  0    4 78021  7380   2 Nov11 ?        00:00:00 /usr/libexec/power-profiles-daemon
+root        1821       1    1840  0    4 78021  7380   2 Nov11 ?        00:00:00 /usr/libexec/power-profiles-daemon
+root        1821       1    1841  0    4 78021  7380   2 Nov11 ?        00:00:00 /usr/libexec/power-profiles-daemon
+root        1829    1817    1829  0    4 43915 10300   0 Nov11 ?        00:00:00 gdm-session-worker [pam/gdm-autologin]
+root        1829    1817    1831  0    4 43915 10300   0 Nov11 ?        00:00:00 gdm-session-worker [pam/gdm-autologin]
+root        1829    1817    1832  0    4 43915 10300   3 Nov11 ?        00:00:00 gdm-session-worker [pam/gdm-autologin]
+root        1829    1817    1834  0    4 43915 10300   0 Nov11 ?        00:00:00 gdm-session-worker [pam/gdm-autologin]
+mel         1871       1    1871  0    1  5769 13604   0 Nov11 ?        00:00:00 /usr/lib/systemd/systemd --user
+root        1875       2    1875  0    1     0     0   3 Nov11 ?        00:00:00 [psimon]
+mel         1879    1871    1879  0    1  5619  3620   3 Nov11 ?        00:00:00 (sd-pam)
+mel         1892    1871    1892  0    1  1944  3688   3 Nov11 ?        00:00:00 /usr/bin/mpris-proxy
+mel         1894    1871    1894  0    3 26292 13152   2 Nov11 ?        00:00:00 /usr/bin/pipewire
+mel         1894    1871    1918  0    3 26292 13152   2 Nov11 ?        00:00:00 /usr/bin/pipewire
+mel         1894    1871    1927  0    3 26292 13152   0 Nov11 ?        00:00:03 /usr/bin/pipewire
+mel         1896    1871    1896  0    2 21923  5608   1 Nov11 ?        00:00:00 /usr/bin/pipewire -c filter-chain.conf
+mel         1896    1871    1920  0    2 21923  5608   0 Nov11 ?        00:00:00 /usr/bin/pipewire -c filter-chain.conf
+mel         1899    1871    1899  0    6 120690 19200  0 Nov11 ?        00:00:00 /usr/bin/wireplumber
+mel         1899    1871    1935  0    6 120690 19200  3 Nov11 ?        00:00:00 /usr/bin/wireplumber
+mel         1899    1871    1936  0    6 120690 19200  2 Nov11 ?        00:00:00 /usr/bin/wireplumber
+mel         1899    1871    1937  0    6 120690 19200  1 Nov11 ?        00:00:00 /usr/bin/wireplumber
+mel         1899    1871    1947  0    6 120690 19200  0 Nov11 ?        00:00:00 /usr/bin/wireplumber
+mel         1899    1871    1951  0    6 120690 19200  3 Nov11 ?        00:00:00 /usr/bin/wireplumber
+mel         1900    1871    1900  0    3 44976 12176   1 Nov11 ?        00:00:00 /usr/bin/pipewire-pulse
+mel         1900    1871    1926  0    3 44976 12176   3 Nov11 ?        00:00:00 /usr/bin/pipewire-pulse
+mel         1900    1871    1928  0    3 44976 12176   1 Nov11 ?        00:00:00 /usr/bin/pipewire-pulse
+mel         1901    1871    1901  0    1  2543  6320   0 Nov11 ?        00:00:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+mel         1902    1871    1902  0    5 46518 10136   1 Nov11 ?        00:00:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+mel         1902    1871    1929  0    5 46518 10136   0 Nov11 ?        00:00:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+mel         1902    1871    1930  0    5 46518 10136   2 Nov11 ?        00:00:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+mel         1902    1871    1931  0    5 46518 10136   3 Nov11 ?        00:00:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+mel         1902    1871    1934  0    5 46518 10136   0 Nov11 ?        00:00:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+rtkit       1919       1    1919  0    3  5465  3352   2 Nov11 ?        00:00:00 /usr/libexec/rtkit-daemon
+rtkit       1919       1    1932  0    3  5465  3352   3 Nov11 ?        00:00:00 /usr/libexec/rtkit-daemon
+rtkit       1919       1    1933  0    3  5465  3352   2 Nov11 ?        00:00:00 /usr/libexec/rtkit-daemon
+mel         1943    1829    1943  0    4 42720  6260   3 Nov11 tty2     00:00:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+mel         1943    1829    1948  0    4 42720  6260   0 Nov11 tty2     00:00:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+mel         1943    1829    1949  0    4 42720  6260   1 Nov11 tty2     00:00:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+mel         1943    1829    1950  0    4 42720  6260   3 Nov11 tty2     00:00:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+mel         1954    1943    1954  0    4 49679 14072   1 Nov11 tty2     00:00:00 /usr/libexec/gnome-session-binary --session=ubuntu
+mel         1954    1943    2041  0    4 49679 14072   2 Nov11 tty2     00:00:00 /usr/libexec/gnome-session-binary --session=ubuntu
+mel         1954    1943    2042  0    4 49679 14072   3 Nov11 tty2     00:00:00 /usr/libexec/gnome-session-binary --session=ubuntu
+mel         1954    1943    2043  0    4 49679 14072   2 Nov11 tty2     00:00:00 /usr/libexec/gnome-session-binary --session=ubuntu
+mel         1991    1871    1991  0    8 170717 7184   0 Nov11 ?        00:00:00 /usr/libexec/xdg-document-portal
+mel         1991    1871    2003  0    8 170717 7184   0 Nov11 ?        00:00:00 /usr/libexec/xdg-document-portal
+mel         1991    1871    2004  0    8 170717 7184   0 Nov11 ?        00:00:00 /usr/libexec/xdg-document-portal
+mel         1991    1871    2006  0    8 170717 7184   0 Nov11 ?        00:00:00 /usr/libexec/xdg-document-portal
+mel         1991    1871    2020  0    8 170717 7184   2 Nov11 ?        00:00:00 /usr/libexec/xdg-document-portal
+mel         1991    1871    2023  0    8 170717 7184   0 Nov11 ?        00:00:00 /usr/libexec/xdg-document-portal
+mel         1991    1871    2024  0    8 170717 7184   0 Nov11 ?        00:00:00 /usr/libexec/xdg-document-portal
+mel         1991    1871    4792  0    8 170717 7184   1 00:03 ?        00:00:00 /usr/libexec/xdg-document-portal
+mel         2009    1871    2009  0    4 77512  6352   0 Nov11 ?        00:00:00 /usr/libexec/xdg-permission-store
+mel         2009    1871    2014  0    4 77512  6352   2 Nov11 ?        00:00:00 /usr/libexec/xdg-permission-store
+mel         2009    1871    2015  0    4 77512  6352   2 Nov11 ?        00:00:00 /usr/libexec/xdg-permission-store
+mel         2009    1871    2017  0    4 77512  6352   3 Nov11 ?        00:00:00 /usr/libexec/xdg-permission-store
+root        2022    1991    2022  0    1   693  2024   0 Nov11 ?        00:00:00 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+mel         2045    1871    2045  0    3 24429  7228   1 Nov11 ?        00:00:00 /usr/libexec/gcr-ssh-agent --base-dir /run/user/1000/gcr
+mel         2045    1871    2057  0    3 24429  7228   1 Nov11 ?        00:00:00 /usr/libexec/gcr-ssh-agent --base-dir /run/user/1000/gcr
+mel         2045    1871    2058  0    3 24429  7228   0 Nov11 ?        00:00:00 /usr/libexec/gcr-ssh-agent --base-dir /run/user/1000/gcr
+mel         2046    1871    2046  0    2 22530  5440   3 Nov11 ?        00:00:00 /usr/libexec/gnome-session-ctl --monitor
+mel         2046    1871    2051  0    2 22530  5440   3 Nov11 ?        00:00:00 /usr/libexec/gnome-session-ctl --monitor
+root        2055       2    2055  0    1     0     0   1 Nov11 ?        00:00:00 [kworker/1:3-mm_percpu_wq]
+mel         2072    1871    2072  0    4 78894  8148   1 Nov11 ?        00:00:00 /usr/libexec/gvfsd
+mel         2072    1871    2075  0    4 78894  8148   0 Nov11 ?        00:00:00 /usr/libexec/gvfsd
+mel         2072    1871    2076  0    4 78894  8148   0 Nov11 ?        00:00:00 /usr/libexec/gvfsd
+mel         2072    1871    2077  0    4 78894  8148   3 Nov11 ?        00:00:00 /usr/libexec/gvfsd
+mel         2080    1871    2080  0    7 98739  7012   1 Nov11 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+mel         2080    1871    2084  0    7 98739  7012   1 Nov11 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+mel         2080    1871    2085  0    7 98739  7012   0 Nov11 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+mel         2080    1871    2086  0    7 98739  7012   2 Nov11 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+mel         2080    1871    2087  0    7 98739  7012   0 Nov11 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+mel         2080    1871    2088  0    7 98739  7012   1 Nov11 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+mel         2080    1871    2089  0    7 98739  7012   1 Nov11 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+mel         2083    1871    2083  0    5 158502 15888  2 Nov11 ?        00:00:00 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+mel         2083    1871    2091  0    5 158502 15888  2 Nov11 ?        00:00:00 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+mel         2083    1871    2092  0    5 158502 15888  0 Nov11 ?        00:00:00 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+mel         2083    1871    2093  0    5 158502 15888  0 Nov11 ?        00:00:00 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+mel         2083    1871    2097  0    5 158502 15888  1 Nov11 ?        00:00:00 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+mel         2115    2083    2115  0    5 95370  7432   2 Nov11 ?        00:00:00 /usr/libexec/at-spi-bus-launcher --launch-immediately
+mel         2115    2083    2125  0    5 95370  7432   3 Nov11 ?        00:00:00 /usr/libexec/at-spi-bus-launcher --launch-immediately
+mel         2115    2083    2126  0    5 95370  7432   3 Nov11 ?        00:00:00 /usr/libexec/at-spi-bus-launcher --launch-immediately
+mel         2115    2083    2127  0    5 95370  7432   0 Nov11 ?        00:00:00 /usr/libexec/at-spi-bus-launcher --launch-immediately
+mel         2115    2083    2128  0    5 95370  7432   1 Nov11 ?        00:00:00 /usr/libexec/at-spi-bus-launcher --launch-immediately
+mel         2118    1871    2118  1   19 1020583 284608 3 Nov11 ?       00:00:18 /usr/bin/gnome-shell
+mel         2118    1871    2145  0   19 1020583 284608 2 Nov11 ?       00:00:00 /usr/bin/gnome-shell
+mel         2118    1871    2146  0   19 1020583 284608 2 Nov11 ?       00:00:00 /usr/bin/gnome-shell
+mel         2118    1871    2148  0   19 1020583 284608 1 Nov11 ?       00:00:00 /usr/bin/gnome-shell
+mel         2118    1871    2151  0   19 1020583 284608 1 Nov11 ?       00:00:00 /usr/bin/gnome-shell
+mel         2118    1871    2158  0   19 1020583 284608 1 Nov11 ?       00:00:00 /usr/bin/gnome-shell
+mel         2118    1871    2159  0   19 1020583 284608 1 Nov11 ?       00:00:00 /usr/bin/gnome-shell
+mel         2118    1871    2160  0   19 1020583 284608 2 Nov11 ?       00:00:00 /usr/bin/gnome-shell
+mel         2118    1871    2161  0   19 1020583 284608 3 Nov11 ?       00:00:00 /usr/bin/gnome-shell
+mel         2118    1871    2162  0   19 1020583 284608 2 Nov11 ?       00:00:00 /usr/bin/gnome-shell
+mel         2118    1871    2163  0   19 1020583 284608 3 Nov11 ?       00:00:00 /usr/bin/gnome-shell
+mel         2118    1871    2164  0   19 1020583 284608 3 Nov11 ?       00:00:00 /usr/bin/gnome-shell
+mel         2118    1871    2165  0   19 1020583 284608 3 Nov11 ?       00:00:00 /usr/bin/gnome-shell
+mel         2118    1871    2195  0   19 1020583 284608 1 Nov11 ?       00:00:00 /usr/bin/gnome-shell
+mel         2118    1871    2220  0   19 1020583 284608 3 Nov11 ?       00:00:00 /usr/bin/gnome-shell
+mel         2118    1871    2811  0   19 1020583 284608 3 Nov11 ?       00:00:00 /usr/bin/gnome-shell
+mel         2118    1871    3097  0   19 1020583 284608 1 Nov11 ?       00:00:00 /usr/bin/gnome-shell
+mel         2118    1871    4775  0   19 1020583 284608 3 00:03 ?       00:00:00 /usr/bin/gnome-shell
+mel         2118    1871    4776  0   19 1020583 284608 0 00:03 ?       00:00:00 /usr/bin/gnome-shell
+mel         2131    2115    2131  0    1  2222  4984   3 Nov11 ?        00:00:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
+root        2217       2    2217  0    1     0     0   0 Nov11 ?        00:00:00 [kworker/u518:1-ttm]
+root        2218       2    2218  0    1     0     0   0 Nov11 ?        00:00:00 [kworker/u518:2-ttm]
+mel         2228    1871    2228  0    4 42280  7332   3 Nov11 ?        00:00:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+mel         2228    1871    2230  0    4 42280  7332   3 Nov11 ?        00:00:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+mel         2228    1871    2231  0    4 42280  7332   1 Nov11 ?        00:00:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+mel         2228    1871    2232  0    4 42280  7332   2 Nov11 ?        00:00:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+colord      2229       1    2229  0    4 79729 14484   1 Nov11 ?        00:00:00 /usr/libexec/colord
+colord      2229       1    2236  0    4 79729 14484   0 Nov11 ?        00:00:00 /usr/libexec/colord
+colord      2229       1    2237  0    4 79729 14484   0 Nov11 ?        00:00:00 /usr/libexec/colord
+colord      2229       1    2239  0    4 79729 14484   3 Nov11 ?        00:00:00 /usr/libexec/colord
+mel         2268    1871    2268  0    7 165057 22256  3 Nov11 ?        00:00:00 /usr/libexec/gnome-shell-calendar-server
+mel         2268    1871    2269  0    7 165057 22256  2 Nov11 ?        00:00:00 /usr/libexec/gnome-shell-calendar-server
+mel         2268    1871    2270  0    7 165057 22256  0 Nov11 ?        00:00:00 /usr/libexec/gnome-shell-calendar-server
+mel         2268    1871    2272  0    7 165057 22256  3 Nov11 ?        00:00:00 /usr/libexec/gnome-shell-calendar-server
+mel         2268    1871    2273  0    7 165057 22256  2 Nov11 ?        00:00:00 /usr/libexec/gnome-shell-calendar-server
+mel         2268    1871    2274  0    7 165057 22256  2 Nov11 ?        00:00:00 /usr/libexec/gnome-shell-calendar-server
+mel         2268    1871    2457  0    7 165057 22256  0 Nov11 ?        00:00:00 /usr/libexec/gnome-shell-calendar-server
+mel         2275    1871    2275  0    5 152391 43700  1 Nov11 ?        00:00:00 /usr/libexec/evolution-source-registry
+mel         2275    1871    2277  0    5 152391 43700  0 Nov11 ?        00:00:00 /usr/libexec/evolution-source-registry
+mel         2275    1871    2278  0    5 152391 43700  3 Nov11 ?        00:00:00 /usr/libexec/evolution-source-registry
+mel         2275    1871    2279  0    5 152391 43700  2 Nov11 ?        00:00:00 /usr/libexec/evolution-source-registry
+mel         2275    1871    2281  0    5 152391 43700  0 Nov11 ?        00:00:00 /usr/libexec/evolution-source-registry
+root        2285       1    2285  0    4 80318  9936   2 Nov11 ?        00:00:00 /usr/libexec/upowerd
+root        2285       1    2324  0    4 80318  9936   3 Nov11 ?        00:00:00 /usr/libexec/upowerd
+root        2285       1    2325  0    4 80318  9936   1 Nov11 ?        00:00:00 /usr/libexec/upowerd
+root        2285       1    2328  0    4 80318  9936   0 Nov11 ?        00:00:00 /usr/libexec/upowerd
+mel         2290    1871    2290  0   12 683395 28260  2 Nov11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+mel         2290    1871    2295  0   12 683395 28260  2 Nov11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+mel         2290    1871    2296  0   12 683395 28260  2 Nov11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+mel         2290    1871    2302  0   12 683395 28260  2 Nov11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+mel         2290    1871    2326  0   12 683395 28260  0 Nov11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+mel         2290    1871    2327  0   12 683395 28260  0 Nov11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+mel         2290    1871    2329  0   12 683395 28260  3 Nov11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+mel         2290    1871    2330  0   12 683395 28260  2 Nov11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+mel         2290    1871    2331  0   12 683395 28260  3 Nov11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+mel         2290    1871    2332  0   12 683395 28260  3 Nov11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+mel         2290    1871    2333  0   12 683395 28260  3 Nov11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+mel         2290    1871    2334  0   12 683395 28260  3 Nov11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+mel         2299    1871    2299  0    4 97092 11248   0 Nov11 ?        00:00:00 /usr/bin/ibus-daemon --panel disable
+mel         2299    1871    2411  0    4 97092 11248   0 Nov11 ?        00:00:00 /usr/bin/ibus-daemon --panel disable
+mel         2299    1871    2412  0    4 97092 11248   2 Nov11 ?        00:00:00 /usr/bin/ibus-daemon --panel disable
+mel         2299    1871    2413  0    4 97092 11248   0 Nov11 ?        00:00:01 /usr/bin/ibus-daemon --panel disable
+mel         2300    1871    2300  0    5 61263  6820   3 Nov11 ?        00:00:00 /usr/libexec/gsd-a11y-settings
+mel         2300    1871    2389  0    5 61263  6820   0 Nov11 ?        00:00:00 /usr/libexec/gsd-a11y-settings
+mel         2300    1871    2390  0    5 61263  6820   2 Nov11 ?        00:00:00 /usr/libexec/gsd-a11y-settings
+mel         2300    1871    2406  0    5 61263  6820   3 Nov11 ?        00:00:00 /usr/libexec/gsd-a11y-settings
+mel         2300    1871    2486  0    5 61263  6820   3 Nov11 ?        00:00:00 /usr/libexec/gsd-a11y-settings
+mel         2305    1871    2305  0    5 103495 20388  0 Nov11 ?        00:00:00 /usr/libexec/gsd-color
+mel         2305    1871    2430  0    5 103495 20388  0 Nov11 ?        00:00:00 /usr/libexec/gsd-color
+mel         2305    1871    2438  0    5 103495 20388  1 Nov11 ?        00:00:00 /usr/libexec/gsd-color
+mel         2305    1871    2452  0    5 103495 20388  3 Nov11 ?        00:00:00 /usr/libexec/gsd-color
+mel         2305    1871    2458  0    5 103495 20388  2 Nov11 ?        00:00:00 /usr/libexec/gsd-color
+mel         2306    1871    2306  0    5 64258  9972   3 Nov11 ?        00:00:00 /usr/libexec/gsd-datetime
+mel         2306    1871    2421  0    5 64258  9972   1 Nov11 ?        00:00:00 /usr/libexec/gsd-datetime
+mel         2306    1871    2422  0    5 64258  9972   2 Nov11 ?        00:00:00 /usr/libexec/gsd-datetime
+mel         2306    1871    2471  0    5 64258  9972   2 Nov11 ?        00:00:00 /usr/libexec/gsd-datetime
+mel         2306    1871    2535  0    5 64258  9972   0 Nov11 ?        00:00:00 /usr/libexec/gsd-datetime
+mel         2309    1871    2309  0    5 96536  8296   0 Nov11 ?        00:00:00 /usr/libexec/gsd-housekeeping
+mel         2309    1871    2380  0    5 96536  8296   2 Nov11 ?        00:00:00 /usr/libexec/gsd-housekeeping
+mel         2309    1871    2381  0    5 96536  8296   2 Nov11 ?        00:00:00 /usr/libexec/gsd-housekeeping
+mel         2309    1871    2384  0    5 96536  8296   2 Nov11 ?        00:00:00 /usr/libexec/gsd-housekeeping
+mel         2309    1871    2485  0    5 96536  8296   3 Nov11 ?        00:00:00 /usr/libexec/gsd-housekeeping
+mel         2316    1871    2316  0    5 103111 19760  3 Nov11 ?        00:00:00 /usr/libexec/gsd-keyboard
+mel         2316    1871    2499  0    5 103111 19760  3 Nov11 ?        00:00:00 /usr/libexec/gsd-keyboard
+mel         2316    1871    2500  0    5 103111 19760  3 Nov11 ?        00:00:00 /usr/libexec/gsd-keyboard
+mel         2316    1871    2508  0    5 103111 19760  3 Nov11 ?        00:00:00 /usr/libexec/gsd-keyboard
+mel         2316    1871    2522  0    5 103111 19760  2 Nov11 ?        00:00:00 /usr/libexec/gsd-keyboard
+mel         2317    1871    2317  0    5 159651 24068  1 Nov11 ?        00:00:00 /usr/libexec/gsd-media-keys
+mel         2317    1871    2484  0    5 159651 24068  3 Nov11 ?        00:00:00 /usr/libexec/gsd-media-keys
+mel         2317    1871    2487  0    5 159651 24068  2 Nov11 ?        00:00:00 /usr/libexec/gsd-media-keys
+mel         2317    1871    2492  0    5 159651 24068  1 Nov11 ?        00:00:00 /usr/libexec/gsd-media-keys
+mel         2317    1871    2524  0    5 159651 24068  3 Nov11 ?        00:00:00 /usr/libexec/gsd-media-keys
+mel         2320    1871    2320  0    5 122405 21724  3 Nov11 ?        00:00:00 /usr/libexec/gsd-power
+mel         2320    1871    2392  0    5 122405 21724  2 Nov11 ?        00:00:00 /usr/libexec/gsd-power
+mel         2320    1871    2393  0    5 122405 21724  3 Nov11 ?        00:00:00 /usr/libexec/gsd-power
+mel         2320    1871    2399  0    5 122405 21724  3 Nov11 ?        00:00:00 /usr/libexec/gsd-power
+mel         2320    1871    2407  0    5 122405 21724  1 Nov11 ?        00:00:00 /usr/libexec/gsd-power
+mel         2321    1871    2321  0    4 80887 11368   0 Nov11 ?        00:00:00 /usr/libexec/gsd-print-notifications
+mel         2321    1871    2382  0    4 80887 11368   2 Nov11 ?        00:00:00 /usr/libexec/gsd-print-notifications
+mel         2321    1871    2383  0    4 80887 11368   2 Nov11 ?        00:00:00 /usr/libexec/gsd-print-notifications
+mel         2321    1871    2391  0    4 80887 11368   2 Nov11 ?        00:00:00 /usr/libexec/gsd-print-notifications
+mel         2322    1871    2322  0    4 114567 7208   3 Nov11 ?        00:00:00 /usr/libexec/gsd-rfkill
+mel         2322    1871    2372  0    4 114567 7208   3 Nov11 ?        00:00:00 /usr/libexec/gsd-rfkill
+mel         2322    1871    2379  0    4 114567 7208   3 Nov11 ?        00:00:00 /usr/libexec/gsd-rfkill
+mel         2322    1871    2386  0    4 114567 7208   3 Nov11 ?        00:00:00 /usr/libexec/gsd-rfkill
+mel         2323    1871    2323  0    4 77588  6736   0 Nov11 ?        00:00:00 /usr/libexec/gsd-screensaver-proxy
+mel         2323    1871    2419  0    4 77588  6736   1 Nov11 ?        00:00:00 /usr/libexec/gsd-screensaver-proxy
+mel         2323    1871    2420  0    4 77588  6736   1 Nov11 ?        00:00:00 /usr/libexec/gsd-screensaver-proxy
+mel         2323    1871    2454  0    4 77588  6736   2 Nov11 ?        00:00:00 /usr/libexec/gsd-screensaver-proxy
+mel         2335    1871    2335  0    5 117263 11648  3 Nov11 ?        00:00:00 /usr/libexec/gsd-sharing
+mel         2335    1871    2408  0    5 117263 11648  3 Nov11 ?        00:00:00 /usr/libexec/gsd-sharing
+mel         2335    1871    2409  0    5 117263 11648  3 Nov11 ?        00:00:00 /usr/libexec/gsd-sharing
+mel         2335    1871    2410  0    5 117263 11648  3 Nov11 ?        00:00:00 /usr/libexec/gsd-sharing
+mel         2335    1871    2414  0    5 117263 11648  0 Nov11 ?        00:00:00 /usr/libexec/gsd-sharing
+mel         2336    1871    2336  0    5 96691  8436   0 Nov11 ?        00:00:00 /usr/libexec/gsd-smartcard
+mel         2336    1871    2387  0    5 96691  8436   0 Nov11 ?        00:00:00 /usr/libexec/gsd-smartcard
+mel         2336    1871    2388  0    5 96691  8436   0 Nov11 ?        00:00:00 /usr/libexec/gsd-smartcard
+mel         2336    1871    2403  0    5 96691  8436   3 Nov11 ?        00:00:00 /usr/libexec/gsd-smartcard
+mel         2336    1871    2491  0    5 96691  8436   2 Nov11 ?        00:00:00 /usr/libexec/gsd-smartcard
+mel         2337    1871    2337  0    5 64379  9576   3 Nov11 ?        00:00:00 /usr/libexec/gsd-sound
+mel         2337    1871    2436  0    5 64379  9576   2 Nov11 ?        00:00:00 /usr/libexec/gsd-sound
+mel         2337    1871    2437  0    5 64379  9576   2 Nov11 ?        00:00:00 /usr/libexec/gsd-sound
+mel         2337    1871    2477  0    5 64379  9576   2 Nov11 ?        00:00:00 /usr/libexec/gsd-sound
+mel         2337    1871    2537  0    5 64379  9576   0 Nov11 ?        00:00:00 /usr/libexec/gsd-sound
+mel         2347    2083    2347  0    8 210081 64584  2 Nov11 ?        00:00:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+mel         2347    2083    2415  0    8 210081 64584  1 Nov11 ?        00:00:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+mel         2347    2083    2416  0    8 210081 64584  1 Nov11 ?        00:00:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+mel         2347    2083    2418  0    8 210081 64584  0 Nov11 ?        00:00:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+mel         2347    2083    2455  0    8 210081 64584  3 Nov11 ?        00:00:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+mel         2347    2083    2819  0    8 210081 64584  1 Nov11 ?        00:00:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+mel         2347    2083    2830  0    8 210081 64584  2 Nov11 ?        00:00:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+mel         2347    2083    2835  0    8 210081 64584  1 Nov11 ?        00:00:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+mel         2360    1871    2360  0    5 130722 24416  0 Nov11 ?        00:00:00 /usr/libexec/goa-daemon
+mel         2360    1871    2423  0    5 130722 24416  2 Nov11 ?        00:00:00 /usr/libexec/goa-daemon
+mel         2360    1871    2424  0    5 130722 24416  2 Nov11 ?        00:00:00 /usr/libexec/goa-daemon
+mel         2360    1871    2459  0    5 130722 24416  0 Nov11 ?        00:00:00 /usr/libexec/goa-daemon
+mel         2360    1871    2463  0    5 130722 24416  2 Nov11 ?        00:00:00 /usr/libexec/goa-daemon
+mel         2367    1871    2367  0    3 38234 39176   0 Nov11 ?        00:00:04 /usr/bin/vmtoolsd -n vmusr --blockFd 3 --uinputFd 4
+mel         2367    1871    2607  0    3 38234 39176   3 Nov11 ?        00:00:00 /usr/bin/vmtoolsd -n vmusr --blockFd 3 --uinputFd 4
+mel         2367    1871    2934  0    3 38234 39176   3 Nov11 ?        00:00:00 /usr/bin/vmtoolsd -n vmusr --blockFd 3 --uinputFd 4
+mel         2370    1871    2370  0    5 103520 21176  1 Nov11 ?        00:00:00 /usr/libexec/gsd-wacom
+mel         2370    1871    2478  0    5 103520 21176  3 Nov11 ?        00:00:00 /usr/libexec/gsd-wacom
+mel         2370    1871    2479  0    5 103520 21176  3 Nov11 ?        00:00:00 /usr/libexec/gsd-wacom
+mel         2370    1871    2489  0    5 103520 21176  3 Nov11 ?        00:00:00 /usr/libexec/gsd-wacom
+mel         2370    1871    2516  0    5 103520 21176  0 Nov11 ?        00:00:00 /usr/libexec/gsd-wacom
+mel         2426    2083    2426  0    4 76641  7724   1 Nov11 ?        00:00:00 /usr/libexec/gsd-disk-utility-notify
+mel         2426    2083    2465  0    4 76641  7724   1 Nov11 ?        00:00:00 /usr/libexec/gsd-disk-utility-notify
+mel         2426    2083    2466  0    4 76641  7724   2 Nov11 ?        00:00:00 /usr/libexec/gsd-disk-utility-notify
+mel         2426    2083    2504  0    4 76641  7724   1 Nov11 ?        00:00:00 /usr/libexec/gsd-disk-utility-notify
+mel         2462    1871    2462  0   10 223892 24764  3 Nov11 ?        00:00:00 /usr/libexec/evolution-calendar-factory
+mel         2462    1871    2518  0   10 223892 24764  1 Nov11 ?        00:00:00 /usr/libexec/evolution-calendar-factory
+mel         2462    1871    2519  0   10 223892 24764  3 Nov11 ?        00:00:00 /usr/libexec/evolution-calendar-factory
+mel         2462    1871    2529  0   10 223892 24764  2 Nov11 ?        00:00:00 /usr/libexec/evolution-calendar-factory
+mel         2462    1871    2598  0   10 223892 24764  0 Nov11 ?        00:00:00 /usr/libexec/evolution-calendar-factory
+mel         2462    1871    2599  0   10 223892 24764  1 Nov11 ?        00:00:00 /usr/libexec/evolution-calendar-factory
+mel         2462    1871    2609  0   10 223892 24764  2 Nov11 ?        00:00:00 /usr/libexec/evolution-calendar-factory
+mel         2462    1871    2616  0   10 223892 24764  3 Nov11 ?        00:00:00 /usr/libexec/evolution-calendar-factory
+mel         2462    1871    2617  0   10 223892 24764  2 Nov11 ?        00:00:00 /usr/libexec/evolution-calendar-factory
+mel         2462    1871    2620  0   10 223892 24764  0 Nov11 ?        00:00:00 /usr/libexec/evolution-calendar-factory
+mel         2469    2299    2469  0    5 61431  7596   0 Nov11 ?        00:00:00 /usr/libexec/ibus-dconf
+mel         2469    2299    2494  0    5 61431  7596   3 Nov11 ?        00:00:00 /usr/libexec/ibus-dconf
+mel         2469    2299    2495  0    5 61431  7596   3 Nov11 ?        00:00:00 /usr/libexec/ibus-dconf
+mel         2469    2299    2528  0    5 61431  7596   0 Nov11 ?        00:00:00 /usr/libexec/ibus-dconf
+mel         2469    2299    2556  0    5 61431  7596   2 Nov11 ?        00:00:00 /usr/libexec/ibus-dconf
+mel         2475    1871    2475  0    4 97662  9780   3 Nov11 ?        00:00:00 /usr/libexec/goa-identity-service
+mel         2475    1871    2497  0    4 97662  9780   3 Nov11 ?        00:00:00 /usr/libexec/goa-identity-service
+mel         2475    1871    2498  0    4 97662  9780   2 Nov11 ?        00:00:00 /usr/libexec/goa-identity-service
+mel         2475    1871    2523  0    4 97662  9780   0 Nov11 ?        00:00:00 /usr/libexec/goa-identity-service
+mel         2476    2299    2476  0    5 106045 32168  0 Nov11 ?        00:00:04 /usr/libexec/ibus-extension-gtk3
+mel         2476    2299    2520  0    5 106045 32168  2 Nov11 ?        00:00:00 /usr/libexec/ibus-extension-gtk3
+mel         2476    2299    2521  0    5 106045 32168  0 Nov11 ?        00:00:00 /usr/libexec/ibus-extension-gtk3
+mel         2476    2299    2526  0    5 106045 32168  1 Nov11 ?        00:00:00 /usr/libexec/ibus-extension-gtk3
+mel         2476    2299    2530  0    5 106045 32168  2 Nov11 ?        00:00:00 /usr/libexec/ibus-extension-gtk3
+mel         2496    1871    2496  0    4 77805  7604   1 Nov11 ?        00:00:00 /usr/libexec/ibus-portal
+mel         2496    1871    2511  0    4 77805  7604   3 Nov11 ?        00:00:00 /usr/libexec/ibus-portal
+mel         2496    1871    2512  0    4 77805  7604   3 Nov11 ?        00:00:00 /usr/libexec/ibus-portal
+mel         2496    1871    2514  0    4 77805  7604   3 Nov11 ?        00:00:00 /usr/libexec/ibus-portal
+mel         2517    1871    2517  0    4 104442 14684  3 Nov11 ?        00:00:00 /usr/libexec/gsd-printer
+mel         2517    1871    2540  0    4 104442 14684  2 Nov11 ?        00:00:00 /usr/libexec/gsd-printer
+mel         2517    1871    2541  0    4 104442 14684  2 Nov11 ?        00:00:00 /usr/libexec/gsd-printer
+mel         2517    1871    2542  0    4 104442 14684  3 Nov11 ?        00:00:00 /usr/libexec/gsd-printer
+mel         2527    1871    2527  0    5 152783 11440  0 Nov11 ?        00:00:00 /usr/libexec/gvfs-udisks2-volume-monitor
+mel         2527    1871    2554  0    5 152783 11440  2 Nov11 ?        00:00:00 /usr/libexec/gvfs-udisks2-volume-monitor
+mel         2527    1871    2555  0    5 152783 11440  2 Nov11 ?        00:00:00 /usr/libexec/gvfs-udisks2-volume-monitor
+mel         2527    1871    2558  0    5 152783 11440  0 Nov11 ?        00:00:00 /usr/libexec/gvfs-udisks2-volume-monitor
+mel         2527    1871    2588  0    5 152783 11440  2 Nov11 ?        00:00:00 /usr/libexec/gvfs-udisks2-volume-monitor
+mel         2608    1871    2608  0    5 98127  8544   1 Nov11 ?        00:00:00 /usr/libexec/gvfs-afc-volume-monitor
+mel         2608    1871    2611  0    5 98127  8544   3 Nov11 ?        00:00:00 /usr/libexec/gvfs-afc-volume-monitor
+mel         2608    1871    2612  0    5 98127  8544   2 Nov11 ?        00:00:00 /usr/libexec/gvfs-afc-volume-monitor
+mel         2608    1871    2613  0    5 98127  8544   2 Nov11 ?        00:00:00 /usr/libexec/gvfs-afc-volume-monitor
+mel         2608    1871    2615  0    5 98127  8544   1 Nov11 ?        00:00:00 /usr/libexec/gvfs-afc-volume-monitor
+mel         2618    1871    2618  0    7 188546 29316  0 Nov11 ?        00:00:00 /usr/libexec/evolution-addressbook-factory
+mel         2618    1871    2626  0    7 188546 29316  3 Nov11 ?        00:00:00 /usr/libexec/evolution-addressbook-factory
+mel         2618    1871    2627  0    7 188546 29316  2 Nov11 ?        00:00:00 /usr/libexec/evolution-addressbook-factory
+mel         2618    1871    2628  0    7 188546 29316  1 Nov11 ?        00:00:00 /usr/libexec/evolution-addressbook-factory
+mel         2618    1871    2631  0    7 188546 29316  3 Nov11 ?        00:00:00 /usr/libexec/evolution-addressbook-factory
+mel         2618    1871    2632  0    7 188546 29316  1 Nov11 ?        00:00:00 /usr/libexec/evolution-addressbook-factory
+mel         2618    1871    2638  0    7 188546 29316  0 Nov11 ?        00:00:00 /usr/libexec/evolution-addressbook-factory
+mel         2621    1871    2621  0    4 77910  7456   3 Nov11 ?        00:00:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+mel         2621    1871    2622  0    4 77910  7456   1 Nov11 ?        00:00:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+mel         2621    1871    2623  0    4 77910  7456   2 Nov11 ?        00:00:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+mel         2621    1871    2625  0    4 77910  7456   0 Nov11 ?        00:00:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+mel         2629    1871    2629  0    4 77666  7012   3 Nov11 ?        00:00:00 /usr/libexec/gvfs-mtp-volume-monitor
+mel         2629    1871    2633  0    4 77666  7012   0 Nov11 ?        00:00:00 /usr/libexec/gvfs-mtp-volume-monitor
+mel         2629    1871    2634  0    4 77666  7012   0 Nov11 ?        00:00:00 /usr/libexec/gvfs-mtp-volume-monitor
+mel         2629    1871    2636  0    4 77666  7012   0 Nov11 ?        00:00:00 /usr/libexec/gvfs-mtp-volume-monitor
+mel         2639    1871    2639  0    4 77630  6444   3 Nov11 ?        00:00:00 /usr/libexec/gvfs-goa-volume-monitor
+mel         2639    1871    2640  0    4 77630  6444   2 Nov11 ?        00:00:00 /usr/libexec/gvfs-goa-volume-monitor
+mel         2639    1871    2641  0    4 77630  6444   1 Nov11 ?        00:00:00 /usr/libexec/gvfs-goa-volume-monitor
+mel         2639    1871    2642  0    4 77630  6444   0 Nov11 ?        00:00:00 /usr/libexec/gvfs-goa-volume-monitor
+mel         2647    2118    2647  0    1 59416 88468   3 Nov11 ?        00:00:00 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.367TF3 -listenfd 4 -listenfd 5 -displayfd 6 -initfd 7 -byteswappedclients
+mel         2669    1871    2669  0    1  9784 11776   3 Nov11 ?        00:00:00 /snap/snapd-desktop-integration/315/usr/bin/snapd-desktop-integration
+mel         2683    2299    2683  0    4 43006  7616   0 Nov11 ?        00:00:00 /usr/libexec/ibus-engine-simple
+mel         2683    2299    2686  0    4 43006  7616   1 Nov11 ?        00:00:00 /usr/libexec/ibus-engine-simple
+mel         2683    2299    2687  0    4 43006  7616   1 Nov11 ?        00:00:00 /usr/libexec/ibus-engine-simple
+mel         2683    2299    2688  0    4 43006  7616   2 Nov11 ?        00:00:00 /usr/libexec/ibus-engine-simple
+mel         2719    1871    2719  0    4 41329  5968   3 Nov11 ?        00:00:00 /usr/libexec/dconf-service
+mel         2719    1871    2730  0    4 41329  5968   0 Nov11 ?        00:00:00 /usr/libexec/dconf-service
+mel         2719    1871    2731  0    4 41329  5968   0 Nov11 ?        00:00:00 /usr/libexec/dconf-service
+mel         2719    1871    2732  0    4 41329  5968   1 Nov11 ?        00:00:00 /usr/libexec/dconf-service
+mel         2764    2669    2764  0    5 107405 30876  1 Nov11 ?        00:00:00 /snap/snapd-desktop-integration/315/usr/bin/snapd-desktop-integration
+mel         2764    2669    2780  0    5 107405 30876  3 Nov11 ?        00:00:00 /snap/snapd-desktop-integration/315/usr/bin/snapd-desktop-integration
+mel         2764    2669    2781  0    5 107405 30876  0 Nov11 ?        00:00:00 /snap/snapd-desktop-integration/315/usr/bin/snapd-desktop-integration
+mel         2764    2669    2782  0    5 107405 30876  0 Nov11 ?        00:00:00 /snap/snapd-desktop-integration/315/usr/bin/snapd-desktop-integration
+mel         2764    2669    2783  0    5 107405 30876  1 Nov11 ?        00:00:00 /snap/snapd-desktop-integration/315/usr/bin/snapd-desktop-integration
+mel         2786    1871    2786  0    4 42910  6940   0 Nov11 ?        00:00:00 /usr/libexec/gvfsd-metadata
+mel         2786    1871    2792  0    4 42910  6940   3 Nov11 ?        00:00:00 /usr/libexec/gvfsd-metadata
+mel         2786    1871    2793  0    4 42910  6940   0 Nov11 ?        00:00:00 /usr/libexec/gvfsd-metadata
+mel         2786    1871    2794  0    4 42910  6940   3 Nov11 ?        00:00:00 /usr/libexec/gvfsd-metadata
+mel         2787    2072    2787  0    5 134263 9012   0 Nov11 ?        00:00:00 /usr/libexec/gvfsd-trash --spawner :1.21 /org/gtk/gvfs/exec_spaw/0
+mel         2787    2072    2788  0    5 134263 9012   0 Nov11 ?        00:00:00 /usr/libexec/gvfsd-trash --spawner :1.21 /org/gtk/gvfs/exec_spaw/0
+mel         2787    2072    2789  0    5 134263 9012   1 Nov11 ?        00:00:00 /usr/libexec/gvfsd-trash --spawner :1.21 /org/gtk/gvfs/exec_spaw/0
+mel         2787    2072    2790  0    5 134263 9012   1 Nov11 ?        00:00:00 /usr/libexec/gvfsd-trash --spawner :1.21 /org/gtk/gvfs/exec_spaw/0
+mel         2787    2072    2796  0    5 134263 9012   0 Nov11 ?        00:00:00 /usr/libexec/gvfsd-trash --spawner :1.21 /org/gtk/gvfs/exec_spaw/0
+mel         2824    1871    2824  0    8 184053 25952  0 Nov11 ?        00:00:00 /usr/libexec/localsearch-3
+mel         2824    1871    2826  0    8 184053 25952  0 Nov11 ?        00:00:00 /usr/libexec/localsearch-3
+mel         2824    1871    2827  0    8 184053 25952  3 Nov11 ?        00:00:00 /usr/libexec/localsearch-3
+mel         2824    1871    2832  0    8 184053 25952  0 Nov11 ?        00:00:00 /usr/libexec/localsearch-3
+mel         2824    1871    2851  0    8 184053 25952  0 Nov11 ?        00:00:00 /usr/libexec/localsearch-3
+mel         2824    1871    2853  0    8 184053 25952  2 Nov11 ?        00:00:00 /usr/libexec/localsearch-3
+mel         2824    1871    2868  0    8 184053 25952  0 Nov11 ?        00:00:00 /usr/libexec/localsearch-3
+mel         2824    1871    2870  0    8 184053 25952  1 Nov11 ?        00:00:00 /usr/libexec/localsearch-3
+mel         2825    1871    2825  0    9 158093 18488  3 Nov11 ?        00:00:00 /usr/libexec/xdg-desktop-portal
+mel         2825    1871    2828  0    9 158093 18488  3 Nov11 ?        00:00:00 /usr/libexec/xdg-desktop-portal
+mel         2825    1871    2829  0    9 158093 18488  0 Nov11 ?        00:00:00 /usr/libexec/xdg-desktop-portal
+mel         2825    1871    2831  0    9 158093 18488  2 Nov11 ?        00:00:00 /usr/libexec/xdg-desktop-portal
+mel         2825    1871    2940  0    9 158093 18488  0 Nov11 ?        00:00:00 /usr/libexec/xdg-desktop-portal
+mel         2825    1871    2956  0    9 158093 18488  1 Nov11 ?        00:00:00 /usr/libexec/xdg-desktop-portal
+mel         2825    1871    4793  0    9 158093 18488  0 00:03 ?        00:00:00 /usr/libexec/xdg-desktop-portal
+mel         2825    1871    4795  0    9 158093 18488  1 00:03 ?        00:00:00 /usr/libexec/xdg-desktop-portal
+mel         2825    1871    4796  0    9 158093 18488  3 00:03 ?        00:00:00 /usr/libexec/xdg-desktop-portal
+mel         2837    1871    2837  0    6 188127 40980  1 Nov11 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gnome
+mel         2837    1871    2844  0    6 188127 40980  1 Nov11 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gnome
+mel         2837    1871    2845  0    6 188127 40980  2 Nov11 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gnome
+mel         2837    1871    2846  0    6 188127 40980  2 Nov11 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gnome
+mel         2837    1871    2866  0    6 188127 40980  2 Nov11 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gnome
+mel         2837    1871    2867  0    6 188127 40980  0 Nov11 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gnome
+mel         2849    1871    2849  0   12 683405 27924  1 Nov11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+mel         2849    1871    2854  0   12 683405 27924  3 Nov11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+mel         2849    1871    2855  0   12 683405 27924  3 Nov11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+mel         2849    1871    2856  0   12 683405 27924  2 Nov11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+mel         2849    1871    2857  0   12 683405 27924  2 Nov11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+mel         2849    1871    2858  0   12 683405 27924  1 Nov11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+mel         2849    1871    2859  0   12 683405 27924  3 Nov11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+mel         2849    1871    2860  0   12 683405 27924  2 Nov11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+mel         2849    1871    2861  0   12 683405 27924  3 Nov11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+mel         2849    1871    2862  0   12 683405 27924  2 Nov11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+mel         2849    1871    2863  0   12 683405 27924  2 Nov11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+mel         2849    1871    2864  0   12 683405 27924  2 Nov11 ?        00:00:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+mel         2885    1871    2885  0    5 120013 80120  3 Nov11 ?        00:00:00 /usr/libexec/gsd-xsettings
+mel         2885    1871    2892  0    5 120013 80120  2 Nov11 ?        00:00:00 /usr/libexec/gsd-xsettings
+mel         2885    1871    2893  0    5 120013 80120  0 Nov11 ?        00:00:00 /usr/libexec/gsd-xsettings
+mel         2885    1871    2894  0    5 120013 80120  0 Nov11 ?        00:00:00 /usr/libexec/gsd-xsettings
+mel         2885    1871    2895  0    5 120013 80120  2 Nov11 ?        00:00:00 /usr/libexec/gsd-xsettings
+root        2890       2    2890  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/u520:1-ttm]
+root        2896       2    2896  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/u520:2-ttm]
+mel         2897    2118    2897  0    6 181829 96368  0 Nov11 ?        00:00:00 /usr/libexec/mutter-x11-frames
+mel         2897    2118    2903  0    6 181829 96368  0 Nov11 ?        00:00:00 /usr/libexec/mutter-x11-frames
+mel         2897    2118    2920  0    6 181829 96368  1 Nov11 ?        00:00:00 /usr/libexec/mutter-x11-frames
+mel         2897    2118    2921  0    6 181829 96368  1 Nov11 ?        00:00:00 /usr/libexec/mutter-x11-frames
+mel         2897    2118    2924  0    6 181829 96368  0 Nov11 ?        00:00:00 /usr/libexec/mutter-x11-frames
+mel         2897    2118    2957  0    6 181829 96368  0 Nov11 ?        00:00:00 /usr/libexec/mutter-x11-frames
+mel         2926    1871    2926  0    4 44851 13096   3 Nov11 ?        00:00:00 /usr/libexec/ibus-x11
+mel         2926    1871    2929  0    4 44851 13096   0 Nov11 ?        00:00:00 /usr/libexec/ibus-x11
+mel         2926    1871    2930  0    4 44851 13096   1 Nov11 ?        00:00:00 /usr/libexec/ibus-x11
+mel         2926    1871    2931  0    4 44851 13096   1 Nov11 ?        00:00:00 /usr/libexec/ibus-x11
+mel         2941    1871    2941  0    5 104597 26836  1 Nov11 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gtk
+mel         2941    1871    2942  0    5 104597 26836  2 Nov11 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gtk
+mel         2941    1871    2943  0    5 104597 26836  1 Nov11 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gtk
+mel         2941    1871    2945  0    5 104597 26836  3 Nov11 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gtk
+mel         2941    1871    2946  0    5 104597 26836  2 Nov11 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gtk
+root        2966       2    2966  0    1     0     0   1 Nov11 ?        00:00:00 [kworker/u514:4-kvfree_rcu_reclaim]
+mel         2985    1871    2985  0    6 143185 62104  1 Nov11 ?        00:00:06 /usr/libexec/gnome-terminal-server
+mel         2985    1871    2986  0    6 143185 62104  3 Nov11 ?        00:00:00 /usr/libexec/gnome-terminal-server
+mel         2985    1871    2987  0    6 143185 62104  1 Nov11 ?        00:00:00 /usr/libexec/gnome-terminal-server
+mel         2985    1871    2989  0    6 143185 62104  3 Nov11 ?        00:00:00 /usr/libexec/gnome-terminal-server
+mel         2985    1871    2990  0    6 143185 62104  1 Nov11 ?        00:00:00 /usr/libexec/gnome-terminal-server
+mel         2985    1871    2992  0    6 143185 62104  3 Nov11 ?        00:00:00 /usr/libexec/gnome-terminal-server
+mel         2993    2985    2993  0    1  3395  7848   2 Nov11 pts/0    00:00:00 bash
+mel         3019    2083    3019  0    6 142420 34372  1 Nov11 ?        00:00:00 /usr/bin/update-notifier
+mel         3019    2083    3030  0    6 142420 34372  3 Nov11 ?        00:00:00 /usr/bin/update-notifier
+mel         3019    2083    3031  0    6 142420 34372  0 Nov11 ?        00:00:00 /usr/bin/update-notifier
+mel         3019    2083    3033  0    6 142420 34372  0 Nov11 ?        00:00:00 /usr/bin/update-notifier
+mel         3019    2083    3034  0    6 142420 34372  2 Nov11 ?        00:00:00 /usr/bin/update-notifier
+mel         3019    2083    3057  0    6 142420 34372  2 Nov11 ?        00:00:00 /usr/bin/update-notifier
+root        3194       2    3194  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/2:2H-kblockd]
+root        3200       2    3200  0    1     0     0   3 Nov11 ?        00:00:00 [kworker/u516:0-events_unbound]
+root        3212       2    3212  0    1     0     0   2 Nov11 ?        00:00:00 [kworker/u515:3-events_unbound]
+mel         3357       1    3357  0    1   722  1808   3 Nov11 ?        00:00:00 sh /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/bin/code-server --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-3a745fe0-4db1-4b22-92cb-f950e8223b68
+mel         3361    3357    3361  1   11 2956236 107344 0 Nov11 ?       00:00:06 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-3a745fe0-4db1-4b22-92cb-f950e8223b68
+mel         3361    3357    3362  0   11 2956236 107344 0 Nov11 ?       00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-3a745fe0-4db1-4b22-92cb-f950e8223b68
+mel         3361    3357    3363  0   11 2956236 107344 3 Nov11 ?       00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-3a745fe0-4db1-4b22-92cb-f950e8223b68
+mel         3361    3357    3364  0   11 2956236 107344 3 Nov11 ?       00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-3a745fe0-4db1-4b22-92cb-f950e8223b68
+mel         3361    3357    3365  0   11 2956236 107344 1 Nov11 ?       00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-3a745fe0-4db1-4b22-92cb-f950e8223b68
+mel         3361    3357    3366  0   11 2956236 107344 0 Nov11 ?       00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-3a745fe0-4db1-4b22-92cb-f950e8223b68
+mel         3361    3357    3367  0   11 2956236 107344 3 Nov11 ?       00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-3a745fe0-4db1-4b22-92cb-f950e8223b68
+mel         3361    3357    3368  0   11 2956236 107344 2 Nov11 ?       00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-3a745fe0-4db1-4b22-92cb-f950e8223b68
+mel         3361    3357    3369  0   11 2956236 107344 2 Nov11 ?       00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-3a745fe0-4db1-4b22-92cb-f950e8223b68
+mel         3361    3357    3370  0   11 2956236 107344 2 Nov11 ?       00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-3a745fe0-4db1-4b22-92cb-f950e8223b68
+mel         3361    3357    3371  0   11 2956236 107344 0 Nov11 ?       00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/server-main.js --connection-token=remotessh --accept-server-license-terms --start-server --enable-remote-auto-shutdown --socket-path=/tmp/code-3a745fe0-4db1-4b22-92cb-f950e8223b68
+root        3397    1799    3397  0    1  4543 11804   1 Nov11 ?        00:00:00 sshd-session: mel [priv]
+mel         3431    3397    3431  0    1  4685  8224   0 Nov11 ?        00:00:02 sshd-session: mel@notty
+mel         3432    3431    3432  0    1   722  1876   3 Nov11 ?        00:00:00 sh
+mel         3450    3432    3450  0    5  9874 17992   3 Nov11 ?        00:00:01 /home/mel/.vscode-server/code-7d842fb85a0275a4a8e4d7e040d2625abbf7f084 command-shell --cli-data-dir /home/mel/.vscode-server/cli --parent-process-id 3432 --on-host=127.0.0.1 --on-port
+mel         3450    3432    3456  0    5  9874 17992   3 Nov11 ?        00:00:00 /home/mel/.vscode-server/code-7d842fb85a0275a4a8e4d7e040d2625abbf7f084 command-shell --cli-data-dir /home/mel/.vscode-server/cli --parent-process-id 3432 --on-host=127.0.0.1 --on-port
+mel         3450    3432    3457  0    5  9874 17992   3 Nov11 ?        00:00:00 /home/mel/.vscode-server/code-7d842fb85a0275a4a8e4d7e040d2625abbf7f084 command-shell --cli-data-dir /home/mel/.vscode-server/cli --parent-process-id 3432 --on-host=127.0.0.1 --on-port
+mel         3450    3432    3458  0    5  9874 17992   3 Nov11 ?        00:00:00 /home/mel/.vscode-server/code-7d842fb85a0275a4a8e4d7e040d2625abbf7f084 command-shell --cli-data-dir /home/mel/.vscode-server/cli --parent-process-id 3432 --on-host=127.0.0.1 --on-port
+mel         3450    3432    3459  0    5  9874 17992   3 Nov11 ?        00:00:00 /home/mel/.vscode-server/code-7d842fb85a0275a4a8e4d7e040d2625abbf7f084 command-shell --cli-data-dir /home/mel/.vscode-server/cli --parent-process-id 3432 --on-host=127.0.0.1 --on-port
+mel         3481    3361    3481  2   13 8358228 142180 2 Nov11 ?       00:00:07 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node --dns-result-order=ipv4first /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+mel         3481    3361    3482  0   13 8358228 142180 0 Nov11 ?       00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node --dns-result-order=ipv4first /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+mel         3481    3361    3483  0   13 8358228 142180 2 Nov11 ?       00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node --dns-result-order=ipv4first /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+mel         3481    3361    3484  0   13 8358228 142180 0 Nov11 ?       00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node --dns-result-order=ipv4first /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+mel         3481    3361    3485  0   13 8358228 142180 0 Nov11 ?       00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node --dns-result-order=ipv4first /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+mel         3481    3361    3486  0   13 8358228 142180 3 Nov11 ?       00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node --dns-result-order=ipv4first /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+mel         3481    3361    3487  0   13 8358228 142180 0 Nov11 ?       00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node --dns-result-order=ipv4first /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+mel         3481    3361    3488  0   13 8358228 142180 1 Nov11 ?       00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node --dns-result-order=ipv4first /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+mel         3481    3361    3489  0   13 8358228 142180 2 Nov11 ?       00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node --dns-result-order=ipv4first /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+mel         3481    3361    3490  0   13 8358228 142180 2 Nov11 ?       00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node --dns-result-order=ipv4first /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+mel         3481    3361    3491  0   13 8358228 142180 2 Nov11 ?       00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node --dns-result-order=ipv4first /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+mel         3481    3361    3512  0   13 8358228 142180 3 Nov11 ?       00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node --dns-result-order=ipv4first /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+mel         3481    3361    3520  0   13 8358228 142180 3 Nov11 ?       00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node --dns-result-order=ipv4first /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+mel         3492    3361    3492  0   13 316169 97880  2 Nov11 ?        00:00:01 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=fileWatcher
+mel         3492    3361    3493  0   13 316169 97880  3 Nov11 ?        00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=fileWatcher
+mel         3492    3361    3494  0   13 316169 97880  3 Nov11 ?        00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=fileWatcher
+mel         3492    3361    3495  0   13 316169 97880  1 Nov11 ?        00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=fileWatcher
+mel         3492    3361    3496  0   13 316169 97880  3 Nov11 ?        00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=fileWatcher
+mel         3492    3361    3497  0   13 316169 97880  3 Nov11 ?        00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=fileWatcher
+mel         3492    3361    3498  0   13 316169 97880  0 Nov11 ?        00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=fileWatcher
+mel         3492    3361    3499  0   13 316169 97880  3 Nov11 ?        00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=fileWatcher
+mel         3492    3361    3500  0   13 316169 97880  1 Nov11 ?        00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=fileWatcher
+mel         3492    3361    3501  0   13 316169 97880  0 Nov11 ?        00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=fileWatcher
+mel         3492    3361    3502  2   13 316169 97880  1 Nov11 ?        00:00:09 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=fileWatcher
+mel         3492    3361    3503  0   13 316169 97880  2 Nov11 ?        00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=fileWatcher
+mel         3492    3361    3504  0   13 316169 97880  2 Nov11 ?        00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=fileWatcher
+mel         3505    3361    3505  1   12 289791 77160  3 Nov11 ?        00:00:04 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=ptyHost --logsPath /home/mel/.vscode-server/data/logs/20251111T235708
+mel         3505    3361    3506  0   12 289791 77160  2 Nov11 ?        00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=ptyHost --logsPath /home/mel/.vscode-server/data/logs/20251111T235708
+mel         3505    3361    3507  0   12 289791 77160  3 Nov11 ?        00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=ptyHost --logsPath /home/mel/.vscode-server/data/logs/20251111T235708
+mel         3505    3361    3508  0   12 289791 77160  1 Nov11 ?        00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=ptyHost --logsPath /home/mel/.vscode-server/data/logs/20251111T235708
+mel         3505    3361    3509  0   12 289791 77160  1 Nov11 ?        00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=ptyHost --logsPath /home/mel/.vscode-server/data/logs/20251111T235708
+mel         3505    3361    3510  0   12 289791 77160  1 Nov11 ?        00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=ptyHost --logsPath /home/mel/.vscode-server/data/logs/20251111T235708
+mel         3505    3361    3511  0   12 289791 77160  1 Nov11 ?        00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=ptyHost --logsPath /home/mel/.vscode-server/data/logs/20251111T235708
+mel         3505    3361    3513  0   12 289791 77160  1 Nov11 ?        00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=ptyHost --logsPath /home/mel/.vscode-server/data/logs/20251111T235708
+mel         3505    3361    3514  0   12 289791 77160  3 Nov11 ?        00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=ptyHost --logsPath /home/mel/.vscode-server/data/logs/20251111T235708
+mel         3505    3361    3515  0   12 289791 77160  1 Nov11 ?        00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=ptyHost --logsPath /home/mel/.vscode-server/data/logs/20251111T235708
+mel         3505    3361    3516  0   12 289791 77160  2 Nov11 ?        00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=ptyHost --logsPath /home/mel/.vscode-server/data/logs/20251111T235708
+mel         3505    3361    3543  0   12 289791 77160  2 Nov11 ?        00:00:00 /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/bootstrap-fork --type=ptyHost --logsPath /home/mel/.vscode-server/data/logs/20251111T235708
+mel         3542    3505    3542  0    1  3167  7016   2 Nov11 pts/1    00:00:00 /bin/bash --init-file /home/mel/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+root        3703       2    3703  0    1     0     0   0 Nov11 ?        00:00:00 [kworker/u513:0-flush-8:0]
+root        3743       2    3743  0    1     0     0   0 Nov11 ?        00:00:00 [kworker/0:0]
+root        3796       2    3796  0    1     0     0   3 Nov11 ?        00:00:00 [kworker/3:1-cgroup_destroy]
+root        4094       1    4094  0    4 92516 42184   0 00:00 ?        00:00:00 /usr/libexec/fwupd/fwupd
+root        4094       1    4098  0    4 92516 42184   1 00:00 ?        00:00:00 /usr/libexec/fwupd/fwupd
+root        4094       1    4099  0    4 92516 42184   3 00:00 ?        00:00:00 /usr/libexec/fwupd/fwupd
+root        4094       1    4100  0    4 92516 42184   1 00:00 ?        00:00:00 /usr/libexec/fwupd/fwupd
+root        4107       2    4107  0    1     0     0   2 00:00 ?        00:00:00 [kworker/2:1H]
+root        4749       2    4749  0    1     0     0   0 00:03 ?        00:00:00 [kworker/u513:1-flush-8:0]
+mel         4750    3432    4750  0    1  2090  2116   0 00:03 ?        00:00:00 sleep 180
+root        4778       2    4778  0    1     0     0   0 00:03 ?        00:00:00 [kworker/u518:0-ttm]
+root        4779       2    4779  0    1     0     0   0 00:03 ?        00:00:00 [kworker/u518:3-ttm]
+root        4780       2    4780  0    1     0     0   3 00:03 ?        00:00:00 [kworker/u518:4-ttm]
+root        4781       2    4781  0    1     0     0   1 00:03 ?        00:00:00 [kworker/u519:1]
+root        4782       2    4782  0    1     0     0   1 00:03 ?        00:00:00 [kworker/u518:5]
+root        4783       2    4783  0    1     0     0   3 00:03 ?        00:00:00 [kworker/u521:1-ttm]
+root        4784       2    4784  0    1     0     0   3 00:03 ?        00:00:00 [kworker/u521:2]
+root        4787       2    4787  0    1     0     0   2 00:03 ?        00:00:00 [kworker/u520:0-ttm]
+root        4788       2    4788  0    1     0     0   2 00:03 ?        00:00:00 [kworker/u520:3-ttm]
+root        4789       2    4789  0    1     0     0   2 00:03 ?        00:00:00 [kworker/u520:4-ttm]
+root        4790       2    4790  0    1     0     0   2 00:03 ?        00:00:00 [kworker/u520:5-ttm]
+mel         4841    3542    4841  0    1  3303  5192   1 00:03 pts/1    00:00:00 ps -FALL
